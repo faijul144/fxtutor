@@ -1,0 +1,2436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#333">
+    <title>FX EDU</title>
+    <meta name="description" content="Material Style Theme">
+    <link rel="shortcut icon" href="assets/img/favicon.png?v=3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/preload.min.css">
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.light-blue-500.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/bum.css">
+    <link rel="stylesheet" href="assets/css/faeffect.css">
+    <link rel="stylesheet" href="assets/css/jquery.simpleTicker.css">
+    <!--Flag Icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/flag-icon.css">
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Notification -->
+
+</head>
+
+<body>
+    <div id="ms-preload" class="ms-preload">
+        <div id="status">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ms-site-container">
+        <!-- Modal -->
+        <div class="modal modal-primary" id="ms-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog animated zoomIn animated-3x" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-block shadow-2dp no-pb">
+                        <button type="button" class="close d-inline pull-right mt-2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="zmdi zmdi-close"></i>
+                            </span>
+                        </button>
+                        <div class="modal-title text-center">
+                            <span class="ms-logo ms-logo-white ms-logo-sm mr-1">FX</span>
+                            <h3 class="no-m ms-site-title">EDU
+                            </h3>
+                        </div>
+                        <div class="modal-header-tabs">
+                            <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-primary" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a href="#ms-login-tab" aria-controls="ms-login-tab" role="tab" data-toggle="tab" class="nav-link active withoutripple">
+                                        <i class="zmdi zmdi-account"></i> Login</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab" class="nav-link withoutripple">
+                                        <i class="zmdi zmdi-account-add"></i> Register</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#ms-recovery-tab" aria-controls="ms-recovery-tab" role="tab" data-toggle="tab" class="nav-link withoutripple">
+                                        <i class="zmdi zmdi-key"></i> Recovery Pass</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active show" id="ms-login-tab">
+                                <form autocomplete="off">
+                                    <fieldset>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-account"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-user">Username</label>
+                                                <input type="text" id="ms-form-user" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-lock"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-pass">Password</label>
+                                                <input type="password" id="ms-form-pass" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-md-6">
+                                                <div class="form-group no-mt">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Remember Me </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button class="btn btn-raised btn-primary pull-right">Login</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <div class="text-center">
+                                    <h3>Login with</h3>
+                                    <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-facebook">
+                                        <i class="zmdi zmdi-facebook"></i> Facebook</a>
+                                    <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-twitter">
+                                        <i class="zmdi zmdi-twitter"></i> Twitter</a>
+                                    <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-google">
+                                        <i class="zmdi zmdi-google"></i> Google</a>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="ms-register-tab">
+                                <form>
+                                    <fieldset>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-account"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-user-r">Username</label>
+                                                <input type="text" id="ms-form-user-r" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-email"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-email-r">Email</label>
+                                                <input type="email" id="ms-form-email-r" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-lock"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-pass-r">Password</label>
+                                                <input type="password" id="ms-form-pass-r" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-lock"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-pass-rn">Re-type Password</label>
+                                                <input type="password" id="ms-form-pass-rn" class="form-control">
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-raised btn-block btn-primary">Register Now</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="ms-recovery-tab">
+                                <fieldset>
+                                    <div class="form-group label-floating">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="zmdi zmdi-account"></i>
+                                            </span>
+                                            <label class="control-label" for="ms-form-user-re">Username</label>
+                                            <input type="text" id="ms-form-user-re" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group label-floating">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="zmdi zmdi-email"></i>
+                                            </span>
+                                            <label class="control-label" for="ms-form-email-re">Email</label>
+                                            <input type="email" id="ms-form-email-re" class="form-control">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-raised btn-block btn-primary">Send Password</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="ms-header ms-header-primary1 headerfix">
+            <!--ms-header-primary-->
+            <div class="container container-full">
+                <div class="ms-title ">
+                    <div class="row logo-margin-top conurl">
+                        <a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-left huda ">
+                            <i class="zmdi zmdi-menu mho "></i>
+                        </a>
+                        <a href="index.html">
+                            <!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
+                            <span class="ms-logo animated zoomInDown animation-delay-5">FX</span>
+                            <h1 class="animated fadeInRight animation-delay-6">
+                                <span>EDU</span>
+                            </h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right ml-4 " style="margin-top: 4px">
+                    <div class="row">
+
+                        <div class="dropdown profile-button-pull d-none d-md-block">
+                            <button class="btn btn-default btn-city dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="true">
+                                <img src="assets/img/profile.jpg" class="banglaprof">
+                                <span class="profile-name">Raj Shah
+                                    <i class="fa fa-ellipsis-v"> </i>
+                                </span>
+                                <span class="caret caret-search"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <a href="#">My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Wallet</a>
+                                </li>
+                                <li>
+                                    <a class="lp_bottom" href="#" style="border-bottom: none">
+                                        <i class="fa fa-sign-out"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Notification Menu -->
+                        <div class="dropdown bell-color">
+                            <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+
+                                <i class="glyphicon glyphicon-bell"></i>
+                                <span class="badge-pill badge-pill-warning badge-pill-move">10</span>
+
+                            </a>
+                            <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel" id="notification-dropdown">
+                                <div class="notification-heading">
+                                    <h4 class="menu-title">Notifications</h4>
+                                    <h4 class="menu-title float-right">
+                                        <a href="#">Mark all as read
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="notifications-wrapper conurl">
+                                    <a class="content" href="#">
+
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+
+                                <div class="notification-footer">
+                                    <a href="#">
+                                        <h4 class="footer-menu-title ">View all&nbsp. . </h4>
+                                    </a>
+
+                                </div>
+
+
+                            </ul>
+                        </div>
+
+                        <!-- End Notification Menu -->
+
+                        <div class="conurl mt-2">
+                            <a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-right huda ">
+                                <i class="zmdi zmdi-menu " style="font-size:28px"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End REVOLUTION SLIDER 5.3.0.2 fullscreen mode -->
+        <div class="container-fluid no-pl no-pr no-ml no-mr redwine ">
+            <div class="container-fluid stickermtp2 " id="ticker">
+                <div id="carouselTicker" class="carouselTicker">
+                    <ul class="carouselTicker__list ">
+
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li>
+                                        <li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- body start -->
+        <div class="container-fluid " style="background-color: #001129">
+            <!--First Row Video and Side text-->
+
+
+            <div class="card mt-1 mb-1" style="background-color:#041936;color:#fff;">
+                <div class="row mr-1 ml-1">
+                    <div class="col-md-12 text-center text-uppercase">
+                        <h2 class="font-weight-bold">Autochartist: Most advanced pattern recognition software</h2>
+                    </div>
+                    <div class="col-lg-4 text-capitalize border-right">
+
+                        <div class="d-inline-flex col-12 book-inform-fix">
+                            <div class="col-4 no-p mr-01">
+                                <strong>Author: </strong>
+                            </div>
+                            <div class="col-8 no-pl ">Fxtutor
+                            </div>
+                        </div>
+
+                        <div class="d-inline-flex col-12 book-inform-fix">
+                            <div class="col-4 no-p mr-01">
+                                <strong>Title: </strong>
+                            </div>
+                            <div class="col-8 no-pl ">CCleaner 5.41.6446</div>
+                        </div>
+
+                        <div class="d-inline-flex col-12 book-inform-fix">
+                            <div class="col-4 no-p mr-01">
+                                <strong>Catagory: </strong>
+                            </div>
+                            <div class="col-8 no-pl catagory-text">free</div>
+                        </div>
+
+                        <div class="d-inline-flex col-12 book-inform-fix">
+                            <div class="col-4 no-p mr-01">
+                                <strong>Filename: </strong>
+                            </div>
+                            <div class="col-8 no-pl">ccsetup541.exe</div>
+                        </div>
+
+                        <div class="d-inline-flex col-12 book-inform-fix">
+                            <div class="col-4 no-p mr-01">
+                                <strong>File size: </strong>
+                            </div>
+                            <div class="col-8 no-pl ">14.62MB (15,333,512 bytes)</div>
+                        </div>
+
+                        <div class="d-inline-flex col-12 book-inform-fix">
+                            <div class="col-4 no-p mr-01">
+                                <strong>License: </strong>
+                            </div>
+                            <div class="col-8 no-pl ">Freeware</div>
+                        </div>
+                        <div class="d-inline-flex col-12 book-inform-fix">
+                            <div class="col-4 no-p mr-01">
+                                <strong>Date added: </strong>
+                            </div>
+                            <div class="col-8 no-pl ">March 13, 2018</div>
+                        </div>
+
+
+
+                        <div class="d-inline-flex col-12 book-inform-fix">
+                            <div class="col-4 no-p mr-01">
+                                <strong>Downloads: </strong>
+                            </div>
+                            <div class="col-8 no-pl ">999
+                            </div>
+                        </div>
+
+                        <div class="d-inline-flex col-12 book-inform-fix">
+                            <div class="col-4 no-p mr-01">
+                                <strong>Total Review: </strong>
+                            </div>
+                            <div class="col-8 no-pl ">999
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 position-relative border-right padfix  col1-padfix">
+                        <div class="detail-tools-image-fix">
+                            <img src="assets/img/books/b2.jpg">
+                            <a href="javascript:void(0)" class="btn btn-raised btn-primary12 pos-mid" data-toggle="modal" data-target="#myModal">Download Now</a>
+                        </div>
+                        <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog animated zoomIn animated-3x" role="document">
+                                <div class="modal-content">
+
+                                    <div class="modal-body modal-tools">
+                                        <div class="tools-bg">
+                                            <ul class="list-unstyled download-version-list">
+                                                <li>Title: CCCleaner 5.9.6</li>
+                                                <li>File Size: 100MB</li>
+                                                <li>Dowload :
+                                                    <a href="#windows">
+                                                        <span class="badge badge-primary9">Windows</span>
+                                                    </a>
+                                                    <a href="#Linux">
+                                                        <span class="badge badge-primary9">Linux</span>
+                                                    </a>
+                                                    <a href="#Mac">
+                                                        <span class="badge badge-primary9">Mac</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                            <ul class="list-unstyled download-version-list">
+                                                <li>Title: CCCleaner 5.9.6</li>
+                                                <li>File Size: 100MB</li>
+                                                <li>Dowload :
+                                                    <a href="#windows">
+                                                        <span class="badge badge-primary9">Windows</span>
+                                                    </a>
+                                                    <a href="#Linux">
+                                                        <span class="badge badge-primary9">Linux</span>
+                                                    </a>
+                                                    <a href="#Mac">
+                                                        <span class="badge badge-primary9">Mac</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-unstyled download-version-list">
+                                                <li>Title: CCCleaner 5.9.6</li>
+                                                <li>File Size: 100MB</li>
+                                                <li>Dowload :
+                                                    <a href="#windows">
+                                                        <span class="badge badge-primary9">Windows</span>
+                                                    </a>
+                                                    <a href="#Linux">
+                                                        <span class="badge badge-primary9">Linux</span>
+                                                    </a>
+                                                    <a href="#Mac">
+                                                        <span class="badge badge-primary9">Mac</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-padfix">
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 no-pl no-pr text-center">
+                                    <h5 class="no-mb no-mt p-01 tools-header">Other Tools</h5>
+                                </div>
+                                <div class="col-6 ">
+                                    <div class="row">
+                                        <div class="col-3 thumn-tools">
+                                            <img src="assets/img/books/b2.jpg">
+                                        </div>
+                                        <div class="col-9 no-pl">
+                                            <p class="name-limit">
+                                                <a href="#">The peradayok tool</a>
+                                            </p>
+                                            <span class="file-size">File Size: 100MB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 thumn-tools">
+                                            <img src="assets/img/books/b2.jpg">
+                                        </div>
+                                        <div class="col-9 no-pl">
+                                                <p class="name-limit">
+                                                    <a href="#">The peradayok tool</a>
+                                                </p>
+                                                <span class="file-size">File Size: 100MB</span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 thumn-tools">
+                                            <img src="assets/img/books/b2.jpg">
+                                        </div>
+                                        <div class="col-9 no-pl">
+                                                <p class="name-limit">
+                                                    <a href="#">The peradayok tool</a>
+                                                </p>
+                                                <span class="file-size">File Size: 100MB</span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 thumn-tools">
+                                            <img src="assets/img/books/b2.jpg">
+                                        </div>
+                                        <div class="col-9 no-pl">
+                                                <p class="name-limit">
+                                                    <a href="#">The peradayok tool</a>
+                                                </p>
+                                                <span class="file-size">File Size: 100MB</span>
+                                            </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 thumn-tools">
+                                            <img src="assets/img/books/b2.jpg">
+                                        </div>
+                                        <div class="col-9 no-pl">
+                                                <p class="name-limit">
+                                                    <a href="#">The peradayok tool</a>
+                                                </p>
+                                                <span class="file-size">File Size: 100MB</span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 thumn-tools">
+                                            <img src="assets/img/books/b2.jpg">
+                                        </div>
+                                        <div class="col-9 no-pl">
+                                                <p class="name-limit">
+                                                    <a href="#">The peradayok tool</a>
+                                                </p>
+                                                <span class="file-size">File Size: 100MB</span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 thumn-tools">
+                                            <img src="assets/img/books/b2.jpg">
+                                        </div>
+                                        <div class="col-9 no-pl">
+                                                <p class="name-limit">
+                                                    <a href="#">The peradayok tool</a>
+                                                </p>
+                                                <span class="file-size">File Size: 100MB</span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 thumn-tools">
+                                            <img src="assets/img/books/b2.jpg">
+                                        </div>
+                                        <div class="col-9 no-pl">
+                                                <p class="name-limit">
+                                                    <a href="#">The peradayok tool</a>
+                                                </p>
+                                                <span class="file-size">File Size: 100MB</span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 thumn-tools">
+                                            <img src="assets/img/books/b2.jpg">
+                                        </div>
+                                        <div class="col-9 no-pl">
+                                                <p class="name-limit">
+                                                    <a href="#">The peradayok tool</a>
+                                                </p>
+                                                <span class="file-size">File Size: 100MB</span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 thumn-tools">
+                                            <img src="assets/img/books/b2.jpg">
+                                        </div>
+                                        <div class="col-9 no-pl">
+                                                <p class="name-limit">
+                                                    <a href="#">The peradayok tool</a>
+                                                </p>
+                                                <span class="file-size">File Size: 100MB</span>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 text-center tools-footer">
+                                    <h6 class="no-mt no-mb">
+                                        <a href="#">See More Tools</a>
+                                    </h6>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--First Row End-->
+            <!--2nd Row About -->
+
+            <div class="container-full fixed-gap">
+                <div class="card" style="background-color:#041936;color:#fff;">
+                    <div class="row mr-1 ml-1">
+                        <div class="col-md-12 text-center text-uppercase">
+                            <h2>User Guide</h2>
+                        </div>
+                        <div class="col-lg-12  text-justify">
+
+
+                            <p>Probably the most popular freeware cleaner globally with over 2 billion downloads since its launch
+                                in 2003. Piriform’s CCleaner is a quick and easy to use program which makes your computer
+                                faster, more secure and more reliable. CCleaner removes cookies, temporary files and various
+                                other unused data that clogs up your operating system. This frees up valuable hard disk space
+                                allowing your system to run faster. Removing this data also protects your anonymity meaning
+                                you can browse online more securely. The built in Registry Cleaner fixes errors and broken
+                                settings to make your computer more stable. The simple, intuitive UI and rapid but powerful
+                                cleaning make CCleaner a favourite among novices and techies alike. Professional, Network,
+                                Business and Technician Editions of CCleaner are also available for serious users.</p>
+                            <hr class="mfix">
+                            <!--See More Button-->
+                            <div class="col-12 text-center see-more font-weight-bold ">
+                                <a href="#des1" data-target="#description" class="reply">See More
+                                    <i class="ml-1 fa fa-chevron-down"></i>
+                                </a>
+                            </div>
+                            <div class="hidden" id="description">
+                                <h5>A Faster Computer</h5>
+                                <p>Browsing the internet your computer picks up a whole host of unnecessary files, cookies and
+                                    history. The same thing happens when you run most programs on your computer – lots of
+                                    temporary files and settings are saved. CCleaner removes these unused files and settings
+                                    to free up valuable hard drive space, enabling your system to run faster. The default
+                                    settings only focus on typical junk files and locations so you’re unlikely to lose important
+                                    information unless you alter these. A Startup Cleaner also helps you to identify and
+                                    remove unused programs running in the background when you start your computer. This makes
+                                    the startup time shorter and puts less strain on your hard drive throughout use. You
+                                    can read more about startup support here.
+                                </p>
+
+                                <h5>Less Crashes & System Errors</h5>
+                                <p>If you notice lots of system freezes, error messages and often experience crashes, the chances
+                                    are your registry become cluttered with unused files and broken settings. CCleaner’s
+                                    fully featured Registry Cleaner identifies these issues and fixes them. The registry
+                                    analysis takes seconds and cleaning just a little bit longer. Prompts advise you when
+                                    to save backups to avoid losing important data.</p>
+
+                                <h5>More Secure Browsing</h5>
+                                <p>Advertisers and websites track your behaviour online with cookies. Saved passwords, cached
+                                    data and internet histories make your identity less secure. CCleaner removes these files
+                                    to make your browsing experience confidential, meaning you are less likely to suffer
+                                    from identity theft and/or online fraud. The military grade Drive Wiper ensures any data
+                                    you want to be permanently deleted, stays deleted.</p>
+
+                                <h5>Customisable Cleaning</h5>
+                                <p>CCleaner Tools and Options tabs allow you to customise cleaning options to fit your needs.
+                                    If you are not a savvy user, you might want to stick with the safe default settings.
+                                    Advanced users can uninstall unwanted programs, select which cookies to save, customise
+                                    cleaning settings and setup system monitoring.</p>
+
+                                <h5>Summary</h5>
+                                <p>CCleaner has earned its position at the top of the freeware cleaners offering the sort of
+                                    features premium programs struggle to compete with. The clean, intuitive UI makes it
+                                    one of the easiest programs to use, but don’t let its size and simplicity fool you. This
+                                    is a powerful utility for improving your computers performance. Piriform’s regular update
+                                    process means CCleaner is constantly improving and its popularity will continue to grow.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--2nd Row End-->
+            <!--Third Row FAQ-->
+
+            <!--Third Row End-->
+            <!--Rating Start-->
+            <div class="container-full fixed-gap">
+                <div class="card" style="background-color:#041936;color:#fff;">
+                    <div class="row mr-1 ml-1">
+
+
+
+                        <div class="col-md-4 position-relative text-center pb-1 border-right">
+                            <h2 class="rate-header">Course Rating</h2>
+                            <div class="rating-number">5</div>
+                            <div class="rating-stat">Avarage Rating
+
+                                <fieldset class="rating1 ratingstar-pos" align="center">
+                                    <input type="radio" id="star30" name="rating5" value="5" />
+                                    <label class="full" for="star30" title="Awesome - 5 stars"></label>
+                                    <input type="radio" id="star31half" name="rating5" value="4 and a half" />
+                                    <label class="half" for="star31half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" id="star40" name="rating5" value="4" />
+                                    <label class="full" for="star40" title="Pretty good - 4 stars"></label>
+                                    <input type="radio" id="star41half" name="rating5" value="3 and a half" />
+                                    <label class="half" for="star41half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio" id="star42" name="rating5" value="3" />
+                                    <label class="full" for="star42" title="Meh - 3 stars"></label>
+                                    <input type="radio" id="star42half" name="rating5" value="2 and a half" />
+                                    <label class="half" for="star42half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio" id="star43" name="rating5" value="2" />
+                                    <label class="full" for="star43" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio" id="star43half" name="rating5" value="1 and a half" />
+                                    <label class="half" for="star43half" title="Meh - 1.5 stars"></label>
+                                    <input type="radio" id="star44" name="rating5" value="1" />
+                                    <label class="full" for="star44" title="Sucks big time - 1 star"></label>
+                                    <input type="radio" id="star44half" name="rating5" value="half" />
+                                    <label class="half" for="star44half" title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 col-sm-6 col mt-3 status-title">
+
+
+
+                            <div class="progress">
+                                <div class="progress-bar rating-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                    5
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success rating-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 60%">
+                                    10
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info rating-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 70%">
+                                    2
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 0%">
+                                    0
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger rating-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 10%">
+                                    5
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-md-3 ">
+                            <div class="rating-pos d-none d-md-block">
+                                <div class="rating-distance">
+                                    <fieldset class="rating1 ratingstar-pos1">
+                                        <input type="radio" id="star50" name="rating6" value="5" />
+                                        <label class="full" for="star50" title="Awesome - 5 stars"></label>
+                                        <input type="radio" id="star50half" name="rating6" value="4 and a half" />
+                                        <label class="half" for="star50half" title="Pretty good - 4.5 stars"></label>
+                                        <input type="radio" id="star51" name="rating6" value="4" />
+                                        <label class="full" for="star51" title="Pretty good - 4 stars"></label>
+                                        <input type="radio" id="star51half" name="rating6" value="3 and a half" />
+                                        <label class="half" for="star51half" title="Meh - 3.5 stars"></label>
+                                        <input type="radio" id="star52" name="rating6" value="3" />
+                                        <label class="full" for="star52" title="Meh - 3 stars"></label>
+                                        <input type="radio" id="star52half" name="rating6" value="2 and a half" />
+                                        <label class="half" for="star52half" title="Kinda bad - 2.5 stars"></label>
+                                        <input type="radio" id="star53" name="rating6" value="2" />
+                                        <label class="full" for="star53" title="Kinda bad - 2 stars"></label>
+                                        <input type="radio" id="star53half" name="rating6" value="1 and a half" />
+                                        <label class="half" for="star53half" title="Meh - 1.5 stars"></label>
+                                        <input type="radio" id="star54" name="rating6" value="1" />
+                                        <label class="full" for="star54" title="Sucks big time - 1 star"></label>
+                                        <input type="radio" id="star54half" name="rating6" value="half" />
+                                        <label class="half" for="star54half" title="Sucks big time - 0.5 stars"></label>
+                                    </fieldset>
+                                    100%
+                                </div>
+                                <div class="rating-distance">
+                                    <fieldset class="rating1 ratingstar-pos1">
+                                        <input type="radio" id="star60" name="rating7" value="5" />
+                                        <label class="full" for="star60" title="Awesome - 5 stars"></label>
+                                        <input type="radio" id="star60half" name="rating7" value="4 and a half" />
+                                        <label class="half" for="star60half" title="Pretty good - 4.5 stars"></label>
+                                        <input type="radio" id="star61" name="rating7" value="4" />
+                                        <label class="full" for="star61" title="Pretty good - 4 stars"></label>
+                                        <input type="radio" id="star61half" name="rating7" value="3 and a half" />
+                                        <label class="half" for="star61half" title="Meh - 3.5 stars"></label>
+                                        <input type="radio" id="star62" name="rating7" value="3" />
+                                        <label class="full" for="star62" title="Meh - 3 stars"></label>
+                                        <input type="radio" id="star62half" name="rating7" value="2 and a half" />
+                                        <label class="half" for="star62half" title="Kinda bad - 2.5 stars"></label>
+                                        <input type="radio" id="star63" name="rating7" value="2" />
+                                        <label class="full" for="star63" title="Kinda bad - 2 stars"></label>
+                                        <input type="radio" id="star63half" name="rating7" value="1 and a half" />
+                                        <label class="half" for="star63half" title="Meh - 1.5 stars"></label>
+                                        <input type="radio" id="star64" name="rating7" value="1" />
+                                        <label class="full" for="star64" title="Sucks big time - 1 star"></label>
+                                        <input type="radio" id="star64half" name="rating7" value="half" />
+                                        <label class="half" for="star64half" title="Sucks big time - 0.5 stars"></label>
+                                    </fieldset>
+                                    60%
+                                </div>
+                                <div class="rating-distance">
+                                    <fieldset class="rating1 ratingstar-pos1">
+                                        <input type="radio" id="star70" name="rating8" value="5" />
+                                        <label class="full" for="star70" title="Awesome - 5 stars"></label>
+                                        <input type="radio" id="star70half" name="rating8" value="4 and a half" />
+                                        <label class="half" for="star70half" title="Pretty good - 4.5 stars"></label>
+                                        <input type="radio" id="star71" name="rating8" value="4" />
+                                        <label class="full" for="star71" title="Pretty good - 4 stars"></label>
+                                        <input type="radio" id="star71half" name="rating8" value="3 and a half" />
+                                        <label class="half" for="star71half" title="Meh - 3.5 stars"></label>
+                                        <input type="radio" id="star72" name="rating8" value="3" />
+                                        <label class="full" for="star72" title="Meh - 3 stars"></label>
+                                        <input type="radio" id="star72half" name="rating8" value="2 and a half" />
+                                        <label class="half" for="star72half" title="Kinda bad - 2.5 stars"></label>
+                                        <input type="radio" id="star73" name="rating8" value="2" />
+                                        <label class="full" for="star73" title="Kinda bad - 2 stars"></label>
+                                        <input type="radio" id="star73half" name="rating8" value="1 and a half" />
+                                        <label class="half" for="star73half" title="Meh - 1.5 stars"></label>
+                                        <input type="radio" id="star74" name="rating8" value="1" />
+                                        <label class="full" for="star74" title="Sucks big time - 1 star"></label>
+                                        <input type="radio" id="star74half" name="rating8" value="half" />
+                                        <label class="half" for="star74half" title="Sucks big time - 0.5 stars"></label>
+                                    </fieldset>
+                                    70%
+                                </div>
+                                <div class="rating-distance">
+                                    <fieldset class="rating1 ratingstar-pos1">
+                                        <input type="radio" id="star80" name="rating9" value="5" />
+                                        <label class="full" for="star80" title="Awesome - 5 stars"></label>
+                                        <input type="radio" id="star80half" name="rating9" value="4 and a half" />
+                                        <label class="half" for="star80half" title="Pretty good - 4.5 stars"></label>
+                                        <input type="radio" id="star81" name="rating9" value="4" />
+                                        <label class="full" for="star81" title="Pretty good - 4 stars"></label>
+                                        <input type="radio" id="star81half" name="rating9" value="3 and a half" />
+                                        <label class="half" for="star81half" title="Meh - 3.5 stars"></label>
+                                        <input type="radio" id="star82" name="rating9" value="3" />
+                                        <label class="full" for="star82" title="Meh - 3 stars"></label>
+                                        <input type="radio" id="star82half" name="rating9" value="2 and a half" />
+                                        <label class="half" for="star82half" title="Kinda bad - 2.5 stars"></label>
+                                        <input type="radio" id="star83" name="rating9" value="2" />
+                                        <label class="full" for="star83" title="Kinda bad - 2 stars"></label>
+                                        <input type="radio" id="star83half" name="rating9" value="1 and a half" />
+                                        <label class="half" for="star83half" title="Meh - 1.5 stars"></label>
+                                        <input type="radio" id="star84" name="rating9" value="1" />
+                                        <label class="full" for="star84" title="Sucks big time - 1 star"></label>
+                                        <input type="radio" id="star84half" name="rating9" value="half" />
+                                        <label class="half" for="star84half" title="Sucks big time - 0.5 stars"></label>
+                                    </fieldset>
+                                    0%
+                                </div>
+                                <div class="rating-distance">
+                                    <fieldset class="rating1 ratingstar-pos1">
+                                        <input type="radio" id="star90" name="rating10" value="5" />
+                                        <label class="full" for="star90" title="Awesome - 5 stars"></label>
+                                        <input type="radio" id="star90half" name="rating10" value="4 and a half" />
+                                        <label class="half" for="star90half" title="Pretty good - 4.5 stars"></label>
+                                        <input type="radio" id="star91" name="rating10" value="4" />
+                                        <label class="full" for="star91" title="Pretty good - 4 stars"></label>
+                                        <input type="radio" id="star91half" name="rating10" value="3 and a half" />
+                                        <label class="half" for="star91half" title="Meh - 3.5 stars"></label>
+                                        <input type="radio" id="star92" name="rating10" value="3" />
+                                        <label class="full" for="star92" title="Meh - 3 stars"></label>
+                                        <input type="radio" id="star92half" name="rating10" value="2 and a half" />
+                                        <label class="half" for="star92half" title="Kinda bad - 2.5 stars"></label>
+                                        <input type="radio" id="star93" name="rating10" value="2" />
+                                        <label class="full" for="star93" title="Kinda bad - 2 stars"></label>
+                                        <input type="radio" id="star93half" name="rating10" value="1 and a half" />
+                                        <label class="half" for="star93half" title="Meh - 1.5 stars"></label>
+                                        <input type="radio" id="star94" name="rating10" value="1" />
+                                        <label class="full" for="star94" title="Sucks big time - 1 star"></label>
+                                        <input type="radio" id="star94half" name="rating10" value="half" />
+                                        <label class="half" for="star94half" title="Sucks big time - 0.5 stars"></label>
+                                    </fieldset>
+                                    10%
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--Rating End-->
+            <!--Review Start-->
+
+            <div class="container-full fixed-gap-last">
+                <div class="card" style="background-color:#041936;color:#fff;">
+                    <div class="row mr-1 ml-1">
+
+                        <div class="col-md-12  mt-3 border-top">
+                            <h2>Reviews</h2>
+
+                            <div class="d-inline-flex ratingstar-pos1">
+                                <fieldset class="rating1">
+                                    <input type="radio" id="star1100" name="rating113" value="5" />
+                                    <label class="full" for="star1100" title="Awesome - 5 stars"></label>
+                                    <input type="radio" id="star1100half" name="rating113" value="4 and a half" />
+                                    <label class="half" for="star1100half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" id="star1101" name="rating113" value="4" />
+                                    <label class="full" for="star1101" title="Pretty good - 4 stars"></label>
+                                    <input type="radio" id="star1101half" name="rating113" value="3 and a half" />
+                                    <label class="half" for="star1101half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio" id="star1102" name="rating113" value="3" />
+                                    <label class="full" for="star1102" title="Meh - 3 stars"></label>
+                                    <input type="radio" id="star1102half" name="rating113" value="2 and a half" />
+                                    <label class="half" for="star1102half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio" id="star1103" name="rating113" value="2" />
+                                    <label class="full" for="star1103" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio" id="star1103half" name="rating113" value="1 and a half" />
+                                    <label class="half" for="star1103half" title="Meh - 1.5 stars"></label>
+                                    <input type="radio" id="star1104" name="rating113" value="1" />
+                                    <label class="full" for="star1104" title="Sucks big time - 1 star"></label>
+                                    <input type="radio" id="star1104half" name="rating11" value="half" />
+                                    <label class="half" for="star1104half" title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                                <span class="badge badge-primary2">5.0</span>
+                            </div>
+
+                            <input type="text" id="ms-form-user" class="form-control" placeholder="Write a Review">
+                            <a href="javascript:void(0)" class="btn btn-raised btn-primary pull-right">Submit</a>
+
+
+
+
+                        </div>
+                        <div class="mb-1  container-fluid">
+                            <div class="row">
+                                <div class="col-md-2 col-12">
+                                    <div>
+                                        <i class="zmdi zmdi-time mr-1"></i>15 days ago</div>
+                                    <div>FXTUTOR Student</div>
+                                </div>
+
+                                <div class="col-md-10 col-12 revfix">
+                                    <div class="d-inline-flex ratingstar-pos1">
+                                        <fieldset class="rating1">
+                                            <input type="radio" id="star100" name="rating11" value="5" />
+                                            <label class="full" for="star100" title="Awesome - 5 stars"></label>
+                                            <input type="radio" id="star100half" name="rating11" value="4 and a half" />
+                                            <label class="half" for="star100half" title="Pretty good - 4.5 stars"></label>
+                                            <input type="radio" id="star101" name="rating11" value="4" />
+                                            <label class="full" for="star101" title="Pretty good - 4 stars"></label>
+                                            <input type="radio" id="star101half" name="rating11" value="3 and a half" />
+                                            <label class="half" for="star101half" title="Meh - 3.5 stars"></label>
+                                            <input type="radio" id="star102" name="rating11" value="3" />
+                                            <label class="full" for="star102" title="Meh - 3 stars"></label>
+                                            <input type="radio" id="star102half" name="rating11" value="2 and a half" />
+                                            <label class="half" for="star102half" title="Kinda bad - 2.5 stars"></label>
+                                            <input type="radio" id="star103" name="rating11" value="2" />
+                                            <label class="full" for="star103" title="Kinda bad - 2 stars"></label>
+                                            <input type="radio" id="star103half" name="rating11" value="1 and a half" />
+                                            <label class="half" for="star103half" title="Meh - 1.5 stars"></label>
+                                            <input type="radio" id="star104" name="rating11" value="1" />
+                                            <label class="full" for="star104" title="Sucks big time - 1 star"></label>
+                                            <input type="radio" id="star104half" name="rating11" value="half" />
+                                            <label class="half" for="star104half" title="Sucks big time - 0.5 stars"></label>
+                                        </fieldset>
+                                        <span class="badge badge-primary2">5.0</span>
+                                    </div>
+                                    <p>The Chinese Yuan or Renminbi is still underestimated by a lot of people and also traders
+                                        in terms of its importance. Definitely a topic worth learning about and happy that
+                                        our team has provided this course. Enjoy this free course!</p>
+                                    <div class="review-reaction ">
+                                        <a href="#">Like</a>
+                                        <a href="#reply" data-target="#reply_review" class="reply">Reply</a>
+                                        <span>13min</span>
+                                    </div>
+
+                                    <div class="reply-comment hidden" id="reply_review">
+                                        <div class="post-comment post-reply-comment ">
+                                            <img src="assets/img/profile.jpg" alt="" class="review-pro-pic">
+                                            <div class="col-md-12 review-input-fix">
+                                                <input type="text" class="form-control " placeholder="Write a Reply">
+                                            </div>
+                                        </div>
+                                        <div class="post-comment post-reply-comment ">
+                                            <img src="assets/img/profile.jpg" alt="" class="review-pro-pic">
+                                            <div class="col-md-12 review-input-fix">
+                                                <p>The Chinese Yuan or Renminbi is still underestimated by a lot of people and
+                                                    also traders in terms of its importance. Definitely a topic worth learning
+                                                    about and happy that our team has provided this course. Enjoy this free
+                                                    course!
+                                                </p>
+                                                <div class="review-reaction ">
+                                                    <a href="#">Like</a>
+                                                    <span>13min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden" id="more_reply">
+                                            <div class="post-comment post-reply-comment ">
+                                                <img src="assets/img/profile.jpg" alt="" class="review-pro-pic">
+                                                <div class="col-md-12 review-input-fix">
+                                                    <p>The Chinese Yuan or Renminbi is still underestimated by a lot of people
+                                                        and also traders in terms of its importance. Definitely a topic worth
+                                                        learning about and happy that our team has provided this course.
+                                                        Enjoy this free course!
+                                                    </p>
+                                                    <div class="review-reaction ">
+                                                        <a href="#">Like</a>
+                                                        <span>13min</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center see-more font-weight-bold">
+                                            <a href="#des1" data-target="#more_reply" class="reply">See More Reply</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-1  container-fluid">
+                            <div class="row">
+                                <div class="col-md-2 col-12">
+                                    <div>
+                                        <i class="zmdi zmdi-time mr-1"></i>15 days ago</div>
+                                    <div>FXTUTOR Student</div>
+                                </div>
+
+                                <div class="col-md-10 col-12 revfix">
+                                    <div class="d-inline-flex ratingstar-pos1">
+                                        <fieldset class="rating1">
+                                            <input type="radio" id="star1001" name="rating111" value="5" />
+                                            <label class="full" for="star1001" title="Awesome - 5 stars"></label>
+                                            <input type="radio" id="star1001half" name="rating11" value="4 and a half" />
+                                            <label class="half" for="star1001half" title="Pretty good - 4.5 stars"></label>
+                                            <input type="radio" id="star1012" name="rating111" value="4" />
+                                            <label class="full" for="star1012" title="Pretty good - 4 stars"></label>
+                                            <input type="radio" id="star1012half" name="rating111" value="3 and a half" />
+                                            <label class="half" for="star1012half" title="Meh - 3.5 stars"></label>
+                                            <input type="radio" id="star1023" name="rating111" value="3" />
+                                            <label class="full" for="star1023" title="Meh - 3 stars"></label>
+                                            <input type="radio" id="star1023half" name="rating11" value="2 and a half" />
+                                            <label class="half" for="star1023half" title="Kinda bad - 2.5 stars"></label>
+                                            <input type="radio" id="star1034" name="rating111" value="2" />
+                                            <label class="full" for="star1034" title="Kinda bad - 2 stars"></label>
+                                            <input type="radio" id="star1034half" name="rating111" value="1 and a half" />
+                                            <label class="half" for="star1034half" title="Meh - 1.5 stars"></label>
+                                            <input type="radio" id="star1045" name="rating111" value="1" />
+                                            <label class="full" for="star1045" title="Sucks big time - 1 star"></label>
+                                            <input type="radio" id="star1045half" name="rating111" value="half" />
+                                            <label class="half" for="star1045half" title="Sucks big time - 0.5 stars"></label>
+                                        </fieldset>
+                                        <span class="badge badge-primary2">5.0</span>
+                                    </div>
+                                    <p>The Chinese Yuan or Renminbi is still underestimated by a lot of people and also traders
+                                        in terms of its importance. Definitely a topic worth learning about and happy that
+                                        our team has provided this course. Enjoy this free course!</p>
+                                    <div class="review-reaction ">
+                                        <a href="#">Like</a>
+                                        <a href="#reply" data-target="#reply_review1" class="reply">Reply</a>
+                                        <span>13min</span>
+                                    </div>
+                                    <div class="reply-comment hidden" id="reply_review1">
+                                        <div class="post-comment post-reply-comment ">
+                                            <img src="assets/img/profile.jpg" alt="" class="review-pro-pic">
+                                            <div class="col-md-12 review-input-fix">
+                                                <input type="text" class="form-control " placeholder="Write a Reply">
+                                            </div>
+                                        </div>
+                                        <div class="post-comment post-reply-comment ">
+                                            <img src="assets/img/profile.jpg" alt="" class="review-pro-pic">
+                                            <div class="col-md-12 review-input-fix">
+                                                <p>The Chinese Yuan or Renminbi is still underestimated by a lot of people and
+                                                    also traders in terms of its importance. Definitely a topic worth learning
+                                                    about and happy that our team has provided this course. Enjoy this free
+                                                    course!
+                                                </p>
+                                                <div class="review-reaction ">
+                                                    <a href="#">Like</a>
+
+                                                    <span>13min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Review End-->
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+
+    <aside class="ms-footbar no-mt no-pt">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 ms-footer-col">
+                    <div class="ms-footbar-block">
+                        <h3 class="ms-footbar-title">Sitemap</h3>
+                        <ul class="list-unstyled ms-icon-list three_cols">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Portafolio</a>
+                            </li>
+                            <li>
+                                <a href="#">Works</a>
+                            </li>
+                            <li>
+                                <a href="#">Timeline</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Login</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4 ms-footer-col ms-footer-alt-color" align="center" style="padding-top:10px">
+                    <div class="ms-footbar-block">
+                        <h3 class="ms-footbar-title">Social Media</h3>
+                        <div class="ms-footbar-social">
+                            <a href="javascript:void(0)" class="btn-circle btn-facebook" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-facebook"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-twitter" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-twitter"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-youtube" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-youtube-play"></i>
+                            </a>
+                            <br>
+                            <a href="javascript:void(0)" class="btn-circle btn-google" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-google"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-instagram" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-instagram"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-github" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 ms-footer-col ">
+                    <div class="ms-footbar-block ">
+                        <h3 class="ms-footbar-title">Subscribe</h3>
+                        <p class="">To get further updates of our edu site or you want then please do subscribe us.</p>
+                        <form>
+                            <div class="form-group label-floating mt-2 mb-1">
+                                <div class="input-group ms-input-subscribe">
+                                    <label class="control-label" for="ms-subscribe">
+                                        <i class="zmdi zmdi-email"></i> Email Adress</label>
+                                    <input type="email" id="ms-subscribe" class="form-control"> </div>
+                            </div>
+                            <button class="ms-subscribre-btn" type="button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer class="ms-footer">
+        <div class="container">
+            <p>Copyright &copy; FX EDU 2018</p>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <p align="justify">
+                <strong style="color:#70BF44">Risk Disclaimer : </strong>FX Academy will not be held liable for any loss or damage resulting from reliance
+                on the information contained within this website including market news, analysis, trading signals and Forex
+                broker reviews. The data contained in this website is not necessarily real-time nor accurate, and analyses
+                are the opinions of the author and do not represent the recommendations of FX Academy or its employees. Currency
+                trading on margin involves high risk, and is not suitable for all investors. As a leveraged product losses
+                are able to exceed initial deposits and capital is at risk. Before deciding to trade Forex or any other financial
+                instrument you should carefully consider your investment objectives, level of experience, and risk appetite.</p>
+        </div>
+    </footer>
+    <!--start end footer list-->
+    <div class="ms-footer conurl">
+        <span class="pr-1">
+            <a href="">Risk Warning</a>
+        </span>
+        <span class="">|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Disclaimer</a>
+        </span>
+        <span class="pl-1">|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Privacy</a>
+        </span>
+        <span class="pl-1">|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Terms & Condition</a>
+        </span>
+        <span class="pl-1">|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Complaints Handling</a>
+        </span>
+    </div>
+
+    <!--end end footer list-->
+    <div class="btn-back-top">
+        <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">
+            <i class="zmdi zmdi-long-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- end footer -->
+
+    <!-- ms-site-container -->
+
+    <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+        <div class="sb-slidebar-container ">
+
+            <div class="container-full" style="overflow:hidden;">
+                <div class="row">
+                    <!-- Start Left-navigation -->
+                    <div class="col-lg-12 col-sm-12 order-md-2 order-lg-3">
+                        <div class="no-mt no-mb card card-warning1">
+                            <div class="card-header conurl" align="center">
+                                <h4 class="card-title" style="font-size: 18px">
+                                    <a role="button " href="profile.html">
+                                        <span>
+                                            <i class="fa fa-dashcube"></i>
+                                            <strong>MY DASHBOARD</strong>
+                                        </span>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3  lbg3 conurl ">
+                                <div class="card-header " role="tab" id="headingeighteen5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseeighteen5" aria-expanded="false" aria-controls="collapseeighteen5">
+                                            <i class="fa fa-pencil"></i>User Update</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseeighteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingeighteen5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="profile_courses.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Post New Update</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3  lbg3 conurl ">
+                                <div class="card-header " role="tab" id="headingSix5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseSix5" aria-expanded="false" aria-controls="collapseSix5">
+                                            <i class="fa fa-key"></i>FXEDU Courses</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix5" class="card-collapse collapse  num-spacing" role="tabpanel" aria-labelledby="headingSix5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="courses_basic.html">
+                                                <span class="list-word-spacing ">
+                                                    <i class="fa fa-check-square-o"></i> Basic Course</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="courses_advance.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Advance Course</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="courses_proffesional.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Professional Course</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="cryptocurrency.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Cryptocurrency</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingthirty5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirty5" aria-expanded="false" aria-controls="collapsethirty5">
+                                            <i class="fa fa-magnet"></i> Price Action</a>
+                                    </h4>
+                                </div>
+                                <div id="collapsethirty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirty5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="short_day.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Candlestick Portal </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingTwo5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+                                            <i class="fa fa-bar-chart"></i> Trading Strategies</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingTwo5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="short_day.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Short/Day Strategies </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="long_strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Long/Swing Stratgies </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="news_strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> News Strategies </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="others_strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Others Strategies </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingThirtythree5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseThirtythree5" aria-expanded="false" aria-controls="collapseThirtythree5">
+                                            <i class="fa fa-bar-chart"></i> Trading Signal</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThirtythree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingThirtythree5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="intra_day.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="weekly_trade.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="long_term_trade.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Post New Signal</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingFour5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFour5" aria-expanded="false" aria-controls="collapseFour5">
+                                            <i class="fa fa-book"></i> Books</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFour5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="profile_books.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Book Library</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingFive5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
+                                            <i class="fa fa-download"></i> Download Portal </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="download_indicators.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Indicators Gallery</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="download_expert.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Expert Advisor</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="trading_tools.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Trading Tools</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingFifteen5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFifteen5" aria-expanded="false" aria-controls="collapseFifteen5">
+                                            <i class="fa fa-codiepie"></i> PAMM Management </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFifteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFifteen5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="pamm_portfolio.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Portfolio Management</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingthirtyone5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtyone5" aria-expanded="false" aria-controls="collapsethirtyone5">
+                                            <i class="fa fa-money"></i> Investment Module </a>
+                                    </h4>
+                                </div>
+                                <div id="collapsethirtyone5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtyone5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="investment_packages.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Investment Packages</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingtwenty5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsetwenty5" aria-expanded="false" aria-controls="collapsetwenty5">
+                                            <i class="fa fa-users"></i> Forum </a>
+                                    </h4>
+                                </div>
+                                <div id="collapsetwenty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingtwenty5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> FXEDU Forum</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Left-navigation -->
+                </div>
+
+
+
+                <div class="row no-mt mb-1-half">
+                    <div class="col-md-12 ">
+                        <table class=" downborder1 lbg3">
+
+                            <tr class="table table-resonsive lhsize2">
+
+                                <td colspan="5" class="abor3 text-center" style="font-size: 11px">Recent Closed Trades</td>
+
+                            </tr>
+                            <tr class="table table-resonsive lhsize2 ">
+                                <td class="abor3 text-center">
+                                    <span>Currency</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>Signal</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>Entry</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>Exit</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>Profit</span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class=" text-center" style="color: #10ff00">+40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class=" text-center" style="color: #10ff00">+40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Hidden Site Bar Right-->
+    <div class="ms-slidebar1 sb-slidebar1 sb-left sb-style-overlay" id="ms-slidebar1">
+        <div class="sb-slidebar1-container">
+
+            <div class="container-full" style="overflow:hidden;">
+                <div class="mb-1-half no-mt card card-warning1">
+                    <div class="card-header conurl" align="center">
+                        <h4 class="card-title" style="font-size: 18px">
+                            <a href="profile.html" role="button">
+                                <i class="fa fa-comments"></i>
+                                <strong>TRADING ROOM</strong>
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="row no-mt mb-1-half">
+                    <div class="col-md-12 ">
+                        <table class=" downborder1 lbg1 conurl">
+                            <tr class="table table-resonsive lhsize2 ">
+                                <td class="text-center" colspan="3" style="font-size: 11px">Trading Session
+                                </td>
+
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td>
+                                    <img src="assets/img/flag/aud.jpg" class="banglaimg">Sydeny
+                                </td>
+                                <td style="text-align: center;">Closed</td>
+                                <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td>
+                                    <img src="assets/img/flag/tokyo.png" class="banglaimg">Tokyo
+                                </td>
+                                <td style="text-align: center;">Closed</td>
+                                <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td>
+                                    <img src="assets/img/flag/london.png" class="banglaimg">London
+                                </td>
+                                <td style="text-align: center;">Closed</td>
+                                <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td>
+                                    <img src="assets/img/flag/newyork.png" class="banglaimg">New York
+                                </td>
+                                <td style="text-align: center;">Closed</td>
+                                <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row no-mt mb-1-half ">
+                    <div class="col-md-12 ">
+                        <table class=" downborder1 lbg1">
+
+                            <tr class="table table-resonsive lhsize2">
+
+                                <td colspan="4" class="abor3 text-center" style="font-size: 11px">Live Market</td>
+
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3">
+                                    <span>1.2563</span>
+                                </td>
+                                <td>
+                                    <span style="color: #10ff00">+1.25%</span>
+                                </td>
+                                <td>
+                                    <span style="color: #fa0800">-0.25%</span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3">
+                                    <span>1.2563</span>
+                                </td>
+                                <td>
+                                    <span style="color: #10ff00">+1.25%</span>
+                                </td>
+                                <td>
+                                    <span style="color: #fa0800">-0.25%</span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3">
+                                    <span>1.2563</span>
+                                </td>
+                                <td>
+                                    <span style="color: #10ff00">+1.25%</span>
+                                </td>
+                                <td>
+                                    <span style="color: #fa0800">-0.25%</span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3">
+                                    <span>1.2563</span>
+                                </td>
+                                <td>
+                                    <span style="color: #10ff00">+1.25%</span>
+                                </td>
+                                <td>
+                                    <span style="color: #fa0800">-0.25%</span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3">
+                                    <span>1.2563</span>
+                                </td>
+                                <td>
+                                    <span style="color: #10ff00">+1.25%</span>
+                                </td>
+                                <td>
+                                    <span style="color: #fa0800">-0.25%</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row ">
+                    <!-- Start Right-navigation -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 order-md-2 order-lg-3">
+                        <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="no-mb no-mt card card-primary3 lbg3">
+                                <div class="card-header" role="tab" id="headingeleven5">
+                                    <h4 class="card-title">
+                                        <a class="withripple" role="button" data-toggle="collapse" href="#collapseeleven5" aria-expanded="true" aria-controls="collapseeleven5">
+                                            <i class="fa fa-cogs"></i>Technical Analysis</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseeleven5" class="card-collapse collapse show num-spacing lbg3" role="tabpanel" aria-labelledby="headingeleven5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li class="conurl ">
+                                            <a class="withripple " href="profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="seel1">
+                                        <a class="withripple" href="profile_courses.html">
+                                            <span class="list-word-spacing abor1">See All</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="no-mb card card-primary3  lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingthirtythree5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtythree5" aria-expanded="false" aria-controls="collapsethirtythree5">
+                                            <i class="fa fa-wrench"></i> Trading Tools</a>
+                                    </h4>
+                                </div>
+                                <div id="collapsethirtythree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtythree5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Economic Calender </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="popular_strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Pips Calculator </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="no-mb card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingTwelve5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwelve5" aria-expanded="false" aria-controls="collapseTwelve5">
+                                            <i class="fa fa-shopping-cart"></i> FXEDU Market Place</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwelve5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingTwelve5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Copy Trade Service </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="popular_strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Open Market Place </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="no-mb card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingthirteen5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirteen5" aria-expanded="false" aria-controls="collapsethirteen5">
+                                            <i class="fa fa-fire"></i> Daily Market Update</a>
+                                    </h4>
+                                </div>
+                                <div id="collapsethirteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirteen5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="profile_signals.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="no-mb card card-primary3">
+                                <div class="card-header" role="tab" id="headingthirtyfive5">
+                                    <h4 class="card-title">
+                                        <a class="withripple" role="button" data-toggle="collapse" href="#collapsethirtyfive5" aria-expanded="true" aria-controls="collapsethirtyfive5">
+                                            <i class="fa fa-globe"></i>News Portal</a>
+                                    </h4>
+                                </div>
+                                <div id="collapsethirtyfive5" class="card-collapse collapse show num-spacing lbg3" role="tabpanel" aria-labelledby="headingthirtyfive5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li class="conurl ">
+                                            <a class="withripple " href="profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="seel1">
+                                        <a class="withripple" href="profile_courses.html">
+                                            <span class="list-word-spacing abor1">See All</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Left-navigation -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Signal Ticker -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="assets/js/jquery.carouselTicker.js"></script>
+
+    <script>
+        $(".carouselTicker").carouselTicker({
+            // animation speed
+            speed: 1,
+            // animation delay
+            delay: 30,
+            // RTL or LTR
+            reverse: true
+        });
+    </script>
+    <!-- End Signal Ticker -->
+    <script src="assets/js/plugins.min.js"></script>
+    <!--Right Slidebar-->
+    <script src="assets/js/sidebar-right.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+
+    <script>
+        $(".reply").click(function () {
+            var myelement = $(this).attr("data-target")
+            $(myelement).slideToggle("slow");
+            $(".hidden:visible").not(myelement).show();
+
+        });
+    </script>
+</body>
+
+</html>

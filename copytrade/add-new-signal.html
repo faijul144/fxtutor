@@ -1,0 +1,2892 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="theme-color" content="#333">
+		<title>FX EDU</title>
+		<meta name="description" content="Material Style Theme">
+		<link rel="shortcut icon" href="../assets/img/favicon.png?v=3">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="../assets/css/preload.min.css">
+		<link rel="stylesheet" href="../assets/css/plugins.min.css">
+		<link rel="stylesheet" href="../assets/css/style.light-blue-500.min.css">
+		<link rel="stylesheet" href="../assets/css/app.css">
+		<link rel="stylesheet" href="../assets/css/custom.css">
+		<link rel="stylesheet" href="../assets/css/bum.css">
+		<link rel="stylesheet" href="../assets/css/faeffect.css">
+		<link rel="stylesheet" href="../assets/css/jquery.simpleTicker.css">
+		<!--Flag Icon-->
+		<link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
+		<!--[if lt IE 9]>
+		<script src="../assets/js/html5shiv.min.js"></script>
+		<script src="../assets/js/respond.min.js"></script>
+		<![endif]-->
+		<!-- Notification -->
+	</head>
+	<body>
+		<div id="ms-preload" class="ms-preload">
+			<div id="status">
+				<div class="spinner">
+					<div class="dot1"></div>
+					<div class="dot2"></div>
+				</div>
+			</div>
+		</div>
+		<div class="ms-site-container">
+			<!-- Modal -->
+			<div class="modal modal-primary" id="ms-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog animated zoomIn animated-3x" role="document">
+					<div class="modal-content">
+						<div class="modal-header d-block shadow-2dp no-pb">
+							<button type="button" class="close d-inline pull-right mt-2" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">
+							<i class="zmdi zmdi-close"></i>
+							</span>
+							</button>
+							<div class="modal-title text-center">
+								<span class="ms-logo ms-logo-white ms-logo-sm mr-1">FX</span>
+								<h3 class="no-m ms-site-title">EDU
+								</h3>
+							</div>
+							<div class="modal-header-tabs">
+								<ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-primary" role="tablist">
+									<li class="nav-item" role="presentation">
+										<a href="#ms-login-tab" aria-controls="ms-login-tab" role="tab" data-toggle="tab" class="nav-link active withoutripple">
+										<i class="zmdi zmdi-account"></i> Login</a>
+									</li>
+									<li class="nav-item" role="presentation">
+										<a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab" class="nav-link withoutripple">
+										<i class="zmdi zmdi-account-add"></i> Register</a>
+									</li>
+									<li class="nav-item" role="presentation">
+										<a href="#ms-recovery-tab" aria-controls="ms-recovery-tab" role="tab" data-toggle="tab" class="nav-link withoutripple">
+										<i class="zmdi zmdi-key"></i> Recovery Pass</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="modal-body">
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade active show" id="ms-login-tab">
+									<form autocomplete="off">
+										<fieldset>
+											<div class="form-group label-floating">
+												<div class="input-group">
+													<span class="input-group-addon">
+													<i class="zmdi zmdi-account"></i>
+													</span>
+													<label class="control-label" for="ms-form-user">Username</label>
+													<input type="text" id="ms-form-user" class="form-control">
+												</div>
+											</div>
+											<div class="form-group label-floating">
+												<div class="input-group">
+													<span class="input-group-addon">
+													<i class="zmdi zmdi-lock"></i>
+													</span>
+													<label class="control-label" for="ms-form-pass">Password</label>
+													<input type="password" id="ms-form-pass" class="form-control">
+												</div>
+											</div>
+											<div class="row mt-2">
+												<div class="col-md-6">
+													<div class="form-group no-mt">
+														<div class="checkbox">
+															<label>
+															<input type="checkbox"> Remember Me </label>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<button class="btn btn-raised btn-primary pull-right">Login</button>
+												</div>
+											</div>
+										</fieldset>
+									</form>
+									<div class="text-center">
+										<h3>Login with</h3>
+										<a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-facebook">
+										<i class="zmdi zmdi-facebook"></i> Facebook</a>
+										<a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-twitter">
+										<i class="zmdi zmdi-twitter"></i> Twitter</a>
+										<a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-google">
+										<i class="zmdi zmdi-google"></i> Google</a>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="ms-register-tab">
+									<form>
+										<fieldset>
+											<div class="form-group label-floating">
+												<div class="input-group">
+													<span class="input-group-addon">
+													<i class="zmdi zmdi-account"></i>
+													</span>
+													<label class="control-label" for="ms-form-user-r">Username</label>
+													<input type="text" id="ms-form-user-r" class="form-control">
+												</div>
+											</div>
+											<div class="form-group label-floating">
+												<div class="input-group">
+													<span class="input-group-addon">
+													<i class="zmdi zmdi-email"></i>
+													</span>
+													<label class="control-label" for="ms-form-email-r">Email</label>
+													<input type="email" id="ms-form-email-r" class="form-control">
+												</div>
+											</div>
+											<div class="form-group label-floating">
+												<div class="input-group">
+													<span class="input-group-addon">
+													<i class="zmdi zmdi-lock"></i>
+													</span>
+													<label class="control-label" for="ms-form-pass-r">Password</label>
+													<input type="password" id="ms-form-pass-r" class="form-control">
+												</div>
+											</div>
+											<div class="form-group label-floating">
+												<div class="input-group">
+													<span class="input-group-addon">
+													<i class="zmdi zmdi-lock"></i>
+													</span>
+													<label class="control-label" for="ms-form-pass-rn">Re-type Password</label>
+													<input type="password" id="ms-form-pass-rn" class="form-control">
+												</div>
+											</div>
+											<button class="btn btn-raised btn-block btn-primary">Register Now</button>
+										</fieldset>
+									</form>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="ms-recovery-tab">
+									<fieldset>
+										<div class="form-group label-floating">
+											<div class="input-group">
+												<span class="input-group-addon">
+												<i class="zmdi zmdi-account"></i>
+												</span>
+												<label class="control-label" for="ms-form-user-re">Username</label>
+												<input type="text" id="ms-form-user-re" class="form-control">
+											</div>
+										</div>
+										<div class="form-group label-floating">
+											<div class="input-group">
+												<span class="input-group-addon">
+												<i class="zmdi zmdi-email"></i>
+												</span>
+												<label class="control-label" for="ms-form-email-re">Email</label>
+												<input type="email" id="ms-form-email-re" class="form-control">
+											</div>
+										</div>
+										<button class="btn btn-raised btn-block btn-primary">Send Password</button>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<header class="ms-header ms-header-primary1" style="display:block;min-height:87px;color:#fff">
+				<!--ms-header-primary-->
+				<div class="container container-full">
+					<div class="ms-title ">
+						<div class="row logo-margin-top conurl">
+							<a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-left huda ">
+							<i class="zmdi zmdi-menu mho "></i>
+							</a>
+							<a href="index.html">
+								<!-- <img src="../assets/img/demo/logo-header.png" alt=""> -->
+								<span class="ms-logo animated zoomInDown animation-delay-5">FX</span>
+								<h1 class="animated fadeInRight animation-delay-6">
+									<span>EDU</span>
+								</h1>
+							</a>
+						</div>
+					</div>
+					<div class="header-right ml-4 " style="margin-top: 4px">
+						<div class="row">
+							<div class="dropdown profile-button-pull d-none d-md-block">
+								<button class="btn btn-default btn-city dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="true">
+								<img src="../assets/img/profile.jpg" class="banglaprof">
+								<span class="profile-name">Raj Shah
+								<i class="fa fa-ellipsis-v"> </i>
+								</span>
+								<span class="caret caret-search"></span>
+								</button>
+								<ul class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenu1">
+									<li>
+										<a href="profile/my_profile.html">My Profile</a>
+									</li>
+									<li>
+										<a href="#">My Wallet</a>
+									</li>
+									<li>
+										<a class="lp_bottom" href="#" style="border-bottom: none">
+										<i class="fa fa-sign-out"></i>Logout</a>
+									</li>
+								</ul>
+							</div>
+							<!-- Notification Menu -->
+							<div class="dropdown bell-color">
+								<a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+								<i class="glyphicon glyphicon-bell"></i>
+								<span class="badge-pill badge-pill-warning badge-pill-move">10</span>
+								</a>
+								<ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel" id="notification-dropdown">
+									<div class="notification-heading">
+										<h4 class="menu-title">Notifications</h4>
+										<h4 class="menu-title float-right">
+											<a href="#">Mark all as read
+											</a>
+										</h4>
+									</div>
+									<div class="notifications-wrapper conurl">
+										<a class="content" href="#">
+											<div class="notification-item">
+												<p class="item-info">Marketing 101, Video Assignment</p>
+											</div>
+										</a>
+										<a class="content" href="#">
+											<div class="notification-item">
+												<p class="item-info">Marketing 101, Video Assignment</p>
+											</div>
+										</a>
+										<a class="content" href="#">
+											<div class="notification-item">
+												<p class="item-info">Marketing 101, Video Assignment</p>
+											</div>
+										</a>
+										<a class="content" href="#">
+											<div class="notification-item">
+												<p class="item-info">Marketing 101, Video Assignment</p>
+											</div>
+										</a>
+										<a class="content" href="#">
+											<div class="notification-item">
+												<p class="item-info">Marketing 101, Video Assignment</p>
+											</div>
+										</a>
+										<a class="content" href="#">
+											<div class="notification-item">
+												<p class="item-info">Marketing 101, Video Assignment</p>
+											</div>
+										</a>
+										<a class="content" href="#">
+											<div class="notification-item">
+												<p class="item-info">Marketing 101, Video Assignment</p>
+											</div>
+										</a>
+										<a class="content" href="#">
+											<div class="notification-item">
+												<p class="item-info">Marketing 101, Video Assignment</p>
+											</div>
+										</a>
+									</div>
+									<div class="notification-footer">
+										<a href="#">
+											<h4 class="footer-menu-title ">View all&nbsp. . </h4>
+										</a>
+									</div>
+								</ul>
+							</div>
+							<!-- End Notification Menu -->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- End REVOLUTION SLIDER 5.3.0.2 fullscreen mode -->
+			<div class="container-fluid no-pl no-pr no-ml no-mr redwine ">
+				<div class="container-fluid stickermtp2 " id="ticker">
+					<div id="carouselTicker" class="carouselTicker">
+						<ul class="carouselTicker__list ">
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li>
+										<li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="carouselTicker__item ">
+								<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+									<div class="card  ">
+										<li class="  ">
+										<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+											<strong>USDHF : 1.225457 </strong>
+										</li>
+										</li>
+									</div>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- body start -->
+			<div class="container-fluid " style="background-color: #001129">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6" id="firstdiv">
+						<div class="row">
+							<!-- Start Left-navigation -->
+							<div class="col-lg-12 col-sm-12 order-md-2 order-lg-3">
+								<div class="mb-1-half mt-1 card card-warning1">
+									<div class="card-header conurl" align="center">
+										<h4 class="card-title" style="font-size: 18px">
+											<a role="button" href="../profile.html">
+											<span>
+											<i class="fa fa-dashcube"></i>
+											<strong>MY DASHBOARD</strong>
+											</span>
+											</a>
+										</h4>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class=" card card-primary3  lbg3 conurl no-mt mb-1-half">
+										<div class="card-header " role="tab" id="headingeighteen5">
+											<h4 class="card-title">
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseeighteen5" aria-expanded="false" aria-controls="collapseeighteen5">
+												<i class="fa fa-pencil"></i>User Update</a>
+											</h4>
+										</div>
+										<div id="collapseeighteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingeighteen5"
+											data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="profile_courses.html" data-toggle="modal" data-target="#myModal">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Post New Update</span>
+													</a>
+												</li>
+											</ul>
+											<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+												<div class="modal-dialog animated zoomIn animated-3x" role="document" style="max-width:830px;">
+													<div class="modal-content" style="background-color:rgba(26, 59, 78, 0.93)">
+														<div class="modal-header">
+															<div class="col-lg-12 pull-right">
+																<button type="button" class="close " data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">
+																<i class="zmdi zmdi-close"></i>
+																</span>
+																</button>
+															</div>
+														</div>
+														<div class="modal-body no-pb no-pt">
+															<div class="col-lg-12">
+																<input type="text" class="form-control text-capitalize" id="inputName" placeholder="Tittle">
+															</div>
+															<div class="btn-group no-pl no-mb" style="margin-left:8px">
+																<p class="dropdown-toggle text-capitalize text-left no-ml redwine2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Catagorey
+																	<i class="zmdi zmdi-chevron-down right"></i>
+																<div class="ripple-container"></div>
+																</p>
+																<ul class="dropdown-menu  lbg1 " style="margin-top:37px !important">
+																	<li class="">
+																		<a class="dropdown-item drop" href="javascript:void(0)"><span class="">Trading Signal</span></a>
+																	</li>
+																	<li>
+																		<a class="dropdown-item drop" href="javascript:void(0)">Trading Strategy</a>
+																	</li>
+																	<li>
+																		<a class="dropdown-item drop" href="javascript:void(0)">Forex Signals</a>
+																	</li>
+																	<li>
+																		<a class="dropdown-item drop" href="javascript:void(0)">Forex Function</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="form-group row no-mt">
+																<div class="col-lg-12">
+																	<textarea class="form-control" rows="3" id="textArea" placeholder="Write what you wish..."></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="modal-footer">
+															<button type="submit" class="btn btn-raised btn-primary">Upload Image</button><input type="file" name="up_image" >
+															<button type="submit" class="btn btn-raised btn-primary">
+																POST
+																<div class="ripple-container"></div>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class=" card card-primary3  lbg3 conurl no-mt mb-1-half">
+										<div class="card-header " role="tab" id="headingSix5">
+											<h4 class="card-title">
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseSix5" aria-expanded="false" aria-controls="collapseSix5">
+												<i class="fa fa-key"></i>FXTUTOR Courses</a>
+											</h4>
+										</div>
+										<div id="collapseSix5" class="card-collapse collapse  num-spacing" role="tabpanel" aria-labelledby="headingSix5" data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="courses_advance.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Basic Course</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="courses_advance.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Advance Course</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="courses_proffesional.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Professional Course</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="cryptocurrency.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Cryptocurrency</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="card card-primary3 lbg3 conurl no-mt mb-1-half">
+										<div class="card-header" role="tab" id="headingthirty5">
+											<h4 class="card-title">
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirty5" aria-expanded="false" aria-controls="collapsethirty5">
+												<i class="fa fa-magnet"></i> Price Action</a>
+											</h4>
+										</div>
+										<div id="collapsethirty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirty5" data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="short_day.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Candlestick Portal </span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="card card-primary3 lbg3 conurl no-mt mb-1-half">
+										<div class="card-header" role="tab" id="headingTwo5">
+											<h4 class="card-title">
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+												<i class="fa fa-bar-chart"></i> Trading Strategies</a>
+											</h4>
+										</div>
+										<div id="collapseTwo5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingTwo5" data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="short_day.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Short/Day Strategies </span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="long_strategies.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Long/Swing Stratgies </span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="news_strategies.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> News Strategies </span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="others_strategies.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Others Strategies </span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="card card-primary3 lbg3 conurl no-mt mb-1-half">
+										<div class="card-header" role="tab" id="headingThree5">
+											<h4 class="card-title" >
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+												<i class="fa fa-area-chart"></i> Trading Signals</a>
+											</h4>
+										</div>
+										<div id="collapseThree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingThree5" data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="intra_day.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="weekly_trade.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="long_term_trade.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="card card-primary3 lbg3 conurl no-mt mb-1-half">
+										<div class="card-header" role="tab" id="headingFour5">
+											<h4 class="card-title">
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFour5" aria-expanded="false" aria-controls="collapseFour5">
+												<i class="fa fa-book"></i> Books</a>
+											</h4>
+										</div>
+										<div id="collapseFour5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFour5" data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="profile_books.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Book Library</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="card card-primary3 lbg3 conurl no-mt mb-1-half">
+										<div class="card-header" role="tab" id="headingFive5">
+											<h4 class="card-title">
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
+												<i class="fa fa-download"></i> Download Portal </a>
+											</h4>
+										</div>
+										<div id="collapseFive5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="download_indicators.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Indicators Gallery</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="download_expert.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Expert Advisor</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="trading_tools.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Trading Tools</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="card card-primary3 lbg3 conurl no-mt mb-1-half">
+										<div class="card-header" role="tab" id="headingFifteen5">
+											<h4 class="card-title">
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFifteen5" aria-expanded="false" aria-controls="collapseFifteen5">
+												<i class="fa fa-codiepie"></i> PAMM Management </a>
+											</h4>
+										</div>
+										<div id="collapseFifteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFifteen5" data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="pamm_portfolio.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Portfolio Management</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="card card-primary3 lbg3 conurl no-mt mb-1-half">
+										<div class="card-header" role="tab" id="headingthirtyone5">
+											<h4 class="card-title">
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtyone5" aria-expanded="false" aria-controls="collapsethirtyone5">
+												<i class="fa fa-money"></i> Investment Module </a>
+											</h4>
+										</div>
+										<div id="collapsethirtyone5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtyone5" data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="investment_packages.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Investment Packages</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="card card-primary3 lbg3 conurl no-mt mb-1-half">
+										<div class="card-header" role="tab" id="headingtwenty5">
+											<h4 class="card-title">
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsetwenty5" aria-expanded="false" aria-controls="collapsetwenty5">
+												<i class="fa fa-users"></i> Forum </a>
+											</h4>
+										</div>
+										<div id="collapsetwenty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingtwenty5" data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> FXEDU Forum</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end Left-navigation -->
+						</div>
+						<div class="row no-mt no-mb mb-2">
+							<div class="col-md-12 ">
+								<table class=" downborder1 lbg3">
+									<tr class="table table-resonsive lhsize2">
+										<td colspan="5" class="abor3 text-center" style="font-size: 11px">Recent Closed Trades</td>
+									</tr>
+									<tr class="table table-resonsive lhsize2 ">
+										<td class="abor3 text-center">
+											<span>Currency</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>Signal</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>Entry</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>Exit</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>Profit</span>
+										</td>
+									</tr>
+									<tr class="table table-resonsive lhsize2">
+										<td class="conurl text-center">
+											<a href="#">
+											<span>EUR/USD</span>
+											</a>
+										</td>
+										<td class="abor3 text-center">
+											<span>BUY</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class=" text-center" style="color: #10ff00">+40&nbsp
+											<span class="abor3">pips
+											<sub>1D 5H ago</sub>
+											</span>
+										</td>
+									</tr>
+									<tr class="table table-resonsive lhsize2">
+										<td class="conurl text-center">
+											<a href="#">
+											<span>EUR/USD</span>
+											</a>
+										</td>
+										<td class="abor3 text-center">
+											<span>BUY</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center" style="color: red">-40&nbsp
+											<span class="abor3">pips
+											<sub>1D 5H ago</sub>
+											</span>
+										</td>
+									</tr>
+									<tr class="table table-resonsive lhsize2">
+										<td class="conurl text-center">
+											<a href="#">
+											<span>EUR/USD</span>
+											</a>
+										</td>
+										<td class="abor3 text-center">
+											<span>BUY</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+											<span class="abor3">pips
+											<sub>1D 5H ago</sub>
+											</span>
+										</td>
+									</tr>
+									<tr class="table table-resonsive lhsize2">
+										<td class="conurl text-center">
+											<a href="#">
+											<span>EUR/USD</span>
+											</a>
+										</td>
+										<td class="abor3 text-center">
+											<span>BUY</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center" style="color: red">-40&nbsp
+											<span class="abor3">pips
+											<sub>1D 5H ago</sub>
+											</span>
+										</td>
+									</tr>
+									<tr class="table table-resonsive lhsize2">
+										<td class="conurl text-center">
+											<a href="#">
+											<span>EUR/USD</span>
+											</a>
+										</td>
+										<td class="abor3 text-center">
+											<span>BUY</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center" style="color: red">-40&nbsp
+											<span class="abor3">pips
+											<sub>1D 5H ago</sub>
+											</span>
+										</td>
+									</tr>
+									<tr class="table table-resonsive lhsize2">
+										<td class="conurl text-center">
+											<a href="#">
+											<span>EUR/USD</span>
+											</a>
+										</td>
+										<td class="abor3 text-center">
+											<span>BUY</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class=" text-center" style="color: #10ff00">+40&nbsp
+											<span class="abor3">pips
+											<sub>1D 5H ago</sub>
+											</span>
+										</td>
+									</tr>
+									<tr class="table table-resonsive lhsize2">
+										<td class="conurl text-center">
+											<a href="#">
+											<span>EUR/USD</span>
+											</a>
+										</td>
+										<td class="abor3 text-center">
+											<span>BUY</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center" style="color: red">-40&nbsp
+											<span class="abor3">pips
+											<sub>1D 5H ago</sub>
+											</span>
+										</td>
+									</tr>
+									<tr class="table table-resonsive lhsize2">
+										<td class="conurl text-center">
+											<a href="#">
+											<span>EUR/USD</span>
+											</a>
+										</td>
+										<td class="abor3 text-center">
+											<span>BUY</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+											<span class="abor3">pips
+											<sub>1D 5H ago</sub>
+											</span>
+										</td>
+									</tr>
+									<tr class="table table-resonsive lhsize2">
+										<td class="conurl text-center">
+											<a href="#">
+											<span>EUR/USD</span>
+											</a>
+										</td>
+										<td class="abor3 text-center">
+											<span>BUY</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center" style="color: red">-40&nbsp
+											<span class="abor3">pips
+											<sub>1D 5H ago</sub>
+											</span>
+										</td>
+									</tr>
+									<tr class="table table-resonsive lhsize2">
+										<td class="conurl text-center">
+											<a href="#">
+											<span>EUR/USD</span>
+											</a>
+										</td>
+										<td class="abor3 text-center">
+											<span>BUY</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center">
+											<span>1.2563</span>
+										</td>
+										<td class="abor3 text-center" style="color: red">-40&nbsp
+											<span class="abor3">pips
+											<sub>1D 5H ago</sub>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- Hide -->
+					<div class="col-lg-6 col-sm-12  mt-1 no-pl no-pr" id="seconddiv">
+						<div class="d-none d-md-block fixed-gap">
+							<div class="container-full">
+								<div class="row fixed-gap">
+									<div class="col-md-4">
+										<div class="card card-info-inverse1 ">
+											<div class="card-body card-bg">
+												<div class="mini-card-text">Total Trading Strategy</div>
+												<div class="badge badge-primary9 counter">500</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card card-info-inverse1">
+											<div class="card-body">
+												<div class="mini-card-text">Total Trading Signal</div>
+												<div class="badge badge-primary9 counter">500</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card card-info-inverse1">
+											<div class="card-body">
+												<div class="mini-card-text">Total Market Analysis</div>
+												<div class="badge badge-primary9 counter">500</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<div class="card card-info-inverse1 ">
+											<div class="card-body card-bg">
+												<div class="mini-card-text">Total Forex Trading Tools</div>
+												<div class="badge badge-primary9 counter">500</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card card-info-inverse1">
+											<div class="card-body">
+												<div class="mini-card-text">Total Books Updated</div>
+												<div class="badge badge-primary9 counter">500</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card card-info-inverse1 ">
+											<div class="card-body card-bg">
+												<div class="mini-card-text">Total Trading Videos</div>
+												<div class="badge badge-primary9 counter">500</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Start Our Top Courses -->
+						<div class="wrap wrap-cus color-dark" >
+							<div class="card new_signal_text_card">
+								<p class="new_signal_text">Disclaimer : Create a new signal by entering the details below. Please make sure that you attach the FXTutor Sender EA which can be found in the downloads section to the Metatrader account that will be sending the trades to FXTutor. Once the new signal is configured, you'll be given a key which must be entered into the EA once attached to the chart.</p>
+							</div>
+							<div class="container-full p-05 d-none d-md-block">
+								<div class="card tab-height nav-tabs-ver-container no-m">
+									<div class="row">
+										<div class="col-lg-3 col-3 tab-left no-pr">
+											<ul class="nav nav-tabs-ver" role="tablist">
+												<li class="nav-item">
+													<a class="nav-link active" href="#home" aria-controls="home" role="tab" data-toggle="tab">
+													Add New Signal</a>
+												</li>
+												<!-- <li class="nav-item">
+													<a class="nav-link" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+													Advanced Settings</a>
+													</li> -->
+												<li class="nav-item">
+													<a class="nav-link" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+													Attachments</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#myfxbook" aria-controls="myfxbook" role="tab" data-toggle="tab">
+													Myfxbook Links</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#myfacebook" aria-controls="myfxbook" role="tab" data-toggle="tab">
+													Facebook Links</a>
+												</li>
+												<!-- <li class="nav-item">
+													<a class="nav-link" href="#billing" aria-controls="billing" role="tab" data-toggle="tab">
+													Payment Method</a>
+												</li> -->
+												<li class="nav-item">
+													<a class="nav-link" href="#sub_fees" aria-controls="sub_fees" role="tab" data-toggle="tab">
+													Subscription Fees</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+													Publish Your Signal</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-lg-9 col-9 tab-right nav-tabs-ver-container-content">
+											<div class="card-body">
+												<div class="tab-content">
+													<div role="tabpanel" class="tab-pane active" id="home">
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" placeholder="Signal Name" required>
+														</p>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" placeholder="MT4 Account Number" required>
+														</p>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" placeholder="MT4 Investor Password" required>
+														</p>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" placeholder="Broker Name" required>
+														</p>
+														<p class="form-group field-radius no-pb">
+															<input type="text" class="form-control form-custom" id="inputName" placeholder="MT4 Server Name/IP" required>
+														</p>
+														<label class="col-12 no-pl sub-label">Note: Input your exact server name or IP
+														</label>
+														<p class="checkbox checkfix text-left">
+															<label class="mr-1">Show Signals In Your Portal
+															<input type="checkbox" >
+															</label>
+														</p>
+														<div class="col-12 text-center">
+															<button type="button" class="btn btn-primary14 btn-raised">
+																Save Settings
+																<div class="ripple-container"></div>
+															</button>
+														</div>
+													</div>
+													<!-- <div role="tabpanel" class="tab-pane" id="profile">
+														<p class="form-group field-radius">
+															<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+																<option>Allow user to copy your take profit(default)</option>
+																<option>Do not allow user to copy take profit </option>
+																<option>Force user to take profit</option>
+															</select>
+														</p>
+														<p class="form-group field-radius">
+															<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+																<option>Allow user to copy your stop loss(default)</option>
+																<option>Do not allow user to copy stop loss </option>
+																<option>Force user to stop loss</option>
+															</select>
+														</p>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" value="0">
+														</p>
+														<label class="col-12 no-pl sub-label">Note : Max Account Balance(0=Function Disabled)</label>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" value="0">
+														</p>
+														<label class="col-12 no-pl sub-label">Note : Max Account Balance(0=Function Disabled)<br>if enabled, minimum value is 5</label>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" value="0">
+														</p>
+														<label class="col-12 no-pl sub-label">Note : Max Account Balance(0=Function Disabled)</label>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" placeholder="Only Allow Specifiq Pairs">
+														</p>
+														<p class="form-group field-radius">
+															<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+																<option>No</option>
+																<option>Yes </option>
+															</select>
+														</p>
+														<label class="col-12 no-pl sub-label">Note : Disable open trades from displaying in your statistics</label>
+														<p class="checkbox checkfix text-left mt-1">
+															<label class="mr-1">Send email if master disconnects
+															<input type="checkbox" >
+															</label>
+														</p>
+														<p class="checkbox checkfix text-left">
+															<label class="mr-1">Send SMS if master disconnects
+															<input type="checkbox" >
+															</label>
+														</p>
+														<label><span class="end-note">To enable SMS notification click Trade Alert on the left navigation</span></label>
+														<div class="col-12 text-center">
+															<button type="button" class="btn btn-primary14 btn-raised">
+																Save Settings
+																<div class="ripple-container"></div>
+															</button>
+															</div>
+														</div> -->
+													<div role="tabpanel" class="tab-pane" id="settings">
+														<p class="new_signal_internal_text">If you have published your signal to the FXTutor then you can attach additional documentation for users to view relating to your signal. This must be in PDF format. The filename will be publically displayed and the PDF will be available to download under the signal description on your signal page</p>
+														<div class="inner_text_divider"></div>
+														<div class="col-12 text-center">
+															<button type="button" class="btn btn-raised up-btn-fix">
+																Upload Document
+																<div class="ripple-container"></div>
+															</button>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane" id="myfxbook">
+														
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="MyFXBook" placeholder="Add New MyFXBook Link" required>
+														</p>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="Title" placeholder="Title (e.g. Master Account)" required>
+														</p>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="optional" placeholder="Short Description of what this myfxbook page shows">
+															<label class="col-12 no-pl sub-label">*optional</label>
+														</p>
+														<button type="button" class="btn btn-primary14 btn-raised">
+															Save Settings
+															<div class="ripple-container"></div>
+														</button>
+														<p class="new_signal_internal_text mt-1-half">Note : Please add your myfxbook verified link so that we can verify your account. Make sure that your account track reward and trading privileges both are verified. Without myfxbook you can't publish your account at fxtutor.</p>
+													</div>
+													<div role="tabpanel" class="tab-pane" id="myfacebook">
+														
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="MyFXBook" placeholder="Add Faceook Link" required>
+														</p>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="Title" placeholder="Title (e.g. Master Account)" required>
+														</p>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="optional" placeholder="Short Description of what this myfacebook page shows">
+															<label class="col-12 no-pl sub-label">*optional</label>
+														</p>
+														<button type="button" class="btn btn-primary14 btn-raised">
+															Save Settings
+															<div class="ripple-container"></div>
+														</button>
+														<p class="new_signal_internal_text mt-1-half">Note : You can add facebook links to your signal to show users your facebook pages. We highly recommend using facebook so that you can show verified information about your signal. This greatly increases your conversion rate.</p>
+													</div>
+													<!-- <div role="tabpanel" class="tab-pane" id="billing">
+														
+														<div class="ms-collapse no-mb" id="accordion51" role="tablist" aria-multiselectable="true">
+															<div class="card card-primary3 lbg3 conurl mb-1-half">
+																<div class="card-header" role="tab" id="headingTwelve51">
+																	<h4 class="card-title text-center">
+																		<a class=" withripple text-uppercase" role="button" data-toggle="collapse" href="#collapseTwelve51" aria-expanded="true" aria-controls="collapseTwelve51">
+																		<i class="fa fa-dollar"></i>Select Your Payment Method</a>
+																	</h4>
+																</div>
+																<div id="collapseTwelve51" class="card-collapse payment-method collapse new-inner-tab show num-spacing" role="tabpanel" aria-labelledby="headingTwelve51" data-parent="#accordion51">
+																	<ul class="panel-group ms-collapse-nav" id="components-nav1" role="tablist" aria-multiselectable="true">
+																		<li class="card card-inner text-left" role="tab" id="e10">
+																			<a role="button" data-toggle="collapse" href="#c10" aria-expanded="true" aria-controls="c10" class=" withripple">
+																			Paypal</a>
+																			<ul id="c10" class="panel-collapse show collapse" role="tabpanel" aria-labelledby="e10" data-parent="#components-nav1">
+																				<li>
+																					<p class="checkbox checkfix text-left">
+																						<label class="mr-1">Show On Order Form
+																						<input type="checkbox" >
+																						</label>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="email" class="form-control form-custom" id="inputName" placeholder="PayPal Email" required>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputName" placeholder="API Username">
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="password" class="form-control form-custom" id="inputEmail" placeholder="API Password">
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputEmail" placeholder="API Signature">
+																					</p>
+																					<p class="checkbox checkfix text-left">
+																						<label class="mr-1">Sandbox Mode
+																						<input type="checkbox"><span class="ml-1">Tick to use Paypal's Virtual Sandbox test environment - Requires a separate sandbox test account</span>                                                                                        </label>
+																					</p>
+																					<div class="col-12 text-center">
+																						<button type="button" class="btn btn-primary14 btn-raised">
+																							Save Changes
+																							<div class="ripple-container"></div>
+																						</button>
+																					</div>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="card card-inner text-left" role="tab" id="e20">
+																			<a role="button" data-toggle="collapse" href="#c20" aria-expanded="false" aria-controls="c20" class="collapsed withripple">
+																			PayPal Express Checkout</a>
+																			<ul id="c20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e20" data-parent="#components-nav1">
+																				<li>
+																					<p class="checkbox checkfix text-left">
+																						<label class="mr-1">Show On Order Form
+																						<input type="checkbox" >
+																						</label>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="email" class="form-control form-custom" id="inputName" placeholder="API Username">
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="password" class="form-control form-custom" id="inputEmail" placeholder="API Password">
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputEmail" placeholder="API Signature">
+																					</p>
+																					<p class="checkbox checkfix text-left">
+																						<label class="mr-1">Sandbox
+																						<input type="checkbox"><span class="ml-1">Tick to enable test mode</span>                                                                                        </label>
+																					</p>
+																					<div class="col-12 text-center">
+																						<button type="button" class="btn btn-primary14 btn-raised">
+																							Save Changes
+																							<div class="ripple-container"></div>
+																						</button>
+																					</div>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="card card-inner text-left" role="tab" id="e21">
+																			<a role="button" data-toggle="collapse" href="#c21" aria-expanded="false" aria-controls="c21" class="collapsed withripple">
+																			Payza</a>
+																			<ul id="c21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e21" data-parent="#components-nav1">
+																				<li>
+																					<p class="checkbox checkfix text-left">
+																						<label class="mr-1">Show On Order Form
+																						<input type="checkbox" >
+																						</label>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="email" class="form-control form-custom" id="inputName" placeholder="Login ID">
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputEmail" placeholder="Secuirity Code">
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="password" class="form-control form-custom" id="inputEmail" placeholder="API Password">
+																						<label class="col-12 no-pl sub-label">Note: Only Required For Automated Refunds</label>
+																					</p>
+																					<p class="checkbox checkfix text-left">
+																						<label class="mr-1">Test Mode
+																						<input type="checkbox"><span class="ml-1">Tick this to test</span>                                                                                        </label>
+																					</p>
+																					<div class="col-12 text-center">
+																						<button type="button" class="btn btn-primary14 btn-raised">
+																							Save Changes
+																							<div class="ripple-container"></div>
+																						</button>
+																					</div>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="card card-inner text-left" role="tab" id="e22">
+																			<a role="button" data-toggle="collapse" href="#c22" aria-expanded="false" aria-controls="c22" class="collapsed withripple">
+																			Payeer</a>
+																			<ul id="c22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e22" data-parent="#components-nav1">
+																				<li>
+																					<p class="checkbox checkfix text-left">
+																						<label class="mr-1">Show On Order Form
+																						<input type="checkbox" >
+																						</label>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputName" placeholder="https://payeer.com/merchant/">
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputEmail" placeholder="ID of the store">
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputEmail" placeholder="Secret Key">
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputEmail" placeholder="Path to find for logging of payments">
+																						<label class="col-12 no-pl sub-label">Example: "/payeer_orders.log"</label>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputEmail" placeholder="IP Filter Handler">
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="email" class="form-control form-custom" id="inputEmail" placeholder="Email for payment errors">
+																					</p>
+																					<div class="col-12 text-center">
+																						<button type="button" class="btn btn-primary14 btn-raised">
+																							Save Changes
+																							<div class="ripple-container"></div>
+																						</button>
+																					</div>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="card card-inner text-left" role="tab" id="e23">
+																			<a role="button" data-toggle="collapse" href="#c23" aria-expanded="false" aria-controls="c23" class="collapsed withripple">
+																			Perfect Money</a>
+																			<ul id="c23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e23" data-parent="#components-nav1">
+																				<li>
+																					<p class="checkbox checkfix text-left">
+																						<label class="mr-1">Show On Order Form
+																						<input type="checkbox" >
+																						</label>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputName" placeholder="Perfect Money Payee Account">
+																						<label class="col-12 no-pl sub-label">Example: U1234567</label>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputEmail" placeholder="Perfect Money Alternate PassPhrase">
+																						<label class="col-12 no-pl sub-label">Note: Alternate PassPhrase can be found and set under settings section in your PM account</label>
+																					</p>
+																					<div class="col-12 text-center">
+																						<button type="button" class="btn btn-primary14 btn-raised">
+																							Save Changes
+																							<div class="ripple-container"></div>
+																						</button>
+																					</div>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="card card-inner text-left" role="tab" id="e24">
+																			<a role="button" data-toggle="collapse" href="#c24" aria-expanded="false" aria-controls="c24" class="collapsed withripple">
+																			Mail In Payment</a>
+																			<ul id="c24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e24" data-parent="#components-nav1">
+																				<li>
+																					<p class="checkbox checkfix text-left">
+																						<label class="mr-1">Show On Order Form
+																						<input type="checkbox" >
+																						</label>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																					</p>
+																					<p class="form-group field-radius">
+																						<textarea class="form-control form-custom" rows="4" id="textArea" placeholder="Bank transfer instrutions"></textarea>
+																						<label class="col-12 no-pl sub-label">Note: The instructions you want displaying to customers who choose this payment method-the invoice number will be shown underneath the text entered above</label>
+																					</p>
+																					<div class="col-12 text-center">
+																						<button type="button" class="btn btn-primary14 btn-raised">
+																							Save Changes
+																							<div class="ripple-container"></div>
+																						</button>
+																					</div>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="card card-inner text-left" role="tab" id="e25">
+																			<a role="button" data-toggle="collapse" href="#c25" aria-expanded="false" aria-controls="c25" class="collapsed withripple">
+																			Bank Transfer</a>
+																			<ul id="c25" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e25" data-parent="#components-nav1">
+																				<li>
+																					<p class="checkbox checkfix text-left">
+																						<label class="mr-1">Show On Order Form
+																						<input type="checkbox" >
+																						</label>
+																					</p>
+																					<p class="form-group field-radius">
+																						<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																					</p>
+																					<p class="form-group field-radius">
+																						<textarea class="form-control form-custom" rows="4" id="textArea" placeholder="Bank transfer instrutions"></textarea>
+																						<label class="col-12 no-pl sub-label">Note: The instructions you want displaying to customers who choose this payment method-the invoice number will be shown underneath the text entered above</label>
+																					</p>
+																					<div class="col-12 text-center">
+																						<button type="button" class="btn btn-primary14 btn-raised">
+																							Save Changes
+																							<div class="ripple-container"></div>
+																						</button>
+																					</div>
+																				</li>
+																			</ul>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div> -->
+													<div role="tabpanel" class="tab-pane temp-height" id="sub_fees">
+														<!-- <p class="checkbox checkfix text-left">
+															<label class="mr-1">
+															<input type="checkbox">
+															<span class="ml-1-half">Paypal</span>
+															</label>
+															<label class="mr-1">
+															<input type="checkbox" >
+															<span class="ml-1-half">Paypal Express</span>
+															</label>
+															<label class="mr-1">
+															<input type="checkbox" >
+															<span class="ml-1-half">Payza</span>
+															</label>
+															<label class="mr-1">
+															<input type="checkbox" >
+															<span class="ml-1-half">Payeer</span>
+															</label>
+															<label class="mr-1">
+															<input type="checkbox" >
+															<span class="ml-1-half">Perfect Money</span>
+															</label>
+															<label class="mr-1">
+															<input type="checkbox" >
+															<span class="ml-1-half">Mail In Payment</span>
+															</label>
+															<label class="mr-1">
+															<input type="checkbox" >
+															<span class="ml-1-half">Bank Transfer</span>
+															</label>
+														</p> -->
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" placeholder="For how many months?">
+														</p>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" placeholder="Price">
+														</p>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" placeholder="Trial period in weeks">
+														</p>
+														<p class="form-group field-radius no-pb">
+															<input type="text" class="form-control form-custom" id="inputName" placeholder="Trial price">
+														</p>
+														<label class="col-12 no-pl sub-label">Note: You can provide 7 days trial price as promotional offer.
+														</label>
+														<div class="col-12 text-center">
+															<button type="button" class="btn btn-primary14 btn-raised">
+																Save Changes
+																<div class="ripple-container"></div>
+															</button>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane" id="messages">
+														<div class="text-left min-req">
+															<h2 class="manpsfix">Minimum Requirements</h2>
+															<ul class="list-unstyled no-m">
+																<li class="d-inline-flex">
+																	<i class="fa fa-close mr-1"></i>
+																	<p>Account must be a live, real money account</p>
+																</li>
+																<li class="d-inline-flex">
+																	<i class="fa fa-close mr-1"></i>
+																	<p>Account balance must be greater than $3000 (Balance: )</p>
+																</li>
+																<li class="d-inline-flex">
+																	<i class="fa fa-close mr-1"></i>
+																	<p>Overall growth must be above 0%</p>
+																</li>
+																<li class="d-inline-flex">
+																	<i class="fa fa-close mr-1"></i>
+																	<p>Account must be at least 3 months old</p>
+																</li>
+																<li class="d-inline-flex">
+																	<i class="fa fa-close mr-1"></i>
+																	<p>Automatic verification check - The above checks are checked every hour, if any of them are no longer true the system will automatically unverify your signal</p>
+																</li>
+															</ul>
+														</div>
+														<p class="checkbox checkfix text-left">
+															<label class="mr-1">Publish in Market Place
+															<input type="checkbox" >
+															</label>
+														</p>
+														<p class="form-group field-radius">
+															<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+																<option>Master Account Leverage</option>
+																<option>1:1 </option>
+																<option>1:10 </option>
+																<option>1:25 </option>
+																<option>1:50 </option>
+																<option>1:100 </option>
+																<option>1:200 </option>
+																<option>1:300 </option>
+																<option>1:400 </option>
+																<option>1:500 </option>
+																<option>1:600 </option>
+																<option>1:800 </option>
+																<option>1:1000 </option>
+															</select>
+														</p>
+														<p class="form-group field-radius">
+															<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+																<option>Minimum Leverage Recommended</option>
+																<option>1:1 </option>
+																<option>1:10 </option>
+																<option>1:25 </option>
+																<option>1:50 </option>
+																<option>1:100 </option>
+																<option>1:200 </option>
+																<option>1:300 </option>
+																<option>1:400 </option>
+																<option>1:500 </option>
+																<option>1:600 </option>
+																<option>1:800 </option>
+																<option>1:1000 </option>
+															</select>
+														</p>
+														<p class="form-group field-radius">
+															<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+																<option>Trade Execution</option>
+																<option>Manual </option>
+																<option>Expert Advisor </option>
+																<option>Mixture of EA & Manual </option>
+															</select>
+														</p>
+														<p class="form-group field-radius">
+															<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+																<option>Trading Style</option>
+																<option>Technical </option>
+																<option>Fundamental </option>
+																<option>Technical & Fundamental </option>
+															</select>
+														</p>
+														<p class="form-group field-radius">
+															<input type="text" class="form-control form-custom" id="inputName" placeholder="$">
+														</p>
+														<label class="col-12 no-pl sub-label">Note : Recommended Investment for client in USD</label>
+														<p class="form-group field-radius">
+															<textarea class="form-control form-custom" rows="4" id="textArea" placeholder="Signal Introduction(Min 100 chars-Max 500 chars)"></textarea>
+														</p>
+														<label class="col-12 no-pl sub-label">Note : A brief discription about your signal</label>
+														<p class="form-group field-radius">
+															<textarea class="form-control form-custom" rows="4" id="textArea" placeholder="Signal Discription(Min 500 chars)"></textarea>
+														</p>
+														<label class="col-12 no-pl sub-label">Note :
+														Please describe your signal in as much detail as you can including expected drawdown, expected growth and describe the way that the signal trades.</label>
+														<div class="col-12 text-center">
+															<button type="button" class="btn btn-primary14 btn-raised">
+																Save Settings
+																<div class="ripple-container"></div>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- panel -->
+							</div>
+						</div>
+						<div class="row d-sm-block d-lg-none d-md-none sm-slave-edit-possition">
+							<div class="col-lg-12">
+								<div class="card card-slave-blue card-hero animated fadeInUp animation-delay-7">
+									<div class="panel-group ms-collapse no-margin" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="card card-primary1 slave-card-bottom-border">
+											<div class="card-header" role="tab" id="headingOne">
+												<h4 class="card-title ms-rotate-icon">
+													<a class="withripple" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+														<div class="fa fa-chain-broken mr-1"></div>
+														Add New Signal
+													</a>
+												</h4>
+											</div>
+											<div id="collapseOne" class="card-collapse collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+												<div class="card-body wrap-slave-edit-sm">
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="inputName" placeholder="Signal Name" required>
+													</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="inputName" placeholder="Account Number" required>
+													</p>
+													<p align="left">Connection Key: FSHLGHSFGHFSDKGFSGLFGKJFSLGK</p>
+													<p class="form-group field-radius">
+														<input type="email" class="form-control form-custom" id="inputEmail" placeholder="Disconnection Alert (user@mail.com)">
+													</p>
+													<p class="checkbox checkfix mt-1 text-left">
+														<label class="mr-1">Hide Trades In Your Portal
+														<input type="checkbox" >
+														</label>
+													</p>
+													<p class="checkbox checkfix text-left">
+														<label class="mr-1">Disable SignalFrom Detecting new trades?
+														<input type="checkbox" >
+														</label>
+													</p>
+													<label class="col-12 no-pl sub-label">Note : Existing trades will still be handled as the master account remain attached</label>
+													<div class="col-12 text-center">
+														<button type="button" class="btn btn-primary14 btn-raised">
+															Save Settings 
+															<div class="ripple-container"></div>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card card-primary1 slave-card-bottom-border">
+											<div class="card-header" role="tab" id="headingTwo">
+												<h4 class="card-title ms-rotate-icon">
+													<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+														<div class="fa fa-chain-broken mr-1"></div>
+														Attachments
+													</a>
+												</h4>
+											</div>
+											<div id="collapseTwo" class="card-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+												<div class="card-body wrap-slave-edit-sm">
+													<p class="new_signal_internal_text">If you have published your signal to the FXTutor then you can attach additional documentation for users to view relating to your signal. This must be in PDF format. The filename will be publically displayed and the PDF will be available to download under the signal description on your signal page</p>
+													<div class="inner_text_divider"></div>
+													<div class="col-12 text-center">
+														<button type="button" class="btn btn-primary14 btn-raised">
+															Upload Document
+															<div class="ripple-container"></div>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card card-primary1 slave-card-bottom-border">
+											<div class="card-header" role="tab" id="headingThree">
+												<h4 class="card-title ms-rotate-icon">
+													<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+														<div class="fa fa-chain-broken mr-1"></div>
+														Myfxbook Links
+													</a>
+												</h4>
+											</div>
+											<div id="collapseThree" class="card-collapse collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+												<div class="card-body wrap-slave-edit-sm">
+													<p class="new_signal_internal_text">You can add myfxbook links to your signal to show users your myfxbook pages. We highly recommend using myfxbook so that you can show verified information about your signal. This greatly increases your conversion rate.</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="MyFXBook" placeholder="Add New MyFXBook Link" required>
+													</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="Title" placeholder="Title (e.g. Master Account)" required>
+													</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="optional" placeholder="Short Description of what this myfxbook page shows">
+														<label class="col-12 no-pl sub-label">*optional</label>
+													</p>
+													<button type="button" class="btn btn-primary14 btn-raised">
+														Save Settings
+														<div class="ripple-container"></div>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="card card-primary1 slave-card-bottom-border">
+											<div class="card-header" role="tab" id="headingFour">
+												<h4 class="card-title ms-rotate-icon">
+													<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+														<div class="fa fa-chain-broken mr-1"></div>
+														Facebook Links
+													</a>
+												</h4>
+											</div>
+											<div id="collapseFour" class="card-collapse collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+												<div class="card-body wrap-slave-edit-sm">
+													<p class="new_signal_internal_text">You can add facebook links to your signal to show users your facebook pages. We highly recommend using facebook so that you can show verified information about your signal. This greatly increases your conversion rate.</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="MyFXBook" placeholder="Add Faceook Link" required>
+													</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="Title" placeholder="Title (e.g. Master Account)" required>
+													</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="optional" placeholder="Short Description of what this myfacebook page shows">
+														<label class="col-12 no-pl sub-label">*optional</label>
+													</p>
+													<button type="button" class="btn btn-primary14 btn-raised">
+														Save Settings
+														<div class="ripple-container"></div>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="card card-primary1 slave-card-bottom-border">
+											<div class="card-header" role="tab" id="headingFive">
+												<h4 class="card-title ms-rotate-icon">
+													<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+														<div class="fa fa-chain-broken mr-1"></div>
+														Payment Method
+													</a>
+												</h4>
+											</div>
+											<div id="collapseFive" class="card-collapse collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+												<div class="card-body wrap-slave-edit-sm">
+													<div class="ms-collapse no-mb" id="accordion51" role="tablist" aria-multiselectable="true">
+														<div class="card card-primary3 lbg3 conurl mb-1-half">
+															<div class="card-header" role="tab" id="headingTwelve511">
+																<h4 class="card-title text-center">
+																	<a class=" withripple text-uppercase sm-line-hight" role="button" data-toggle="collapse" href="#collapseTwelve511" aria-expanded="true" aria-controls="collapseTwelve511">
+																	<i class="fa fa-dollar"></i>Select Your Payment Method</a>
+																</h4>
+															</div>
+															<div id="collapseTwelve511" class="card-collapse payment-method collapse new-inner-tab show num-spacing" role="tabpanel" aria-labelledby="headingTwelve511" data-parent="#accordion51">
+																<ul class="panel-group no-mt ms-collapse-nav" id="components-nav1" role="tablist" aria-multiselectable="true">
+																	<li class="card card-inner text-left" role="tab" id="e101">
+																		<a role="button" data-toggle="collapse" href="#c101" aria-expanded="true" aria-controls="c101" class=" withripple">
+																		Paypal</a>
+																		<ul id="c101" class="panel-collapse show collapse" role="tabpanel" aria-labelledby="e101" data-parent="#components-nav1">
+																			<li>
+																				<p class="checkbox checkfix text-left">
+																					<label class="mr-1">Show On Order Form
+																					<input type="checkbox" >
+																					</label>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="email" class="form-control form-custom" id="inputName" placeholder="PayPal Email" required>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputName" placeholder="API Username">
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="password" class="form-control form-custom" id="inputEmail" placeholder="API Password">
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputEmail" placeholder="API Signature">
+																				</p>
+																				<p class="checkbox checkfix text-left">
+																					<label class="mr-1">Sandbox Mode
+																					<input type="checkbox"><span class="ml-1">Tick to use Paypal's Virtual Sandbox test environment - Requires a separate sandbox test account</span>                                                                                        </label>
+																				</p>
+																				<div class="col-12 text-center">
+																					<button type="button" class="btn btn-primary14 btn-raised">
+																						Save Changes
+																						<div class="ripple-container"></div>
+																					</button>
+																				</div>
+																			</li>
+																		</ul>
+																	</li>
+																	<li class="card card-inner text-left" role="tab" id="e201">
+																		<a role="button" data-toggle="collapse" href="#c201" aria-expanded="false" aria-controls="c201" class="collapsed withripple">
+																		PayPal Express Checkout</a>
+																		<ul id="c201" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e201" data-parent="#components-nav1">
+																			<li>
+																				<p class="checkbox checkfix text-left">
+																					<label class="mr-1">Show On Order Form
+																					<input type="checkbox" >
+																					</label>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="email" class="form-control form-custom" id="inputName" placeholder="API Username">
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="password" class="form-control form-custom" id="inputEmail" placeholder="API Password">
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputEmail" placeholder="API Signature">
+																				</p>
+																				<p class="checkbox checkfix text-left">
+																					<label class="mr-1">Sandbox
+																					<input type="checkbox"><span class="ml-1">Tick to enable test mode</span>                                                                                        </label>
+																				</p>
+																				<div class="col-12 text-center">
+																					<button type="button" class="btn btn-primary14 btn-raised">
+																						Save Changes
+																						<div class="ripple-container"></div>
+																					</button>
+																				</div>
+																			</li>
+																		</ul>
+																	</li>
+																	<li class="card card-inner text-left" role="tab" id="e211">
+																		<a role="button" data-toggle="collapse" href="#c211" aria-expanded="false" aria-controls="c211" class="collapsed withripple">
+																		Payza</a>
+																		<ul id="c211" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e211" data-parent="#components-nav1">
+																			<li>
+																				<p class="checkbox checkfix text-left">
+																					<label class="mr-1">Show On Order Form
+																					<input type="checkbox" >
+																					</label>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="email" class="form-control form-custom" id="inputName" placeholder="Login ID">
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputEmail" placeholder="Secuirity Code">
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="password" class="form-control form-custom" id="inputEmail" placeholder="API Password">
+																					<label class="col-12 no-pl sub-label">Note: Only Required For Automated Refunds</label>
+																				</p>
+																				<p class="checkbox checkfix text-left">
+																					<label class="mr-1">Test Mode
+																					<input type="checkbox"><span class="ml-1">Tick this to test</span>                                                                                        </label>
+																				</p>
+																				<div class="col-12 text-center">
+																					<button type="button" class="btn btn-primary14 btn-raised">
+																						Save Changes
+																						<div class="ripple-container"></div>
+																					</button>
+																				</div>
+																			</li>
+																		</ul>
+																	</li>
+																	<li class="card card-inner text-left" role="tab" id="e221">
+																		<a role="button" data-toggle="collapse" href="#c221" aria-expanded="false" aria-controls="c221" class="collapsed withripple">
+																		Payeer</a>
+																		<ul id="c221" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e221" data-parent="#components-nav1">
+																			<li>
+																				<p class="checkbox checkfix text-left">
+																					<label class="mr-1">Show On Order Form
+																					<input type="checkbox" >
+																					</label>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputName" placeholder="https://payeer.com/merchant/">
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputEmail" placeholder="ID of the store">
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputEmail" placeholder="Secret Key">
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputEmail" placeholder="Path to find for logging of payments">
+																					<label class="col-12 no-pl sub-label">Example: "/payeer_orders.log"</label>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputEmail" placeholder="IP Filter Handler">
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="email" class="form-control form-custom" id="inputEmail" placeholder="Email for payment errors">
+																				</p>
+																				<div class="col-12 text-center">
+																					<button type="button" class="btn btn-primary14 btn-raised">
+																						Save Changes
+																						<div class="ripple-container"></div>
+																					</button>
+																				</div>
+																			</li>
+																		</ul>
+																	</li>
+																	<li class="card card-inner text-left" role="tab" id="e231">
+																		<a role="button" data-toggle="collapse" href="#c231" aria-expanded="false" aria-controls="c231" class="collapsed withripple">
+																		Perfect Money</a>
+																		<ul id="c231" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e231" data-parent="#components-nav1">
+																			<li>
+																				<p class="checkbox checkfix text-left">
+																					<label class="mr-1">Show On Order Form
+																					<input type="checkbox" >
+																					</label>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputName" placeholder="Perfect Money Payee Account">
+																					<label class="col-12 no-pl sub-label">Example: U1234567</label>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputEmail" placeholder="Perfect Money Alternate PassPhrase">
+																					<label class="col-12 no-pl sub-label">Note: Alternate PassPhrase can be found and set under settings section in your PM account</label>
+																				</p>
+																				<div class="col-12 text-center">
+																					<button type="button" class="btn btn-primary14 btn-raised">
+																						Save Changes
+																						<div class="ripple-container"></div>
+																					</button>
+																				</div>
+																			</li>
+																		</ul>
+																	</li>
+																	<li class="card card-inner text-left" role="tab" id="e241">
+																		<a role="button" data-toggle="collapse" href="#c241" aria-expanded="false" aria-controls="c241" class="collapsed withripple">
+																		Mail In Payment</a>
+																		<ul id="c241" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e241" data-parent="#components-nav1">
+																			<li>
+																				<p class="checkbox checkfix text-left">
+																					<label class="mr-1">Show On Order Form
+																					<input type="checkbox" >
+																					</label>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																				</p>
+																				<p class="form-group field-radius">
+																					<textarea class="form-control form-custom" rows="4" id="textArea" placeholder="Bank transfer instrutions"></textarea>
+																					<label class="col-12 no-pl sub-label">Note: The instructions you want displaying to customers who choose this payment method-the invoice number will be shown underneath the text entered above</label>
+																				</p>
+																				<div class="col-12 text-center">
+																					<button type="button" class="btn btn-primary14 btn-raised">
+																						Save Changes
+																						<div class="ripple-container"></div>
+																					</button>
+																				</div>
+																			</li>
+																		</ul>
+																	</li>
+																	<li class="card card-inner text-left" role="tab" id="e251">
+																		<a role="button" data-toggle="collapse" href="#c251" aria-expanded="false" aria-controls="c251" class="collapsed withripple">
+																		Bank Transfer</a>
+																		<ul id="c251" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e251" data-parent="#components-nav1">
+																			<li>
+																				<p class="checkbox checkfix text-left">
+																					<label class="mr-1">Show On Order Form
+																					<input type="checkbox" >
+																					</label>
+																				</p>
+																				<p class="form-group field-radius">
+																					<input type="text" class="form-control form-custom" id="inputName" placeholder="Display Name" required>
+																				</p>
+																				<p class="form-group field-radius">
+																					<textarea class="form-control form-custom" rows="4" id="textArea" placeholder="Bank transfer instrutions"></textarea>
+																					<label class="col-12 no-pl sub-label">Note: The instructions you want displaying to customers who choose this payment method-the invoice number will be shown underneath the text entered above</label>
+																				</p>
+																				<div class="col-12 text-center">
+																					<button type="button" class="btn btn-primary14 btn-raised">
+																						Save Changes
+																						<div class="ripple-container"></div>
+																					</button>
+																				</div>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card card-primary1 slave-card-bottom-border">
+											<div class="card-header" role="tab" id="headingSix">
+												<h4 class="card-title ms-rotate-icon">
+													<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+														<div class="fa fa-chain-broken mr-1"></div>
+														Subscription Fees
+													</a>
+												</h4>
+											</div>
+											<div id="collapseSix" class="card-collapse collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+												<div class="card-body wrap-slave-edit-sm">
+													<p class="checkbox checkfix text-left">
+														<label class="mr-1">
+														<input type="checkbox">
+														<span class="ml-1-half">Paypal</span>
+														</label>
+														<label class="mr-1">
+														<input type="checkbox" >
+														<span class="ml-1-half">Paypal Express</span>
+														</label>
+														<label class="mr-1">
+														<input type="checkbox" >
+														<span class="ml-1-half">Payza</span>
+														</label>
+														<label class="mr-1">
+														<input type="checkbox" >
+														<span class="ml-1-half">Payeer</span>
+														</label>
+														<label class="mr-1">
+														<input type="checkbox" >
+														<span class="ml-1-half">Perfect Money</span>
+														</label>
+														<label class="mr-1">
+														<input type="checkbox" >
+														<span class="ml-1-half">Mail In Payment</span>
+														</label>
+														<label class="mr-1">
+														<input type="checkbox" >
+														<span class="ml-1-half">Bank Transfer</span>
+														</label>
+													</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="inputName" placeholder="For how many months?">
+													</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="inputName" placeholder="Price">
+													</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="inputName" placeholder="Trial period in weeks">
+													</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="inputName" placeholder="Trial price">
+													</p>
+													<p class="form-group field-radius">
+														<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+															<option>Currency</option>
+															<option>AUD</option>
+															<option>CAD</option>
+															<option>EUR</option>
+															<option>GBP</option>
+															<option>HKD</option>
+															<option>SGD</option>
+															<option>USD</option>
+														</select>
+													</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="inputName" placeholder="Subscription Name">
+													</p>
+													<div class="col-12 text-center">
+														<button type="button" class="btn btn-primary14 btn-raised">
+															Save Changes
+															<div class="ripple-container"></div>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card card-primary1 slave-card-bottom-border">
+											<div class="card-header" role="tab" id="headingSeven">
+												<h4 class="card-title ms-rotate-icon">
+													<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+														<div class="fa fa-chain-broken mr-1"></div>
+														Publish Your Signal
+													</a>
+												</h4>
+											</div>
+											<div id="collapseSeven" class="card-collapse collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
+												<div class="card-body wrap-slave-edit-sm">
+													<div class="text-left pb-1">
+														<h2 class="manpsfix">Minimum Requirements</h2>
+														<ul class="list-unstyled">
+															<li class="d-inline-flex">
+																<i class="fa fa-close mr-1"></i>
+																<p>Account must be a live, real money account</p>
+															</li>
+															<li class="d-inline-flex">
+																<i class="fa fa-close mr-1"></i>
+																<p>Account balance must be greater than $3000 (Balance: )</p>
+															</li>
+															<li class="d-inline-flex">
+																<i class="fa fa-close mr-1"></i>
+																<p>Overall growth must be above 0%</p>
+															</li>
+															<li class="d-inline-flex">
+																<i class="fa fa-close mr-1"></i>
+																<p>Account must be at least 3 months old</p>
+															</li>
+															<li class="d-inline-flex">
+																<i class="fa fa-close mr-1"></i>
+																<p>Automatic verification check - The above checks are checked every hour, if any of them are no longer true the system will automatically unverify your signal</p>
+															</li>
+														</ul>
+													</div>
+													<p class="checkbox checkfix text-left">
+														<label class="mr-1">Publish in Market Place
+														<input type="checkbox" >
+														</label>
+													</p>
+													<p class="form-group field-radius">
+														<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+															<option>Master Account Leverage</option>
+															<option>1:1 </option>
+															<option>1:10 </option>
+															<option>1:25 </option>
+															<option>1:50 </option>
+															<option>1:100 </option>
+															<option>1:200 </option>
+															<option>1:300 </option>
+															<option>1:400 </option>
+															<option>1:500 </option>
+															<option>1:600 </option>
+															<option>1:800 </option>
+															<option>1:1000 </option>
+														</select>
+													</p>
+													<p class="form-group field-radius">
+														<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+															<option>Minimum Leverage Recommended</option>
+															<option>1:1 </option>
+															<option>1:10 </option>
+															<option>1:25 </option>
+															<option>1:50 </option>
+															<option>1:100 </option>
+															<option>1:200 </option>
+															<option>1:300 </option>
+															<option>1:400 </option>
+															<option>1:500 </option>
+															<option>1:600 </option>
+															<option>1:800 </option>
+															<option>1:1000 </option>
+														</select>
+													</p>
+													<p class="form-group field-radius">
+														<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+															<option>Trade Execution</option>
+															<option>Manual </option>
+															<option>Expert Advisor </option>
+															<option>Mixture of EA & Manual </option>
+														</select>
+													</p>
+													<p class="form-group field-radius">
+														<select id="inputGen" class="form-control form-custom text-uppercase fselect no-mt selectpicker">
+															<option>Trading Style</option>
+															<option>Technical </option>
+															<option>Fundamental </option>
+															<option>Technical & Fundamental </option>
+														</select>
+													</p>
+													<p class="form-group field-radius">
+														<input type="text" class="form-control form-custom" id="inputName" placeholder="$">
+													</p>
+													<label class="col-12 no-pl sub-label">Note : Recommended Investment for client in USD</label>
+													<p class="form-group field-radius">
+														<textarea class="form-control form-custom" rows="4" id="textArea" placeholder="Signal Introduction(Min 100 chars-Max 500 chars)"></textarea>
+													</p>
+													<label class="col-12 no-pl sub-label">Note : A brief discription about your signal</label>
+													<p class="form-group field-radius">
+														<textarea class="form-control form-custom" rows="4" id="textArea" placeholder="Signal Discription(Min 500 chars)"></textarea>
+													</p>
+													<label class="col-12 no-pl sub-label">Note :
+													Please describe your signal in as much detail as you can including expected drawdown, expected growth and describe the way that the signal trades.</label>
+													<div class="col-12 text-center">
+														<button type="button" class="btn btn-primary14 btn-raised">
+															Save Settings
+															<div class="ripple-container"></div>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- pagination -->
+						<!-- end pagination -->
+						<!-- end general information  -->
+					</div>
+					<div class="col-lg-3 col-sm-6 col" id="thirddiv">
+						<div class=" mt-1 card card-warning1 mb-1-half">
+							<div class="card-header conurl" align="center">
+								<h4 class="card-title" style="font-size: 18px">
+									<a href="profile.html" role="button">
+									<i class="fa fa-comments"></i><strong>TRADING ROOM</strong></a>
+								</h4>
+							</div>
+						</div>
+						<div class="row ">
+							<div class="col-md-12 ">
+								<table class=" downborder1 lbg3 conurl mb-1-half">
+									<tr class="table table-resonsive lhsize3 ">
+										<td class="text-center" colspan="3" style="font-size: 11px">Trading Session
+										</td>
+									</tr>
+									<tr class="table table-resonsive lhsize3">
+										<td>
+											<img src="../assets/img/flag/aud.jpg" class="banglaimg">Sydeny
+										</td>
+										<td style="text-align: center;">Closed</td>
+										<td style="text-align: right;">12:05:12 AM (Thu)</td>
+									</tr>
+									<tr class="table table-resonsive lhsize3">
+										<td>
+											<img src="../assets/img/flag/tokyo.png" class="banglaimg">Tokyo
+										</td>
+										<td style="text-align: center;">Closed</td>
+										<td style="text-align: right;">12:05:12 AM (Thu)</td>
+									</tr>
+									<tr class="table table-resonsive lhsize3">
+										<td>
+											<img src="../assets/img/flag/london.png" class="banglaimg">London
+										</td>
+										<td style="text-align: center;">Closed</td>
+										<td style="text-align: right;">12:05:12 AM (Thu)</td>
+									</tr>
+									<tr class="table table-resonsive lhsize3">
+										<td>
+											<img src="../assets/img/flag/newyork.png" class="banglaimg">New York
+										</td>
+										<td style="text-align: center;">Closed</td>
+										<td style="text-align: right;">12:05:12 AM (Thu)</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<!-- Start Right-navigation -->
+							<div class="col-lg-12 col-md-12 col-sm-12 order-md-2 order-lg-3">
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="card card-primary3 lbg3 conurl mb-1-half">
+										<div class="card-header" role="tab" id="headingTwelve5">
+											<h4 class="card-title shine">
+												<a class=" withripple" role="button" data-toggle="collapse" href="#collapseTwelve5" aria-expanded="true" aria-controls="collapseTwelve5">
+												<i class="fa fa-shopping-cart"></i>Be A FXTUTOR Provider</a>
+											</h4>
+										</div>
+										<div id="collapseTwelve5" class="card-collapse collapse new-inner-tab show num-spacing" role="tabpanel" aria-labelledby="headingTwelve5" data-parent="#accordion5">
+											<ul class="panel-group ms-collapse-nav" id="components-nav" role="tablist" aria-multiselectable="true">
+												<li class="card card-inner" role="tab" id="e1">
+													<a role="button" data-toggle="collapse" href="#c1" aria-expanded="true" aria-controls="c1" class=" withripple">
+													<i class="fa fa-area-chart mr-1"></i>Copytrade</a>
+													<ul id="c1" class="panel-collapse show collapse" role="tabpanel" aria-labelledby="e1" data-parent="#components-nav">
+														<li>
+															<a class="withripple hidden-menu" href="#add-new-signal">
+															<span class="active-option">
+															<i class="fa fa-check-square-o"></i> Add New Signal </span>
+															<span class="badge badge1 badge-success pull-right">1.2</span>
+															</a>
+														</li>
+														<li>
+															<a class="withripple hidden-menu" href="manage-signals.html">
+															<span >
+															<i class="fa fa-check-square-o"></i> Manage Signals </span>
+															<span class="badge badge1 badge-success pull-right">1.2</span>
+															</a>
+														</li>
+														<li>
+															<a class="withripple hidden-menu" href="track-my-user.html">
+															<span class="">
+															<i class="fa fa-check-square-o"></i> Track My Users </span>
+															<span class="badge badge1 badge-success pull-right">1.2</span>
+															</a>
+														</li>
+														<li>
+															<a class="withripple hidden-menu" href="#no">
+															<span class="">
+															<i class="fa fa-check-square-o"></i> My Personal Slaves </span>
+															<span class="badge badge1 badge-success pull-right">1.2</span>
+															</a>
+														</li>
+														<li>
+															<a class="withripple hidden-menu" href="signal-status-overview.html">
+															<span>
+															<i class="fa fa-check-square-o"></i> Signal Status Overview </span>
+															<span class="badge badge1 badge-success pull-right">1.2</span>
+															</a>
+														</li>
+														<li>
+															<a class="withripple hidden-menu" href="#no">
+															<span>
+															<i class="fa fa-check-square-o"></i> My Copytrade Billing </span>
+															<span class="badge badge1 badge-success pull-right">1.2</span>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li class="card card-inner" role="tab" id="e2">
+													<a role="button" data-toggle="collapse" href="#c2" aria-expanded="false" aria-controls="c2" class="collapsed withripple">
+													<i class="fa fa-pencil-square-o mr-1"></i>Be A Instructor</a>
+													<ul id="c2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e2" data-parent="#components-nav">
+														<li>
+															<a class="withripple hidden-menu" href="#no">
+															<span>
+															<i class="fa fa-check-square-o"></i> Add Course </span>
+															<span class="badge badge1 badge-success pull-right">1.2</span>
+															</a>
+														</li>
+														<li>
+															<a class="withripple hidden-menu" href="#no">
+															<span>
+															<i class="fa fa-check-square-o"></i> Manage Course </span>
+															<span class="badge badge1 badge-success pull-right">1.2</span>
+															</a>
+														</li>
+														<li>
+															<a class="withripple hidden-menu" href="course-market-place.html">
+															<span>
+															<i class="fa fa-shopping-cart"></i> Market Place </span>
+															<span class="badge badge1 badge-success pull-right">1.2</span>
+															</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse post-reply-comment mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="mb-0 card card-primary3 lbg3  mt-1">
+										<div class="card-header" role="tab" id="headingeleven5">
+											<h4 class="card-title">
+												<a class="withripple" role="button" data-toggle="collapse" href="#collapseeleven5" aria-expanded="true" aria-controls="collapseeleven5">
+												<i class="fa fa-cogs"></i>Technical Analysis</a>
+											</h4>
+										</div>
+										<div id="collapseeleven5" class="card-collapse collapse show num-spacing " role="tabpanel" aria-labelledby="headingeleven5"
+											data-parent="#accordion5">
+											<ul>
+												<li class="conurl ">
+													<a class="withripple " href="profile_courses.html">
+													<span class="list-word-spacing abor">
+													<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+													</a>
+												</li>
+												<li class="conurl ">
+													<a class="withripple" href="profile_courses.html">
+													<span class="list-word-spacing abor">
+													<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+													</a>
+												</li>
+												<li class="conurl ">
+													<a class="withripple" href="profile_courses.html">
+													<span class="list-word-spacing abor">
+													<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+													</a>
+												</li>
+												<li class="conurl ">
+													<a class="withripple" href="profile_courses.html">
+													<span class="list-word-spacing abor">
+													<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+													</a>
+												</li>
+												<li class="conurl ">
+													<a class="withripple" href="profile_courses.html">
+													<span class="list-word-spacing abor">
+													<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+													</a>
+												</li>
+											</ul>
+											<div class="seel1">
+												<a class="withripple" href="profile_courses.html">
+												<span class="list-word-spacing abor1">See All</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class=" card card-primary3 lbg3 conurl mb-1-half">
+										<div class="card-header" role="tab" id="headingthirtythree5">
+											<h4 class="card-title">
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtythree5" aria-expanded="false" aria-controls="collapsethirtythree5">
+												<i class="fa fa-wrench"></i> Trading Tools</a>
+											</h4>
+										</div>
+										<div id="collapsethirtythree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtythree5" data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="strategies.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Economic Calender </span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="popular_strategies.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Pips Calculator </span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="card card-primary3 lbg3 conurl mb-1-half">
+										<div class="card-header" role="tab" id="headingthirteen5">
+											<h4 class="card-title">
+												<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirteen5" aria-expanded="false" aria-controls="collapsethirteen5">
+												<i class="fa fa-fire"></i> Daily Market Update</a>
+											</h4>
+										</div>
+										<div id="collapsethirteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirteen5"
+											data-parent="#accordion5">
+											<ul>
+												<li>
+													<a class="withripple" href="profile_signals.html">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+												<li>
+													<a class="withripple" href="">
+													<span class="list-word-spacing">
+													<i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+													<span class="badge badge-success pull-right">1.2</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ms-collapse" id="accordion5" role="tablist" aria-multiselectable="true">
+									<div class="mb-0 card card-primary3 lbg3">
+										<div class="card-header" role="tab" id="headingthirtyfive5">
+											<h4 class="card-title">
+												<a class="withripple" role="button" data-toggle="collapse" href="#collapsethirtyfive5" aria-expanded="true" aria-controls="collapsethirtyfive5">
+												<i class="fa fa-globe"></i>News Portal</a>
+											</h4>
+										</div>
+										<div id="collapsethirtyfive5" class="card-collapse collapse show num-spacing " role="tabpanel" aria-labelledby="headingthirtyfive5"
+											data-parent="#accordion5">
+											<ul>
+												<li class="conurl ">
+													<a class="withripple " href="profile_courses.html">
+													<span class="list-word-spacing abor">
+													<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+													</a>
+												</li>
+												<li class="conurl ">
+													<a class="withripple" href="profile_courses.html">
+													<span class="list-word-spacing abor">
+													<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+													</a>
+												</li>
+												<li class="conurl ">
+													<a class="withripple" href="profile_courses.html">
+													<span class="list-word-spacing abor">
+													<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+													</a>
+												</li>
+												<li class="conurl ">
+													<a class="withripple" href="profile_courses.html">
+													<span class="list-word-spacing abor">
+													<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+													</a>
+												</li>
+												<li class="conurl ">
+													<a class="withripple" href="profile_courses.html">
+													<span class="list-word-spacing abor">
+													<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+													</a>
+												</li>
+											</ul>
+											<div class="seel1">
+												<a class="withripple" href="profile_courses.html">
+												<span class="list-word-spacing abor1">See All</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end Left-navigation -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<aside class="ms-footbar no-mt no-pt">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 ms-footer-col">
+						<div class="ms-footbar-block">
+							<h3 class="ms-footbar-title">Sitemap</h3>
+							<ul class="list-unstyled ms-icon-list three_cols">
+								<li>
+									<a href="#">Home</a>
+								</li>
+								<li>
+									<a href="#">Blog</a>
+								</li>
+								<li>
+									<a href="#">Portafolio</a>
+								</li>
+								<li>
+									<a href="#">Works</a>
+								</li>
+								<li>
+									<a href="#">Timeline</a>
+								</li>
+								<li>
+									<a href="#">Pricing</a>
+								</li>
+								<li>
+									<a href="#">About Us</a>
+								</li>
+								<li>
+									<a href="#">Our Team</a>
+								</li>
+								<li>
+									<a href="#">Services</a>
+								</li>
+								<li>
+									<a href="#">FAQ</a>
+								</li>
+								<li>
+									<a href="#">Login</a>
+								</li>
+								<li>
+									<a href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 ms-footer-col ms-footer-alt-color" align="center" style="padding-top:10px">
+						<div class="ms-footbar-block">
+							<h3 class="ms-footbar-title">Social Media</h3>
+							<div class="ms-footbar-social">
+								<a href="javascript:void(0)" class="btn-circle btn-facebook" style="background-color:#607d8b">
+								<i class="zmdi zmdi-facebook"></i>
+								</a>
+								<a href="javascript:void(0)" class="btn-circle btn-twitter" style="background-color:#607d8b">
+								<i class="zmdi zmdi-twitter"></i>
+								</a>
+								<a href="javascript:void(0)" class="btn-circle btn-youtube" style="background-color:#607d8b">
+								<i class="zmdi zmdi-youtube-play"></i>
+								</a>
+								<br>
+								<a href="javascript:void(0)" class="btn-circle btn-google" style="background-color:#607d8b">
+								<i class="zmdi zmdi-google"></i>
+								</a>
+								<a href="javascript:void(0)" class="btn-circle btn-instagram" style="background-color:#607d8b">
+								<i class="zmdi zmdi-instagram"></i>
+								</a>
+								<a href="javascript:void(0)" class="btn-circle btn-github" style="background-color:#607d8b">
+								<i class="zmdi zmdi-github"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 ms-footer-col ">
+						<div class="ms-footbar-block ">
+							<h3 class="ms-footbar-title">Subscribe</h3>
+							<p class="">To get further updates of our edu site or you want then please do subscribe us.</p>
+							<form>
+								<div class="form-group label-floating mt-2 mb-1">
+									<div class="input-group ms-input-subscribe">
+										<label class="control-label" for="ms-subscribe">
+										<i class="zmdi zmdi-email"></i> Email Adress</label>
+										<input type="email" id="ms-subscribe" class="form-control">
+									</div>
+								</div>
+								<button class="ms-subscribre-btn" type="button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<footer class="ms-footer">
+			<div class="container">
+				<p>Copyright &copy; FX EDU 2018</p>
+			</div>
+			<hr>
+			<div class="container">
+				<p align="justify">
+					<strong style="color:#70BF44">Risk Disclaimer : </strong>FX Academy will not be held liable for any loss or damage resulting from reliance
+					on the information contained within this website including market news, analysis, trading signals and
+					Forex broker reviews. The data contained in this website is not necessarily real-time nor accurate, and
+					analyses are the opinions of the author and do not represent the recommendations of FX Academy or its
+					employees. Currency trading on margin involves high risk, and is not suitable for all investors. As a
+					leveraged product losses are able to exceed initial deposits and capital is at risk. Before deciding
+					to trade Forex or any other financial instrument you should carefully consider your investment objectives,
+					level of experience, and risk appetite.
+				</p>
+			</div>
+		</footer>
+		<!--start end footer list-->
+		<div class="ms-footer conurl">
+			<span class="pr-1">
+			<a href="">Risk Warning</a>
+			</span>
+			<span class="">|</span>
+			<span class="pl-1">
+			<a href="javascript:void(0)">Disclaimer</a>
+			</span>
+			<span class="pl-1">|</span>
+			<span class="pl-1">
+			<a href="javascript:void(0)">Privacy</a>
+			</span>
+			<span class="pl-1">|</span>
+			<span class="pl-1">
+			<a href="javascript:void(0)">Terms & Condition</a>
+			</span>
+			<span class="pl-1">|</span>
+			<span class="pl-1">
+			<a href="javascript:void(0)">Complaints Handling</a>
+			</span>
+		</div>
+		<!--end end footer list-->
+		<div class="btn-back-top">
+			<a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">
+			<i class="zmdi zmdi-long-arrow-up"></i>
+			</a>
+		</div>
+		</div>
+		<!-- end footer -->
+		<!-- ms-site-container -->
+		<div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+			<div class="sb-slidebar-container">
+				<header class="ms-slidebar-header">
+					<div class="ms-slidebar-login">
+						<a href="javascript:void(0)" class="withripple">
+						<i class="zmdi zmdi-account"></i> Login</a>
+						<a href="javascript:void(0)" class="withripple">
+						<i class="zmdi zmdi-account-add"></i> Register</a>
+					</div>
+					<div class="ms-slidebar-title">
+						<form class="search-form">
+							<input id="search-box-slidebar" type="text" class="search-input" placeholder="Search..." name="q" />
+							<label for="search-box-slidebar">
+							<i class="zmdi zmdi-search"></i>
+							</label>
+						</form>
+						<div class="ms-slidebar-t">
+							<span class="ms-logo ms-logo-sm">FX</span>
+							<h3>
+								<span>EDU</span>
+							</h3>
+						</div>
+					</div>
+				</header>
+				<ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
+					<li class="card" role="tab" id="sch2">
+						<a class="collapsed" role="button" data-toggle="collapse" href="#sc2" aria-expanded="false" aria-controls="sc2">
+						<i class="zmdi zmdi-desktop-mac"></i>About FXEDU</a>
+						<ul id="sc2" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch2" data-parent="#slidebar-menu">
+						</ul>
+					</li>
+					<li class="card" role="tab" id="sch4">
+						<a class="collapsed" role="button" data-toggle="collapse" href="#sc4" aria-expanded="false" aria-controls="sc4">
+						<i class="zmdi zmdi-edit"></i> Free Basic Training</a>
+						<ul id="sc4" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch4" data-parent="#slidebar-menu">
+						</ul>
+					</li>
+					<li class="card" role="tab" id="sch5">
+						<a class="collapsed" role="button" data-toggle="collapse" href="#sc5" aria-expanded="false" aria-controls="sc5">
+						<i class="fa fa-eye"></i>Daily Trades/Videos</a>
+						<ul id="sc5" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch5" data-parent="#slidebar-menu">
+						</ul>
+					</li>
+					<li class="card" role="tab" id="sch6">
+						<a class="collapsed" role="button" data-toggle="collapse" href="#sc6" aria-expanded="false" aria-controls="sc6">
+						<i class="fa fa-star"></i>Broker Reviews</a>
+						<ul id="sc6" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch6" data-parent="#slidebar-menu">
+						</ul>
+					</li>
+					<li class="card" role="tab" id="sch7">
+						<a class="collapsed" role="button" data-toggle="collapse" href="#sc7" aria-expanded="false" aria-controls="sc7">
+						<i class="fa fa-users"></i>Trading Room</a>
+						<ul id="sc7" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch7" data-parent="#slidebar-menu">
+						</ul>
+					</li>
+					<li class="card" role="tab" id="sch8">
+						<a class="collapsed" role="button" data-toggle="collapse" href="#sc8" aria-expanded="false" aria-controls="sc8">
+						<i class="fa fa-bolt"></i>Copy Trading</a>
+						<ul id="sc8" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch8" data-parent="#slidebar-menu">
+						</ul>
+					</li>
+					<li class="card" role="tab" id="sch9">
+						<a class="collapsed" role="button" data-toggle="collapse" href="#sc9" aria-expanded="false" aria-controls="sc9">
+						<i class="fa fa-comments"></i>Official Blog</a>
+						<ul id="sc9" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch9" data-parent="#slidebar-menu">
+						</ul>
+					</li>
+					<li class="card" role="tab" id="sch10">
+						<a class="collapsed" role="button" data-toggle="collapse" href="#sc10" aria-expanded="false" aria-controls="sc10">
+						<i class="fa fa-user"></i>Our Representative</a>
+						<ul id="sc10" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch10" data-parent="#slidebar-menu">
+						</ul>
+					</li>
+					<li>
+						<a class="link" href="page-all.html">
+						<i class="zmdi zmdi-link"></i>Testimonial</a>
+					</li>
+					<li>
+						<a class="link" href="page-all.html">
+						<i class="fa fa-beer"></i>Carrer at FXEDU</a>
+					</li>
+				</ul>
+				<div class="ms-slidebar-social ms-slidebar-block">
+					<h4 class="ms-slidebar-block-title">Social Links</h4>
+					<div class="ms-slidebar-social">
+						<a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook">
+							<i class="zmdi zmdi-facebook"></i>
+							<span class="badge-pill badge-pill-pink">12</span>
+							<div class="ripple-container"></div>
+						</a>
+						<a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-twitter">
+							<i class="zmdi zmdi-twitter"></i>
+							<span class="badge-pill badge-pill-pink">4</span>
+							<div class="ripple-container"></div>
+						</a>
+						<a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-google">
+							<i class="zmdi zmdi-google"></i>
+							<div class="ripple-container"></div>
+						</a>
+						<a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
+							<i class="zmdi zmdi-instagram"></i>
+							<div class="ripple-container"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Signal Ticker -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="../assets/js/jquery.carouselTicker.js"></script>
+		<script>
+			function showmoremenu() {
+			document.getElementById("hide1").style.display = "block";
+			document.getElementById("hide2").style.display = "block";
+			document.getElementById("hide3").style.display = "block";
+			document.getElementById("hide4").style.display = "block";
+			document.getElementById("hide5").style.display = "block";
+			document.getElementById("hide6").style.display = "block";
+			}
+		</script>
+		<script>
+			$(".carouselTicker").carouselTicker({
+			    // animation speed
+			    speed: 1,
+			    // animation delay
+			    delay: 30,
+			    // RTL or LTR
+			    reverse: true
+			});
+		</script>
+		<!-- End Signal Ticker -->
+		<script src="../assets/js/plugins.min.js"></script>
+		<!-- REVOLUTION JS FILES -->
+		<script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="../assets/js/app.min.js"></script>
+		<!-- <script>
+			$("#Payment").on("change", function() {
+			    var payvalue=(this.value);
+			    if (payvalue == '1'){
+			    $('.pay-'+payvalue).removeClass('hidden')
+			  }
+			  else if (payvalue == '2'){
+			    $('.pay-'+payvalue).removeClass('hidden')
+			  }
+			});
+			</script> -->
+	</body>
+</html>

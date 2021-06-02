@@ -1,0 +1,153 @@
+
+/*profile dropdown*/
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #041936;
+	min-width: 168px;
+	margin-left: 18px;
+	line-height: 6px;
+	font-size: 13px;
+	overflow: auto;
+	-webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	text-align: center;
+	border-radius: 5px;
+
+}
+
+.logo-margin-top{margin-top: -8px}
+
+.dropdown-content ul:last-child{border-bottom: none;}
+
+.dropdown-content a {
+	color: #fff;
+	padding: 9px 11px;
+	text-decoration: none;
+	display: block;
+	border-bottom:1px solid #03214a
+	}
+/*end profile dropdown*/
+
+
+/*start notification*/
+.glyphicon-bell {
+
+    font-size:2rem;
+    margin-top: 28px;
+  }
+
+.notifications {
+   min-width:290px;
+   background-color: #086f9e
+
+  }
+
+  .notifications-wrapper {
+     overflow:auto;
+      max-height:200px;
+      background-color: #033e58
+    }
+
+ .menu-title {
+     color:#FFF;
+     font-size:14px;
+      display:inline-block;
+      margin:3px;
+      font-weight: bold;
+      }
+
+      .menu-title a{
+     color:#FFF;
+      }
+      .menu-title a:hover{
+    color:#FFF;
+     border-bottom: 1px solid #4b92b1;
+      }
+
+      .footer-menu-title {
+     color:#fff;
+     font-size:14px;
+      text-align: center;
+      margin:0px 0px -4px 0px;
+      font-style: 12px;
+      font-weight: bold;
+      }
+  .footer-menu-title a{
+     color:#fff;
+      }
+
+
+
+.glyphicon-circle-arrow-right {
+      margin-left:10px;
+   }
+
+
+ .notification-heading, .notification-footer  {
+ 	padding:2px 10px;
+
+       }
+
+
+#notification-dropdown {
+	margin-top: 57px;
+	margin-left: -250px;
+   -webkit-transform:translate3d(0px, 5px, 0px) !important;
+           transform:translate3d(0px, 5px, 0px) !important;
+
+}
+.item-title {
+
+ font-size:1.3rem;
+ color:#000;
+
+}
+
+.notifications a.content {
+ text-decoration:none;
+ background:#ccc;
+
+ }
+
+
+
+.notification-item p{margin-bottom: 0px;}
+
+.notification-item {
+ padding:1px 0px 1px 8px;
+ margin:2px 0px 2px 2px;
+ background:#06202b;
+ border-radius:4px;
+ font-size: 11px;
+
+
+ }
+/*end notification dropdown*/
+
+/*dropdown shaking */
+body.bd-scroll
+{
+    padding-top: 0px;
+}
+
+.profile-name{
+	  color: #fff;
+    margin-right: 6px;
+    margin-left: 5px;
+    position: relative;
+    top: 8px;
+}
+
+.badge-pill-move{
+	margin-bottom:40px ;
+	margin-right: 4px;
+	margin-left: -16px
+}
+
+.profile-button-pull{margin-top: 3px}
+
+.bell-color a{color:#fff;}
+
+.faijul{border-bottom: none}

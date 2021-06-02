@@ -1,0 +1,2555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#333">
+    <title>FX EDU</title>
+    <meta name="description" content="Material Style Theme">
+    <link rel="shortcut icon" href="../assets/img/favicon.png?v=3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../assets/css/preload.min.css">
+    <link rel="stylesheet" href="../assets/css/plugins.min.css">
+    <link rel="stylesheet" href="../assets/css/style.light-blue-500.min.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/bum.css">
+    <link rel="stylesheet" href="../assets/css/faeffect.css">
+    <link rel="stylesheet" href="../assets/css/jquery.simpleTicker.css">
+
+    <!--Flag Icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Notification -->
+
+</head>
+
+<body>
+    <div id="ms-preload" class="ms-preload">
+        <div id="status">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ms-site-container">
+        <!-- Modal -->
+        <div class="modal modal-primary" id="ms-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog animated zoomIn animated-3x" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-block shadow-2dp no-pb">
+                        <button type="button" class="close d-inline pull-right mt-2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="zmdi zmdi-close"></i>
+                            </span>
+                        </button>
+                        <div class="modal-title text-center">
+                            <span class="ms-logo ms-logo-white ms-logo-sm mr-1">FX</span>
+                            <h3 class="no-m ms-site-title">EDU
+                            </h3>
+                        </div>
+                        <div class="modal-header-tabs">
+                            <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-primary" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a href="#ms-login-tab" aria-controls="ms-login-tab" role="tab" data-toggle="tab" class="nav-link active withoutripple">
+                                        <i class="zmdi zmdi-account"></i> Login</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab" class="nav-link withoutripple">
+                                        <i class="zmdi zmdi-account-add"></i> Register</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#ms-recovery-tab" aria-controls="ms-recovery-tab" role="tab" data-toggle="tab" class="nav-link withoutripple">
+                                        <i class="zmdi zmdi-key"></i> Recovery Pass</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active show" id="ms-login-tab">
+                                <form autocomplete="off">
+                                    <fieldset>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-account"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-user">Username</label>
+                                                <input type="text" id="ms-form-user" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-lock"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-pass">Password</label>
+                                                <input type="password" id="ms-form-pass" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-md-6">
+                                                <div class="form-group no-mt">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Remember Me </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button class="btn btn-raised btn-primary pull-right">Login</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <div class="text-center">
+                                    <h3>Login with</h3>
+                                    <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-facebook">
+                                        <i class="zmdi zmdi-facebook"></i> Facebook</a>
+                                    <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-twitter">
+                                        <i class="zmdi zmdi-twitter"></i> Twitter</a>
+                                    <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-google">
+                                        <i class="zmdi zmdi-google"></i> Google</a>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="ms-register-tab">
+                                <form>
+                                    <fieldset>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-account"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-user-r">Username</label>
+                                                <input type="text" id="ms-form-user-r" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-email"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-email-r">Email</label>
+                                                <input type="email" id="ms-form-email-r" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-lock"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-pass-r">Password</label>
+                                                <input type="password" id="ms-form-pass-r" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-lock"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-pass-rn">Re-type Password</label>
+                                                <input type="password" id="ms-form-pass-rn" class="form-control">
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-raised btn-block btn-primary">Register Now</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="ms-recovery-tab">
+                                <fieldset>
+                                    <div class="form-group label-floating">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="zmdi zmdi-account"></i>
+                                            </span>
+                                            <label class="control-label" for="ms-form-user-re">Username</label>
+                                            <input type="text" id="ms-form-user-re" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group label-floating">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="zmdi zmdi-email"></i>
+                                            </span>
+                                            <label class="control-label" for="ms-form-email-re">Email</label>
+                                            <input type="email" id="ms-form-email-re" class="form-control">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-raised btn-block btn-primary">Send Password</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="ms-header ms-header-primary1 headerfix">
+            <!--ms-header-primary-->
+            <div class="container container-full">
+                <div class="ms-title ">
+                    <div class="row logo-margin-top conurl">
+                        <a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-left huda ">
+                            <i class="zmdi zmdi-menu mho "></i>
+                        </a>
+                        <a href="../index.html">
+                            <!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
+                            <span class="ms-logo animated zoomInDown animation-delay-5">FX</span>
+                            <h1 class="animated fadeInRight animation-delay-6">
+                                <span>EDU</span>
+                            </h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right ml-4 " style="margin-top: 4px">
+                    <div class="row">
+
+                        <div class="dropdown profile-button-pull d-none d-md-block">
+                            <button class="btn btn-default btn-city dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="true">
+                                <img src="../assets/img/profile.jpg" class="banglaprof">
+                                <span class="profile-name">Raj Shah
+                                    <i class="fa fa-ellipsis-v"> </i>
+                                </span>
+                                <span class="caret caret-search"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <a href="#">My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Wallet</a>
+                                </li>
+                                <li>
+                                    <a class="lp_bottom" href="#" style="border-bottom: none">
+                                        <i class="fa fa-sign-out"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Notification Menu -->
+                        <div class="dropdown bell-color">
+                            <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+
+                                <i class="glyphicon glyphicon-bell"></i>
+                                <span class="badge-pill badge-pill-warning badge-pill-move">10</span>
+
+                            </a>
+                            <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel" id="notification-dropdown">
+                                <div class="notification-heading">
+                                    <h4 class="menu-title">Notifications</h4>
+                                    <h4 class="menu-title float-right">
+                                        <a href="#">Mark all as read
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="notifications-wrapper conurl">
+                                    <a class="content" href="#">
+
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+
+                                <div class="notification-footer">
+                                    <a href="#">
+                                        <h4 class="footer-menu-title ">View all&nbsp. . </h4>
+                                    </a>
+
+                                </div>
+
+
+                            </ul>
+                        </div>
+
+                        <!-- End Notification Menu -->
+
+                        <div class="conurl mt-2">
+                            <a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-right huda ">
+                                <i class="zmdi zmdi-menu " style="font-size:28px"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End REVOLUTION SLIDER 5.3.0.2 fullscreen mode -->
+        <div class="container-fluid no-pl no-pr no-ml no-mr redwine ">
+            <div class="container-fluid stickermtp2 " id="ticker">
+                <div id="carouselTicker" class="carouselTicker">
+                    <ul class="carouselTicker__list ">
+
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li>
+                                        <li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="carouselTicker__item ">
+                            <ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+                                <div class="card  ">
+                                    <li class="  ">
+                                        <li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+                                            <strong>USDHF : 1.225457 </strong>
+                                        </li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- body start -->
+        <div class="container-fluid mb-1" style="background-color: #001129">
+            <!--First Row Video and Side text-->
+
+
+            <div class="card mt-2 fixed-gap-first" style="background-color:#041936;color:#fff;">
+                <div class="row mr-1 ml-1">
+                    <div class="col-md-12 text-center text-uppercase conurl">
+                        <h2 class="font-weight-bold">
+                            <a href="../course_detail.html">Learn to trade with the Forex Beginner Strategy</a>
+                        </h2>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="row ">
+                            <div class="col-lg-12">
+                                <div class="card card-primary1 ">
+                                    <div class="ms-hero-bg">
+                                        <h3 class="color-white index-1 text-center no-pt ml-1 cheadfix text-uppercase">Course Curriculum</h3>
+                                    </div>
+                                    <div class="cur-menu-width">
+                                        <div class="ms-collapse no-margin cur-menu-fix  " id="accordion12" role="tablist" aria-multiselectable="true">
+                                            <div class=" card card-primary1 ">
+                                                <div class="card-header " role="tab" id="headingOne12 ">
+                                                    <h4 class="card-title ms-rotate-icon collapsebar1 ">
+                                                        <a class="withripple text-capitalize mr-1" role="button" data-toggle="collapse" href="#collapseOne12" aria-expanded="false"
+                                                            aria-controls="collapseOne12">
+                                                            <div class="row d-inline-flex">
+                                                                <div class="fa fa-tags col-1"></div>
+                                                                <div class="col lheight"> 5 steps of the forex beginner strategy</div>
+                                                            </div>
+                                                        </a>
+
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseOne12" class="card-collapse collapse cbg show" role="tabpanel" aria-labelledby="headingOne12" data-parent="#accordion12">
+                                                    <div class="card-body text-left no-pb">
+                                                        <div class=" clistfix">
+                                                            <ul class="list-unstyled no-mb">
+                                                                <li>
+                                                                    <div class="row d-inline-flex">
+                                                                        <div class="fa fa-eye col-1"></div>
+                                                                        <div class="col lheight">
+                                                                            <a href="course_cur1.html" >Forex beginner strategy: getting started</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>9 minutes</li>
+                                                                <li>
+                                                                    <div class="row d-inline-flex">
+                                                                        <div class="fa fa-graduation-cap col-1"></div>
+                                                                        <div class="col lheight">
+                                                                            <a href="cquiz1.html">Quiz:Getting Started</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>10 minutes</li>
+                                                                <li>
+                                                                    <div class="row d-inline-flex">
+                                                                        <div class="fa fa-eye col-1"></div>
+                                                                        <div class="col lheight">
+                                                                            <a href="course_cur2.html">Identify the trading opportunity </a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </li>
+                                                                <li>7 minutes</li>
+
+                                                                <li>
+                                                                    <div class="row d-inline-flex">
+                                                                        <div class="fa fa-graduation-cap col-1"></div>
+                                                                        <div class="col lheight">
+                                                                            <a href="cquiz2.html">Quiz: Identify the trading opportunity </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>8 minutes</li>
+                                                                <li>
+                                                                    <div class="row d-inline-flex">
+                                                                        <div class="fa fa-eye col-1"></div>
+                                                                        <div class="col lheight">
+                                                                            <a href="course_cur3.html" class="active">Enter the pending order</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>8 minutes</li>
+                                                                <li>
+                                                                    <div class="row d-inline-flex">
+                                                                        <div class="fa fa-graduation-cap col-1"></div>
+                                                                        <div class="col lheight">
+                                                                            <a href="cquiz3.html">Quiz: Enter the pending order </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>8 minutes</li>
+                                                                <li>
+                                                                    <div class="row d-inline-flex">
+                                                                        <div class="fa fa-eye col-1"></div>
+                                                                        <div class="col lheight">
+                                                                            <a href="course_cur4.html">Manage the pending order</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>9 minutes</li>
+                                                                <li>
+                                                                    <div class="row d-inline-flex">
+                                                                        <div class="fa fa-graduation-cap col-1"></div>
+                                                                        <div class="col lheight">
+                                                                            <a href="cquiz4.html">Quiz: Manage the pending order</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>8 minutes</li>
+                                                                <li>
+                                                                    <div class="row d-inline-flex">
+                                                                        <div class="fa fa-eye col-1"></div>
+                                                                        <div class="col lheight">
+                                                                            <a href="course_cur5.html">Trade management</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>10 minutes</li>
+                                                                <li>
+                                                                    <div class="row d-inline-flex">
+                                                                        <div class="fa fa-graduation-cap col-1"></div>
+                                                                        <div class="col lheight">
+                                                                            <a href="cquiz5.html">Quiz: Trade management </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>8 minutes</li>
+
+                                                            </ul>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-0 card card-primary">
+                                                    <div class="card-header" role="tab" id="headingTwo12">
+                                                        <h4 class="card-title ms-rotate-icon collapsebar1">
+                                                            <a class="collapsed withripple text-capitalize mr-1" role="button" data-toggle="collapse" href="#collapseTwo12" aria-expanded="false"
+                                                                aria-controls="collapseTwo12">
+                                                                <div class="row d-inline-flex">
+                                                                    <div class="fa fa-tags col-1"></div>
+                                                                    <div class="col lheight"> Building on the forex beginner strategy
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseTwo12" class="card-collapse collapse cbg" role="tabpanel" aria-labelledby="headingTwo12" data-parent="#accordion12">
+                                                        <div class="card-body text-left no-pb">
+                                                            <div class="row clistfix ml-1">
+                                                                <ul class="list-unstyled no-mb">
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-eye col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="#" >Forex beginner strategy: getting started</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>9 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-graduation-cap col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="cquiz1.html">Quiz:Getting Started</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>10 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-eye col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="course_cur2.html">Identify the trading opportunity </a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </li>
+                                                                    <li>7 minutes</li>
+
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-graduation-cap col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="cquiz2.html">Quiz: Identify the trading opportunity </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>8 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-eye col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="course_cur3.html">Enter the pending order</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>8 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-graduation-cap col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="cquiz3.html">Quiz: Enter the pending order </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>8 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-eye col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="course_cur4.html">Manage the pending order</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>9 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-graduation-cap col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="cquiz4.html">Quiz: Manage the pending order</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>8 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-eye col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="course_cur5.html">Trade management</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>10 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-graduation-cap col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="cquiz5.html">Quiz: Trade management </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>8 minutes</li>
+
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-0 card card-primary">
+                                                    <div class="card-header" role="tab" id="headingThree3">
+                                                        <h4 class="card-title ms-rotate-icon collapsebar1">
+                                                            <a class="collapsed withripple text-capitalize mr-1" role="button" data-toggle="collapse" href="#collapseThree3" aria-expanded="false"
+                                                                aria-controls="collapseThree3">
+                                                                <div class="row d-inline-flex">
+                                                                    <div class="fa fa-tags col-1"></div>
+                                                                    <div class="col lheight"> Backtesting the forex beginner strategy </div>
+                                                                </div>
+                                                            </a>
+
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseThree3" class="card-collapse collapse cbg" role="tabpanel" aria-labelledby="headingThree12" data-parent="#accordion12">
+                                                        <div class="card-body text-left no-pb">
+                                                            <div class="row clistfix ml-1">
+                                                                <ul class="list-unstyled no-mb">
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-eye col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="#" >Forex beginner strategy: getting started</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>9 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-graduation-cap col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="cquiz1.html">Quiz:Getting Started</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>10 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-eye col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="course_cur2.html">Identify the trading opportunity </a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </li>
+                                                                    <li>7 minutes</li>
+
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-graduation-cap col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="cquiz2.html">Quiz: Identify the trading opportunity </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>8 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-eye col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="course_cur3.html">Enter the pending order</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>8 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-graduation-cap col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="cquiz3.html">Quiz: Enter the pending order </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>8 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-eye col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="course_cur4.html">Manage the pending order</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>9 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-graduation-cap col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="cquiz4.html">Quiz: Manage the pending order</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>8 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-eye col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="course_cur5.html">Trade management</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>10 minutes</li>
+                                                                    <li>
+                                                                        <div class="row d-inline-flex">
+                                                                            <div class="fa fa-graduation-cap col-1"></div>
+                                                                            <div class="col lheight">
+                                                                                <a href="cquiz5.html">Quiz: Trade management </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>8 minutes</li>
+
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a href="cquiz2.html" class="btn btn-raised btn-primary pull-left lesson-button-posfix">Previous <span class="d-none d-lg-inline-flex">lesson</span>
+                            <div class="ripple-container"></div>
+                        <a href="cquiz3.html" class="btn btn-raised btn-primary pull-right lesson-button-posfix">Next <span class="d-none d-lg-inline-flex mr-1">lesson</span>
+                            <div class="ripple-container"></div>
+
+                            </a>
+
+                    </div>
+                    <div class="col-lg-8 ">
+
+                        <div class="card">
+                            <div data-type="vimeo" data-video-id="94747106"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--First Row End-->
+            <!--2nd Row About -->
+
+            <div class="container-full fixed-gap">
+                <div class="card course_bg">
+                    <div class="row mr-1 ml-1">
+                        <div class="col-md-12 text-center text-uppercase">
+                            <h2>About this course</h2>
+                        </div>
+                        <div class="col-lg-12  text-justify paragraph">
+
+                            <h3>How to read Japanese candlestick charts</h3>
+                            <p>Japanese candlesticks are a way of presenting the price action over a set period of time. They
+                                provide useful information, such as the market sentiment or possible reversals in the markets,
+                                by showing the price movement in a specific way.</p>
+                            <div class="lt-tip">
+                                Every trader needs a trading journal. As a Tradimo user, you qualify for the $30 discount on the
+                                <a href="#">Edgewonk trading journal</a>. Simply use the code “
+                                <strong>tradimo</strong>” during the checkout process to get
+                                <strong>$30 off</strong>.
+                                <a href="#">Use this link to get the discount</a>.
+                            </div>
+
+                            <h3>A Japanese candlestick chart shows you more information</h3>
+                            <p>When you trade something, whether it is forex, stocks or commodities, you will use price charts
+                                to see the price movement in the markets.</p>
+
+                            <p>Consider the following two charts:</p>
+                            <p align="center">
+                                <img tabindex="0" src="../assets/img/courses/1.png" alt="" data-toggle="modal" data-target="#myModal13" class="course_img">
+                            </p>
+
+                            <div class="modal" id="myModal13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel13" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog animated zoomIn animated-3x" role="document">
+                                    <div class="modal-content">
+                                        <img src="../assets/img/courses/1.png" alt="" class="img-fluid"> </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <p>
+                                The line chart is a very simple way of showing the price movement. It displays the information with a simple line using a
+                                series of data points. It is the type of chart that you may be used to seeing in magazines
+                                and newspapers that shows the price movement of stocks and shares.</p>
+
+                            <div class="lt-tip ">
+                                A line chart is simplistic and only displays price movement in a line. A Japanese candlestick chart shows more information
+                                within each individual candlestick.
+                            </div>
+
+                            <p>The Japanese candlestick chart shows the same price movement, however it is made up of individual
+                                candlesticks. Traders prefer to read candlestick charts because they include more information
+                                than a line chart and can be more useful for making trading decisions.</p>
+
+                            <h3>Japanese candlesticks represent a set period of time</h3>
+
+                            <p>If a Japanese candlestick chart is set to a 30 minute time period, then each individual candle
+                                will form over thirty minutes. Likewise, if the chart is set to a 15 minute time period,
+                                then each candle will take fifteen minutes to form.</p>
+
+                            <p>Consider the following charts:</p>
+                            <p align="center">
+                                <img tabindex="0" src="../assets/img/courses/2.png" alt="" data-toggle="modal" data-target="#myModal14" class="course_img">
+                            </p>
+
+
+                            <div class="modal" id="myModal14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel13" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog animated zoomIn animated-3x" role="document">
+                                    <div class="modal-content">
+                                        <img src="../assets/img/courses/2.png" alt="" class="img-fluid"> </div>
+                                </div>
+                            </div>
+
+
+                            <p>Each chart shows the price action for the EUR/USD. The two candles in the green shaded area in
+                                the left chart are two 30 minute candles. This represents the exact same period as the twelve
+                                shaded candles on the 5 minute chart to the right.</p>
+                            <p>The two charts are showing the price action of the same asset, only the chart to the left is
+                                showing the price action over a much longer period than the chart to the right.</p>
+                            <p>This is because the chart to the left is a 30 minute chart, meaning that each candle took thirty
+                                minutes to form, and the chart to the right is a 5 minute chart, meaning that each candlestick
+                                took five minutes to form. The 30 minute chart therefore shows a much broader time scale
+                                of price action than the 5 minute chart.</p>
+                            <div class="lt-tip">
+                                Each Japanese candlestick represents a specific time frame. If the time period is set for 30 minutes, then each individual
+                                candle will take 30 minutes to form.
+                            </div>
+                            <h3>Each candle shows the open, close, high and low price</h3>
+                            <p>Take a look at the following image:</p>
+                            <p align="center">
+                                <img tabindex="0" src="../assets/img/courses/3.png" alt="" data-toggle="modal" data-target="#myModal15" class="course_img">
+                            </p>
+                            <div class="modal" id="myModal15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel13" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog animated zoomIn animated-3x" role="document">
+                                    <div class="modal-content">
+                                        <img src="../assets/img/courses/3.png" alt="" class="img-fluid"> </div>
+                                </div>
+                            </div>
+
+
+                            <p>The wide part of the candlestick is called the body. It represents the open and close of the
+                                period. This means that if the chart is a 1 hour chart, then each candlestick body will show
+                                the opening price for that 1 hour period and the closing price for that 1 hour period. The
+                                wicks at the top and the bottom of the candlestick show the highest and lowest price reached
+                                during that 1 hour period. A chart that displays the open, high, low and close price for
+                                a given period is referred to as a OHLC chart.</p>
+                            <p>The different colours of the body tell you if the candlestick is bullish (rising) or bearish
+                                (falling). At tradimo, we have set our candlesticks to orange for bearish candles and blue
+                                for bullish candles. It does not matter what colour your candlesticks are; they can be set
+                                to any colour in your trading software.</p>
+                            <p>If the candlestick is bullish, then the opening price is always at the bottom and the closing
+                                price is always at the top. If the candlestick is bearish, then the opening price is always
+                                at the top and the closing price is always at the bottom.</p>
+                            <div class="lt-tip">
+                                OHLC: The opening price, highest price, lowest price and closing price of a given period is often referred to as the OHLC.
+                                Charts that display this information are often called OHLC charts.
+                            </div>
+                            <p>The different colours simply provide a means for you to instantly tell if they are bullish or
+                                bearish.
+                            </p>
+                            <h3>
+                                <i>A closer look at a bearish Japanese candlestick</i>
+                            </h3>
+
+                            <p>The candlestick in this illustration is a period of 1 day, which means that the candle took an
+                                entire day to form. The currency pair is the EUR/USD.</p>
+                            <p>From the candle you can identify the following information:</p>
+                            <ul>
+                                <li>
+                                    <p>The candle is bearish because of its orange colour. This means that over the course of
+                                        a single day the price of the EUR/USD dropped. There were more sellers than buyers
+                                        throughout the day; the price was lower at the close of the day than when it opened.</p>
+                                </li>
+                                <li>
+                                    <p>The price at the beginning of the day opened at 1.38278.</p>
+                                </li>
+                                <li>
+                                    <p>The price at the end of the day closed at 1.34497.</p>
+                                </li>
+                                <li>
+                                    <p>Throughout the day, the highest price that the buyers pushed the EUR/USD to was 1.38600.</p>
+                                </li>
+                                <li>
+                                    <p>Throughout the day, the lowest price that the sellers pushed the EUR/USD to was 1.34125.</p>
+                                </li>
+                            </ul>
+
+                            <p>This, however, only shows the OHLC for that day. If you wanted to see the price movement in more
+                                detail, you would go to a lower time frame.</p>
+                            <p>Using the example above, to find out more specifically what happened during the course of that
+                                day – that day being the single candlestick shown – you could go to a 1 hour time frame chart.
+                                This chart would show candlesticks that more accurately depict the price movement throughout
+                                the day.</p>
+                            <p>Similarly, you could go to an even lower time frame – say, a 15 minute or a 5 minute time frame
+                                – and find out how the price behaved in even more detail.</p>
+                            <p>You will explore the methods of choosing which time frame best suits your trading style in further
+                                lessons.
+                            </p>
+                            <h3>
+                                <i>A further example using a bullish Japanese candlestick</i>
+                            </h3>
+                            <p>The candlestick in this illustration is a one hour period, which means that the candle took an
+                                hour to form. The currency pair is EUR/USD.</p>
+                            <p>From the candle you can identify the following information:</p>
+                            <ul>
+                                <li>
+                                    <p>The candle is bullish because it is blue. This means that over the course of an hour,
+                                        the price of the EUR/USD increased. There were more buyers than sellers throughout
+                                        the hour; the price was higher at the close of the hour than when it opened.</p>
+                                </li>
+                                <li>
+                                    <p>The price at the beginning of the hour opened at 1.3016.</p>
+                                </li>
+                                <li>
+                                    <p>The price at the end of the hour closed at 1.3175.</p>
+                                </li>
+                                <li>
+                                    <p>Throughout the course of the hour the highest price that the buyers pushed the EUR/USD
+                                        to was 1.3185.</p>
+                                </li>
+                                <li>
+                                    <p>Throughout the hour the lowest price that the sellers pushed the EUR/USD to 1.2956.</p>
+                                </li>
+                            </ul>
+                            <p>Although a trader can use practically any time period for each candle, the most common periods
+                                are M1 (1 minute), M5, M15, M30, H1 (1 hour), H4, D1 (1 day), W1 (1 week) and MN1 (1 month).
+                                The time frames that are available for your use will depend on the trading platform you choose
+                                to use.</p>
+                            <h3>Summary</h3>
+                            <p>So far, you have learned that:</p>
+                            <ul>
+                                <li>
+                                    <p>the Japanese candlestick chart shows you more information than a simple line chart.</p>
+                                </li>
+                                <li>
+                                    <p>the Japanese candlestick chart is the most common type of chart used by traders</p>
+                                </li>
+                                <li>
+                                    <p>Japanese candlesticks represent the time that the candle takes to form, which is referred
+                                        to as a time frame.</p>
+                                </li>
+                                <li>
+                                    <p>each candlestick tells you the open, high, low and close (OHLC) price of the time frame
+                                        for that candle.</p>
+                                </li>
+                                <li>
+                                    <p>an orange candle means that the price has moved down and a blue candle means that the
+                                        price has moved up.</p>
+                                </li>
+                            </ul>
+
+
+                            <a href="cquiz2.html" class="btn btn-raised btn-primary pull-left lesson-button-posfix">Previous <span class="d-none d-lg-inline-flex">lesson</span>
+                                <div class="ripple-container"></div>
+                            <a href="cquiz3.html" class="btn btn-raised btn-primary pull-right lesson-button-posfix">Next <span class="d-none d-lg-inline-flex mr-1">lesson</span>
+                                <div class="ripple-container"></div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--2nd Row End-->
+            <!--Third Row FAQ-->
+            <div class="container-full fixed-gap-last1">
+                <div class="card course_bg">
+                    <div class="card-body no-pt">
+                        <div class="row">
+                            <div class="col-md-12">
+
+
+                                <input type="text" class="form-control" placeholder="Write a Comment">
+
+                            </div>
+                            <!--1st comment start-->
+                            <div class="col-md-12 no-pr ">
+
+                                <div class="post-comment">
+                                    <div class="row">
+                                        <div class="col-md-1 col-2 no-pr">
+                                            <img src="../assets/img/profile.jpg" class="comment-pro-pic">
+                                        </div>
+                                        <div class="col-md-11 col-9 no-pl">
+                                            <p class="comment-pos conurl">
+                                                <a href="timeline.html" class="profile-link">Diana </a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrudLorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                ad minim venia
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1 "></div>
+                                    <div class="col-md-11 comment-reaction ">
+
+                                        <a href="#">Like</a>
+                                        <a href="#reply" data-target="#reply_comment" class="reply">Reply</a>
+                                        <span>13min</span>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="reply-comment hidden" id="reply_comment">
+                                    <div class="post-comment post-reply-comment">
+
+                                        <img src="../assets/img/profile.jpg" alt="" class="reply-pro-pic">
+                                        <div class="col-md-12 reply-input-fix">
+                                            <input type="text" class="form-control " placeholder="Write a Reply">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="reply-post">
+                                    <div class="post-comment">
+                                        <div class="row">
+                                            <div class="col-md-1 col-2 col no-pr">
+                                                <img src="../assets/img/profile.jpg" class="comment-pro-pic">
+                                            </div>
+                                            <div class="col-md-11 col-9 sm-comfix no-pl">
+                                                <p class="comment-pos conurl">
+                                                    <a href="timeline.html" class="profile-link">Diana </a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                                    magna aliqua. Ut enim ad minim venia
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 col-2"></div>
+                                        <div class="col-md-11 col-9 sm-fix comment-reaction">
+
+                                            <a href="#">Like</a>
+                                            <a href="#sub-reply" data-target="#sub_reply_comment" class="reply">Reply</a>
+                                            <span>13min</span>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="reply-comment hidden" id="sub_reply_comment">
+                                        <div class="post-comment post-reply-comment">
+
+                                            <img src="../assets/img/profile.jpg" alt="" class="reply-pro-pic">
+                                            <div class="col-md-12 reply-input-fix">
+                                                <input type="text" class="form-control " placeholder="Write a Reply">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--1st comment end-->
+
+                            <!--1st comment start-->
+                            <div class="col-md-12 no-pr ">
+
+                                <div class="post-comment">
+                                    <div class="row">
+                                        <div class="col-md-1 col-2 no-pr">
+                                            <img src="../assets/img/profile.jpg" class="comment-pro-pic">
+                                        </div>
+                                        <div class="col-md-11 col-9 no-pl">
+                                            <p class="comment-pos conurl">
+                                                <a href="timeline.html" class="profile-link">Diana </a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrudLorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                ad minim venia
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-11 comment-reaction ">
+
+                                        <a href="#">Like</a>
+                                        <a href="#reply1" data-target="#reply_comment1" class="reply">Reply</a>
+                                        <span>13min</span>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="reply-comment hidden" id="reply_comment1">
+                                    <div class="post-comment post-reply-comment">
+
+                                        <img src="../assets/img/profile.jpg" alt="" class="reply-pro-pic">
+                                        <div class="col-md-12 reply-input-fix">
+                                            <input type="text" class="form-control " placeholder="Write a Reply">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="reply-post">
+                                    <div class="post-comment">
+                                        <div class="row">
+                                            <div class="col-md-1 col-2 no-pr">
+                                                <img src="../assets/img/profile.jpg" class="comment-pro-pic">
+                                            </div>
+                                            <div class="col-md-11 col-9 sm-comfix no-pl">
+                                                <p class="comment-pos conurl">
+                                                    <a href="timeline.html" class="profile-link">Diana </a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                                    magna aliqua. Ut enim ad minim venia
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-11 comment-reaction sm-fix">
+
+                                            <a href="#">Like</a>
+                                            <a href="#sub-reply1" data-target="#sub_reply_comment1" class="reply">Reply</a>
+                                            <span>13min</span>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="reply-comment hidden" id="sub_reply_comment1">
+                                        <div class="post-comment post-reply-comment">
+
+                                            <img src="../assets/img/profile.jpg" alt="" class="reply-pro-pic">
+                                            <div class="col-md-12 reply-input-fix">
+                                                <input type="text" class="form-control " placeholder="Write a Reply">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--1st comment end-->
+
+                            <!--1st comment start-->
+                            <div class="col-md-12 no-pr ">
+
+                                <div class="post-comment">
+                                    <div class="row">
+                                        <div class="col-md-1 col-2 no-pr">
+                                            <img src="../assets/img/profile.jpg" class="comment-pro-pic">
+                                        </div>
+                                        <div class="col-md-11 col-9 no-pl">
+                                            <p class="comment-pos conurl">
+                                                <a href="timeline.html" class="profile-link">Diana </a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrudLorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                ad minim venia
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-11 comment-reaction ">
+
+                                        <a href="#">Like</a>
+                                        <a href="#reply2" data-target="#reply_comment2" class="reply">Reply</a>
+                                        <span>13min</span>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="reply-comment hidden" id="reply_comment2">
+                                    <div class="post-comment post-reply-comment">
+
+                                        <img src="../assets/img/profile.jpg" alt="" class="reply-pro-pic">
+                                        <div class="col-md-12 reply-input-fix">
+                                            <input type="text" class="form-control " placeholder="Write a Reply">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="reply-post">
+                                    <div class="post-comment">
+                                        <div class="row">
+                                            <div class="col-md-1 col-2 no-pr">
+                                                <img src="../assets/img/profile.jpg" class="comment-pro-pic">
+                                            </div>
+                                            <div class="col-md-11 col-9 sm-comfix no-pl">
+                                                <p class="comment-pos conurl">
+                                                    <a href="timeline.html" class="profile-link">Diana </a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                                    magna aliqua. Ut enim ad minim venia
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-11 comment-reaction sm-fix">
+
+                                            <a href="#">Like</a>
+                                            <a href="#sub-reply2" data-target="#sub_reply_comment2" class="reply">Reply</a>
+                                            <span>13min</span>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="reply-comment hidden" id="sub_reply_comment2">
+                                        <div class="post-comment post-reply-comment">
+
+                                            <img src="../assets/img/profile.jpg" alt="" class="reply-pro-pic">
+                                            <div class="col-md-12 reply-input-fix">
+                                                <input type="text" class="form-control " placeholder="Write a Reply">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--1st comment end-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Third Row End-->
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <aside class="ms-footbar no-mt no-pt">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 ms-footer-col">
+                    <div class="ms-footbar-block">
+                        <h3 class="ms-footbar-title">Sitemap</h3>
+                        <ul class="list-unstyled ms-icon-list three_cols">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Portafolio</a>
+                            </li>
+                            <li>
+                                <a href="#">Works</a>
+                            </li>
+                            <li>
+                                <a href="#">Timeline</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Login</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4 ms-footer-col ms-footer-alt-color" align="center" style="padding-top:10px">
+                    <div class="ms-footbar-block">
+                        <h3 class="ms-footbar-title">Social Media</h3>
+                        <div class="ms-footbar-social">
+                            <a href="javascript:void(0)" class="btn-circle btn-facebook" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-facebook"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-twitter" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-twitter"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-youtube" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-youtube-play"></i>
+                            </a>
+                            <br>
+                            <a href="javascript:void(0)" class="btn-circle btn-google" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-google"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-instagram" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-instagram"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-github" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 ms-footer-col ">
+                    <div class="ms-footbar-block ">
+                        <h3 class="ms-footbar-title">Subscribe</h3>
+                        <p class="">To get further updates of our edu site or you want then please do subscribe us.</p>
+                        <form>
+                            <div class="form-group label-floating mt-2 mb-1">
+                                <div class="input-group ms-input-subscribe">
+                                    <label class="control-label" for="ms-subscribe">
+                                        <i class="zmdi zmdi-email"></i> Email Adress</label>
+                                    <input type="email" id="ms-subscribe" class="form-control"> </div>
+                            </div>
+                            <button class="ms-subscribre-btn" type="button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer class="ms-footer">
+        <div class="container">
+            <p>Copyright &copy; FX EDU 2018</p>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <p align="justify">
+                <strong style="color:#70BF44">Risk Disclaimer : </strong>FX Academy will not be held liable for any loss or damage resulting from reliance
+                on the information contained within this website including market news, analysis, trading signals and Forex
+                broker reviews. The data contained in this website is not necessarily real-time nor accurate, and analyses
+                are the opinions of the author and do not represent the recommendations of FX Academy or its employees. Currency
+                trading on margin involves high risk, and is not suitable for all investors. As a leveraged product losses
+                are able to exceed initial deposits and capital is at risk. Before deciding to trade Forex or any other financial
+                instrument you should carefully consider your investment objectives, level of experience, and risk appetite.</p>
+        </div>
+    </footer>
+    <!--start end footer list-->
+    <div class="ms-footer conurl">
+        <span class="pr-1">
+            <a href="">Risk Warning</a>
+        </span>
+        <span class="">|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Disclaimer</a>
+        </span>
+        <span class="pl-1">|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Privacy</a>
+        </span>
+        <span class="pl-1">|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Terms & Condition</a>
+        </span>
+        <span class="pl-1">|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Complaints Handling</a>
+        </span>
+    </div>
+
+    <!--end end footer list-->
+    <div class="btn-back-top">
+        <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">
+            <i class="zmdi zmdi-long-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- end footer -->
+
+    <!-- ms-site-container -->
+
+    <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+        <div class="sb-slidebar-container ">
+
+            <div class="container-full" style="overflow:hidden;">
+                <div class="row">
+                    <!-- Start Left-navigation -->
+                    <div class="col-lg-12 col-sm-12 order-md-2 order-lg-3">
+                        <div class="no-mt no-mb card card-warning1">
+                            <div class="card-header conurl" align="center">
+                                <h4 class="card-title" style="font-size: 18px">
+                                    <a role="button " href="profile.html">
+                                        <span>
+                                            <i class="fa fa-dashcube"></i>
+                                            <strong>MY DASHBOARD</strong>
+                                        </span>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3  lbg3 conurl ">
+                                <div class="card-header " role="tab" id="headingeighteen5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseeighteen5" aria-expanded="false" aria-controls="collapseeighteen5">
+                                            <i class="fa fa-pencil"></i>User Update</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseeighteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingeighteen5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="profile_courses.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Post New Update</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3  lbg3 conurl ">
+                                <div class="card-header " role="tab" id="headingSix5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseSix5" aria-expanded="false" aria-controls="collapseSix5">
+                                            <i class="fa fa-key"></i>FXEDU Courses</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix5" class="card-collapse collapse  num-spacing" role="tabpanel" aria-labelledby="headingSix5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="../courses_basic.html">
+                                                <span class="list-word-spacing ">
+                                                    <i class="fa fa-check-square-o"></i> Basic Course</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../courses_advance.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Advance Course</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../courses_proffesional.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Professional Course</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../cryptocurrency.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Cryptocurrency</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingthirty5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirty5" aria-expanded="false" aria-controls="collapsethirty5">
+                                            <i class="fa fa-magnet"></i> Price Action</a>
+                                    </h4>
+                                </div>
+                                <div id="collapsethirty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirty5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="../short_day.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Candlestick Portal </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingTwo5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+                                            <i class="fa fa-bar-chart"></i> Trading Strategies</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingTwo5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="../short_day.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Short/Day Strategies </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../long_strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Long/Swing Stratgies </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../news_strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> News Strategies </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../others_strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Others Strategies </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingThirtythree5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseThirtythree5" aria-expanded="false" aria-controls="collapseThirtythree5">
+                                            <i class="fa fa-bar-chart"></i> Trading Signal</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThirtythree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingThirtythree5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="../intra_day.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../weekly_trade.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../long_term_trade.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Post New Signal</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingFour5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFour5" aria-expanded="false" aria-controls="collapseFour5">
+                                            <i class="fa fa-book"></i> Books</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFour5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="../profile_books.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Book Library</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingFive5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
+                                            <i class="fa fa-download"></i> Download Portal </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="../download_indicators.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Indicators Gallery</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../download_expert.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Expert Advisor</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../trading_tools.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Trading Tools</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingFifteen5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFifteen5" aria-expanded="false" aria-controls="collapseFifteen5">
+                                            <i class="fa fa-codiepie"></i> PAMM Management </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFifteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFifteen5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="../pamm_portfolio.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Portfolio Management</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingthirtyone5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtyone5" aria-expanded="false" aria-controls="collapsethirtyone5">
+                                            <i class="fa fa-money"></i> Investment Module </a>
+                                    </h4>
+                                </div>
+                                <div id="collapsethirtyone5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtyone5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="../investment_packages.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Investment Packages</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse no-mt mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="mb-0 card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingtwenty5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsetwenty5" aria-expanded="false" aria-controls="collapsetwenty5">
+                                            <i class="fa fa-users"></i> Forum </a>
+                                    </h4>
+                                </div>
+                                <div id="collapsetwenty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingtwenty5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> FXEDU Forum</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Left-navigation -->
+                </div>
+
+
+
+                <div class="row no-mt mb-1-half">
+                    <div class="col-md-12 ">
+                        <table class=" downborder1 lbg3">
+
+                            <tr class="table table-resonsive lhsize2">
+
+                                <td colspan="5" class="abor3 text-center" style="font-size: 11px">Recent Closed Trades</td>
+
+                            </tr>
+                            <tr class="table table-resonsive lhsize2 ">
+                                <td class="abor3 text-center">
+                                    <span>Currency</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>Signal</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>Entry</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>Exit</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>Profit</span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class=" text-center" style="color: #10ff00">+40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class=" text-center" style="color: #10ff00">+40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl text-center">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>BUY</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center">
+                                    <span>1.2563</span>
+                                </td>
+                                <td class="abor3 text-center" style="color: red">-40&nbsp
+                                    <span class="abor3">pips
+                                        <sub>1D 5H ago</sub>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Hidden Site Bar Right-->
+    <div class="ms-slidebar1 sb-slidebar1 sb-left sb-style-overlay" id="ms-slidebar1">
+        <div class="sb-slidebar1-container">
+
+            <div class="container-full" style="overflow:hidden;">
+                <div class="mb-1-half no-mt card card-warning1">
+                    <div class="card-header conurl" align="center">
+                        <h4 class="card-title" style="font-size: 18px">
+                            <a href="../profile.html" role="button">
+                                <i class="fa fa-comments"></i>
+                                <strong>TRADING ROOM</strong>
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="row no-mt mb-1-half">
+                    <div class="col-md-12 ">
+                        <table class=" downborder1 lbg1 conurl">
+                            <tr class="table table-resonsive lhsize2 ">
+                                <td class="text-center" colspan="3" style="font-size: 11px">Trading Session
+                                </td>
+
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td>
+                                    <img src="../assets/img/flag/aud.jpg" class="banglaimg">Sydeny
+                                </td>
+                                <td style="text-align: center;">Closed</td>
+                                <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td>
+                                    <img src="../assets/img/flag/tokyo.png" class="banglaimg">Tokyo
+                                </td>
+                                <td style="text-align: center;">Closed</td>
+                                <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td>
+                                    <img src="../assets/img/flag/london.png" class="banglaimg">London
+                                </td>
+                                <td style="text-align: center;">Closed</td>
+                                <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td>
+                                    <img src="../assets/img/flag/newyork.png" class="banglaimg">New York
+                                </td>
+                                <td style="text-align: center;">Closed</td>
+                                <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row no-mt mb-1-half ">
+                    <div class="col-md-12 ">
+                        <table class=" downborder1 lbg1">
+
+                            <tr class="table table-resonsive lhsize2">
+
+                                <td colspan="4" class="abor3 text-center" style="font-size: 11px">Live Market</td>
+
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3">
+                                    <span>1.2563</span>
+                                </td>
+                                <td>
+                                    <span style="color: #10ff00">+1.25%</span>
+                                </td>
+                                <td>
+                                    <span style="color: #fa0800">-0.25%</span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3">
+                                    <span>1.2563</span>
+                                </td>
+                                <td>
+                                    <span style="color: #10ff00">+1.25%</span>
+                                </td>
+                                <td>
+                                    <span style="color: #fa0800">-0.25%</span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3">
+                                    <span>1.2563</span>
+                                </td>
+                                <td>
+                                    <span style="color: #10ff00">+1.25%</span>
+                                </td>
+                                <td>
+                                    <span style="color: #fa0800">-0.25%</span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3">
+                                    <span>1.2563</span>
+                                </td>
+                                <td>
+                                    <span style="color: #10ff00">+1.25%</span>
+                                </td>
+                                <td>
+                                    <span style="color: #fa0800">-0.25%</span>
+                                </td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize2">
+                                <td class="conurl">
+                                    <a href="#">
+                                        <span>EUR/USD</span>
+                                    </a>
+                                </td>
+                                <td class="abor3">
+                                    <span>1.2563</span>
+                                </td>
+                                <td>
+                                    <span style="color: #10ff00">+1.25%</span>
+                                </td>
+                                <td>
+                                    <span style="color: #fa0800">-0.25%</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row ">
+                    <!-- Start Right-navigation -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 order-md-2 order-lg-3">
+                        <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="no-mb no-mt card card-primary3 lbg3">
+                                <div class="card-header" role="tab" id="headingeleven5">
+                                    <h4 class="card-title">
+                                        <a class="withripple" role="button" data-toggle="collapse" href="#collapseeleven5" aria-expanded="true" aria-controls="collapseeleven5">
+                                            <i class="fa fa-cogs"></i>Technical Analysis</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseeleven5" class="card-collapse collapse show num-spacing lbg3" role="tabpanel" aria-labelledby="headingeleven5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li class="conurl ">
+                                            <a class="withripple " href="../profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="../profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="../profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="../profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="../profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="seel1">
+                                        <a class="withripple" href="../profile_courses.html">
+                                            <span class="list-word-spacing abor1">See All</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="no-mb card card-primary3  lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingthirtythree5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtythree5" aria-expanded="false" aria-controls="collapsethirtythree5">
+                                            <i class="fa fa-wrench"></i> Trading Tools</a>
+                                    </h4>
+                                </div>
+                                <div id="collapsethirtythree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtythree5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="../strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Economic Calender </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../popular_strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Pips Calculator </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="no-mb card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingTwelve5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwelve5" aria-expanded="false" aria-controls="collapseTwelve5">
+                                            <i class="fa fa-shopping-cart"></i> FXEDU Market Place</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwelve5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingTwelve5" data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="../strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Copy Trade Service </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../popular_strategies.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Open Market Place </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="no-mb card card-primary3 lbg3 conurl">
+                                <div class="card-header" role="tab" id="headingthirteen5">
+                                    <h4 class="card-title">
+                                        <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirteen5" aria-expanded="false" aria-controls="collapsethirteen5">
+                                            <i class="fa fa-fire"></i> Daily Market Update</a>
+                                    </h4>
+                                </div>
+                                <div id="collapsethirteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirteen5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li>
+                                            <a class="withripple" href="../profile_signals.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../weekly_trade.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="withripple" href="../long_term_trade.html">
+                                                <span class="list-word-spacing">
+                                                    <i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+                                                <span class="badge badge-success pull-right">1.2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="no-mb card card-primary3">
+                                <div class="card-header" role="tab" id="headingthirtyfive5">
+                                    <h4 class="card-title">
+                                        <a class="withripple" role="button" data-toggle="collapse" href="#collapsethirtyfive5" aria-expanded="true" aria-controls="collapsethirtyfive5">
+                                            <i class="fa fa-globe"></i>News Portal</a>
+                                    </h4>
+                                </div>
+                                <div id="collapsethirtyfive5" class="card-collapse collapse show num-spacing lbg3" role="tabpanel" aria-labelledby="headingthirtyfive5"
+                                    data-parent="#accordion5">
+                                    <ul>
+                                        <li class="conurl ">
+                                            <a class="withripple " href="../profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="../profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="../profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="../profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                        <li class="conurl ">
+                                            <a class="withripple" href="../profile_courses.html">
+                                                <span class="list-word-spacing abor">
+                                                    <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="seel1">
+                                        <a class="withripple" href="../profile_courses.html">
+                                            <span class="list-word-spacing abor1">See All</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Left-navigation -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Signal Ticker -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../assets/js/jquery.carouselTicker.js"></script>
+
+    <script>
+        $(".carouselTicker").carouselTicker({
+            // animation speed
+            speed: 1,
+            // animation delay
+            delay: 30,
+            // RTL or LTR
+            reverse: true
+        });
+    </script>
+    <!-- End Signal Ticker -->
+    <script src="../assets/js/plugins.min.js"></script>
+    <!--Right Slidebar-->
+    <script src="../assets/js/sidebar-right.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <!-- Reply Toggle -->
+    <script>
+        $(".reply").click(function () {
+            var myelement = $(this).attr("data-target")
+            $(myelement).slideToggle("slow");
+            $(".hidden:visible").not(myelement).show();
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,677 @@
+.profile1-photo {
+    height: 58px;
+    width: 58px;
+
+}
+
+.mob-profix {
+    margin-bottom: 195px;
+}
+
+#chat-block .footer {
+    background: #8dc63f;
+    padding: 2px 20px;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin: 0 auto 3px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#chat-block .footer a {
+    color: #fff
+}
+
+#chat-block .footer a:hover {
+    border-bottom: #fff
+}
+
+.icon1-in-title {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.left-info-fix {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+
+
+.icon1-pos-fix {
+    margin-top: -3px
+}
+
+.active-tool {
+    color: #27aae1;
+    font-size: 15px
+}
+
+.list-divider li {
+    border-right: 1px solid #094393;
+    line-height: 0px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.list-divider li:last-child {
+    border-right: none
+}
+
+.list-divider li:first-child {
+    padding-left: 5px
+}
+
+.top-icon-fix {
+    margin-right: 5px
+}
+
+.fside {
+    margin-right: 5px
+}
+
+.user1-fix {
+    line-height: 20px !important;
+    padding-top: 5px;
+    margin-top: 5px;
+
+}
+
+.user1-fix a {
+    margin-left: 9px;
+    color: #fff;
+}
+.user1-fix a:hover{
+
+    color: #03a9f4;
+}
+
+.user1-fix p {
+    margin-left: 67px;
+}
+
+.top-content-fix {
+    margin-left: 9px;
+}
+
+.postfix {
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: justify;
+}
+
+.comment-fix {
+    margin-top: 29px;
+
+}
+.comment-reaction{
+    margin-left: 46px!important;
+    margin:0 0 20px;
+}
+.comment-reaction a{
+margin-right: 10px;
+color:#fff!important
+}
+
+.comment-reaction a:hover{
+    color:#03a9f4!important
+    }
+
+
+.post-reply{
+    margin-left: 60px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.video-content-fix{
+    margin-top:-20px
+}
+
+.name-posfix{
+margin-bottom:20px;
+}
+
+
+.name-posfix h5{
+    padding-top: 9px
+}
+
+.name-posfix.afriend p{
+    overflow: hidden;
+    width: 104px;
+    height: 25px;
+    white-space: nowrap;
+}
+.name-posfix p>a{
+    color: #fff;
+}
+
+.name-posfix p>a:hover{
+    color: #03a9f4
+}
+
+.time-fix{
+    width: 34px;
+    position: absolute;
+    bottom: 0px;
+    right: 52px;
+    margin: auto;
+    text-align: right
+}
+
+.scroll-hide-wrap{
+    height:305px;width:100% ;overflow:hidden
+}
+
+.scroll-hide{
+    height:100%;width:110%;overflow:auto
+}
+
+.profile1-name-fix{
+   margin-left: -78px!important;
+   color:#fff;
+text-transform:uppercase
+}
+.add-friend{
+    margin-top: -18px;
+    font-size: 14px;
+}
+
+img.profile1-photo-sm{
+	height: 34px;
+	width: 36px;
+}
+
+.post-content .post-container .post-detail .post-comment img.profile1-photo-sm{
+    margin-right: 10px;
+  }
+
+  .feed-item img.profile1-photo-sm{
+    float: left;
+    margin-right: 10px;
+  }
+
+  .adjust-new{
+      margin-right:11px!important
+  }
+
+  .name-limit{
+    display: block!important;
+    width: 142px!important;
+    overflow: hidden!important;
+    white-space: nowrap!important;
+    text-overflow: ellipsis!important;
+    float: left!important;
+    margin-right: -9px!important;
+    margin-top:4px!important;
+    color:#fff
+  }
+
+  name-limit:hover{
+    color: #03a9f4
+  }
+
+  .post-btn{
+    padding: 4px 14px !important;
+    font-size: 14px !important;
+    text-transform: capitalize !important;
+  }
+
+  .post-comment input[type=text] {
+width: 100%!important
+  }
+
+  .form-group{
+width: 100%!important
+  }
+
+.d-md-block{
+    display: inline-block!important;
+}
+
+.badge-fix{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.btn.btn-raised.btn-primary{
+    background-color:#0e2f5d!important;
+}
+
+
+.form-control, .form-group .form-control {
+    background-image: linear-gradient(#03214a, #03214a), linear-gradient(#03214a, #0f66dc)!important;
+}
+.badge{
+    background-color: #0e2f5d !important;
+}
+
+.organization {
+    text-transform: capitalize;
+}
+
+.reaction a{
+    color: #fff
+}
+
+.reaction a:hover{
+    color: #03a9f4
+}
+
+.follow-me li>a{
+    color: #fff
+}
+
+.follow-me li>a:hover{
+    color: #03a9f4
+}
+
+.profile-link{
+    color: #fff
+}
+
+.profile-link:hover{
+    color: #03a9f4
+}
+
+.post-reply-comment{
+    margin-top: -28px!important;
+}
+
+.mobile-menu ul li>a{
+    color:#fff!important
+}
+
+.mobile-menu ul li>a:hover{
+    color:#03a9f4!important
+}
+
+h5>a{
+    color:#fff;
+    text-transform: uppercase
+}
+
+h5>a:hover{
+    color:#03a9f4;
+    border-bottom: 1px solid #0f66dc!important
+}
+
+.mtpx-2{
+    margin-top:20px!important
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(0.25rem + 35px)!important;
+}
+
+option{
+background-color:#03214a!important
+}
+
+.control-label{
+font-size:15px !important;
+color:#fff!important
+}
+
+.placefix::placeholder{
+    font-size:15px !important
+}
+
+.placefix{
+    font-size:15px !important
+}
+
+.edit-menu a{
+    color:#fff!important
+}
+
+.edit-menu{
+    color:#fff!important
+}
+
+.left-side{
+    background-color:#041936!important
+}
+
+.pcolorfix p{
+    color:#fff!important
+}
+
+.lebel-about{
+font-size:18px!important;
+}
+.sdatefix{
+    font-size:12px!important
+}
+
+.divide{
+    border-right:1px solid #03214a;
+    padding:0px 10px
+}
+
+.workimgfix{
+margin-top:8px
+}
+
+.active{
+color:#03a9f4 !important
+}
+
+.messenger-option li{
+    color:#fff
+}
+
+.messenger-option li a{
+    color:#fff
+}
+
+.messenger-option li a:hover{
+    color:#03a9f4
+}
+
+.option-border{
+border-top:1px solid #03214a;
+border-bottom:1px solid #03214a;
+margin-bottom: 5px
+}
+
+.nav.nav-tabs{
+    background-color:#041936!important
+}
+
+.contact-list-fix li a.active{
+    background-color:#04203C!important
+    }
+
+.contact-list-fix li a{
+color:#fff
+}
+
+.contact-list-fix li a:hover{
+    color:#03a9f4
+    }
+
+.chat-item p{
+color:#fff!important
+}
+
+.sticky-top{
+z-index: 1 !important
+}
+
+.cover-edit {
+    margin-left:111px;
+    margin-top:37px;
+color:#052550;
+opacity: 0.7;
+}
+
+.cover-edit:hover{
+    opacity: 1;
+}
+
+.profile-edit{
+    color: #052550;
+    opacity: 0;
+    position: relative;
+    top: -45px;
+
+}
+
+.profile-info:hover .profile-edit{
+    opacity: 1;
+    background-color:#000000ad;
+    padding:5px 80px;
+
+
+}
+
+.profile1-edit{
+    color: #052550;
+    opacity: 0.7;
+    position: relative;
+    top: 6px;
+    background-color:#000000ad;
+    padding:4px 71px;
+
+
+}
+
+.hover-photo:hover .profile1-edit{
+    opacity: 1;
+
+
+}
+
+
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+.comment-reaction {
+    margin-left: 48px !important;
+}
+.about-profile{
+    padding-right: 8px!important
+}
+.left-height{
+    margin-bottom: 5px!important
+}
+.cover-edit{
+    margin-left: 10px!important;
+    margin-top: 10px!important;
+}
+
+#thirddiv{
+    margin: 0 8px 5px 8px!important
+}
+
+.chat-window-container .panel .panel-heading{
+    padding: 15px!important
+}
+.chat-window-container .panel .panel-body{
+    height: 100%!important;
+}
+.chat-window-container .panel{
+    height: 100%!important;
+}
+
+.conwidthfix{
+    width: 100%!important;
+    overflow: hidden !important;
+}
+
+.st-menu-open::after{
+    width: 102%!important
+}
+
+.edit-profile-container{
+    margin-top: 10px;
+}
+
+h1.grey, h2.grey, h3.grey, h4.grey, h5.grey, h6.grey{
+    margin:0 auto 10px!important;
+}
+
+.suggestions h1.grey,.suggestions h2.grey,.suggestions h3.grey,.suggestions h4.grey,.suggestions h5.grey,.suggestions h6.grey{
+    margin:10px auto 10px!important;
+}
+
+hr{
+    margin: 10px 0;
+}
+
+.edit-profile-container h4 i{
+    margin-right: 8px!important;
+}
+
+.edit-block .form-horizontal .fieldset .form-group label.control-label{
+    margin:5px 0 0!important;
+}
+
+.fa.fa-2x.fa-pencil-square-o{
+    font-size: 25pt!important;
+}
+
+img.profile1-photo-sm,.profile-photo-sm{
+    margin-left: 8px!important;
+}
+
+}
+
+.friends-img{
+    padding: 1px!important;
+
+}
+
+.friends-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.friend-wraper{
+    background-color:#0E2F5D;
+
+}
+
+.left-height{
+    height: 102%;
+    padding-right: 0px!important
+}
+
+.total-friend{
+    text-align: left;
+    padding-left:5px!important
+}
+.find-friend{
+    text-align: right;
+    padding-right:5px!important
+}
+
+.total-friend a,
+.find-friend a{
+    color:#fff;
+    font-size:11pt;
+}
+
+.total-friend a:hover,
+.total-friend a:focus,
+.find-friend a:hover,
+.find-friend a:focus{
+    color:#27aae1;
+}
+
+
+.chat-contacts li{
+    background-color: #03357B!important;
+    color: #fff!important
+}
+
+
+.chat-contacts li .contact-name{
+    color: #fff!important
+}
+
+.split-vertical-body{
+    background-color: #03357B!important;
+    color: #fff!important
+}
+
+.chat-window-container>.panel>.panel-heading{
+     border-bottom: none!important
+}
+
+.chat-window-container .panel .form-control{
+    margin-bottom: 0px !important
+}
+
+.side-messanger-image{
+    height: 40px;
+    width: 40px;
+}
+
+.messagebar-button{
+        margin-top: 25px;
+    margin-right: 12px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.messagebar-button:hover, .messagebar-button:focus, .messagebar-button:active{
+    color: #03a1e9!important
+}
+
+.list-word-spacing{
+    margin-left: 0!important
+}
+
+/*.row [class*="col-"] {
+    padding: 0 7.5px!important;
+}*/
+
+.col-md-3,.col-md-6{
+    padding: 0 7.5px!important;
+}
+
+.about-content-block{
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .name-posfix.afriend p{
+        width: 73px!important
+    }
+}
+
+.small-profile-photo{
+    border: 5px solid #fff;
+  margin-bottom:-50px;
+  height: 180px;
+  width: 185px;
+  position: relative;
+  left: 0px;
+}
+
+@media screen and (max-width: 416px) and (min-width: 411px){
+    .profile1-edit{
+        top: 78px;
+        right: 99px;
+    }
+
+    .small-profile-photo{
+        left: 85px;
+        margin-bottom: -10px;
+    }
+}
+
+@media screen and (max-width:378px) and (min-width:375px){
+     .profile1-edit{
+        top: 80px;
+        right: 93px;
+    }
+
+    .small-profile-photo{
+        left: 90px;
+        margin-bottom: -15px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+     .profile1-edit{
+        top: 80px;
+        right: 97px;
+    }
+
+    .small-profile-photo{
+        left: 85px;
+        margin-bottom: -15px;
+    }
+
+    .online-dot{
+        right: 30px;
+        top: 8px;
+    }
+} 
+

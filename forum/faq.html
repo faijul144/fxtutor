@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#333">
+    <title>FX TUTOR</title>
+    <meta name="description" content="Material Style Theme">
+    <link rel="shortcut icon" href="../assets/img/favicon.png?v=3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Font Awesome Animation-->
+    <link rel="stylesheet" href="../assets/css/font-animation.css">
+    <!-- Reveloution Slider -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/revolution/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/revolution/revolution/css/settings.css">
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/revolution/revolution/css/layers.css">
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/revolution/revolution/css/navigation.css">
+    <link rel="stylesheet" href="../assets/css/preload.min.css">
+    <link rel="stylesheet" href="../assets/css/plugins.min.css">
+    <!--bottom slider-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick/slick-theme.css">
+    <!-- TYPEWRITER ADDON -->
+    <script type="text/javascript" src="../assets/plugins/revolution/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/revolution/revolution-addons/typewriter/css/typewriter.css">
+    <link rel="stylesheet" href="../assets/css/style.light-blue-500.min.css">
+    <link rel="stylesheet" href="../assets/css/flipclock.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Custom CSS & Signal Ticker -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/bum.css">
+    <link rel="stylesheet" href="../assets/css/simplebar.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="forum.css">
+    <script src="../assets/js/moment.js"></script>
+    <script src="../assets/js/moment-timezone.js"></script>
+    <script type="text/javascript">
+      /***********************************************
+      * Local Time script- By Dynamic Drive (http://www.dynamicdrive.com)
+      * Please keep this notice intact
+      * Visit http://www.dynamicdrive.com/ for this script and 100s more.
+      ***********************************************/
+      function showLocalTime(container, zoneString, formatString){
+         var thisobj=this
+         this.container=document.getElementById(container)
+         this.localtime = moment.tz(new Date(), zoneString)
+         this.formatString = formatString
+         this.container.innerHTML = this.localtime.format( this.formatString )
+         setInterval(function(){thisobj.updateContainer()}, 1000) //update container every second
+      }
+      
+      showLocalTime.prototype.updateContainer=function(){
+         this.localtime.second(this.localtime.seconds() + 1 )
+         this.container.innerHTML = this.localtime.format( this.formatString )
+      }
+      
+    </script>
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Preloader Start -->
+    <!--  <div id="preloader" class="ms-preload">
+      <div id="status">
+        <div class="spinner">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+        </div>
+      </div>
+      </div> -->
+    <!-- Preloader End -->
+    <!--header bar end-->
+    <div class="ms-site-container container-bg ">
+      <header class="ms-header ms-header-primary1 headerfix">
+        <!--ms-header-primary-->
+        <div class="container container-full">
+          <div class="ms-title ">
+            <div class="row logo-margin-top conurl">
+              <a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-left huda ">
+              <i class="zmdi zmdi-menu mho "></i>
+              </a>
+              <a href="index.html">
+                <!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
+                <span class="ms-logo animated zoomInDown animation-delay-5">FX</span>
+                <h1 class="animated fadeInRight animation-delay-6">
+                  <span>EDU</span>
+                </h1>
+              </a>
+            </div>
+          </div>
+          <div class="header-right ml-4 " style="margin-top: 4px">
+            <div class="row">
+              <div class="dropdown profile-button-pull d-none d-md-block">
+                <button class="btn btn-default btn-city dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <img src="assets/img/profile.jpg" class="banglaprof">
+                <span class="profile-name">Raj Shah
+                <i class="fa fa-ellipsis-v"> </i>
+                </span>
+                <span class="caret caret-search"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenu1">
+                  <li>
+                    <a href="#">My Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">My Wallet</a>
+                  </li>
+                  <li>
+                    <a class="lp_bottom" href="#" style="border-bottom: none">
+                    <i class="fa fa-sign-out"></i>Logout</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Notification Menu -->
+              <div class="dropdown bell-color">
+                <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+                <i class="glyphicon glyphicon-bell"></i>
+                <span class="badge-pill badge-pill-warning badge-pill-move">10</span>
+                </a>
+                <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel" id="notification-dropdown">
+                  <div class="notification-heading">
+                    <h4 class="menu-title">Notifications</h4>
+                    <h4 class="menu-title float-right">
+                      <a href="#">Mark all as read
+                      </a>
+                    </h4>
+                  </div>
+                  <div class="notifications-wrapper conurl">
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="notification-footer">
+                    <a href="#">
+                      <h4 class="footer-menu-title ">View all&nbsp. . </h4>
+                    </a>
+                  </div>
+                </ul>
+              </div>
+              <!-- End Notification Menu -->
+              <div class="conurl mt-2">
+                <a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-right huda ">
+                <i class="zmdi zmdi-menu " style="font-size:28px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Stat Header Sliders -->
+      <div class="extra-container">
+        <div class="container-fluid currency-slider-iframe">
+          <iframe src="https://www.currency.me.uk/remote/CUK-LFOREXRTICKER-2.php?ws=http://www.fxtutor.net/&amp;s=1&amp;f=verdana&amp;fc=ffffff&amp;fs=12px&amp;mbg=03357B&amp;bs=no&amp;bc=03357B&amp;vc=fff&amp;lc=eee&amp;lhc=1E5881" height="30" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="width: 100%;position: relative;top: -2px"></iframe>
+        </div>
+      </div>
+      <!-- forum nav -->
+      <div class="forum-nav-container container-fluid bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent no-pr no-pl">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto text-dark-brown">
+              <li class="nav-item text-uppercase">
+                <a href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false" data-name="daily signal" id="quickLink"><i class="fa fa-align-justify"></i> Quick Links</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a href="faq.html" role="button" aria-haspopup="true" aria-expanded="false" data-name="daily signal"><i class="fa fa-question-circle"></i> Faq</a>
+              </li>
+            </ul>
+            <form class="d-inline-flex my-2 my-lg-0 review-form form-group field-radius is-empty search-nav-box">
+              <p class="form-group no-m">
+                <input type="text" class="search-forum" placeholder="Search" name="search" >
+              </p>
+              <button class="btn btn-raised btn-forum-nav no-m" type="submit"><i class="fa fa-search"></i></button>
+              <a href="search.html" class="btn btn-raised btn-forum-nav no-m"><i class="fa fa-gear"></i></a>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="forum-nav-container container-fluid bg-gray" id="quickLinkNav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent no-pr no-pl">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto text-dark-brown">
+              <li class="nav-item text-uppercase">
+                <a href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false" data-name="daily signal"><i class="fa fa-check-square-o"></i> New Post</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false" data-name="daily signal"><i class="fa fa-check-square-o"></i> Today's Post</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false" data-name="daily signal"><i class="fa fa-check-square-o"></i> Subscribed threads</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- forum nav end -->
+      <div class="container-fluid mb-1-half mt-1-half" style="background-color: #000E22">
+        <div class="row">
+          <div class="col-lg-9 col-sm-12 no-pr" id="seconddiv">
+            <div class="mid-content bg-transparent position-relative">
+              <i class="fa fa-align-justify side-toggle toggle-pos-forum"></i>
+              <header class="title-container mb-1-half mt-1 bg-light">
+                <h2 class="forex-header-second header-forum-edit-2"><i class="fa fa-home ml-1"></i><span>FORUM / Main / FAQ</span></h2>
+              </header>
+
+            <div class="forum-faq-main-container">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> FREQUENTLY ASKED QUESTIONS</a>
+                  <span class="forum-toggle toogle-btn-1" data-name="1"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-1">
+                <div class="row">
+                  <div class="col-md-6 faq-query-list">
+                    <!-- Query Section 1 -->
+                    <h4>Login and Registration Issues</h4>
+                    <ul>
+                      <li><a href="#q1">Why do I need to register ?</a></li>
+                      <li><a href="#q2">What is COPPA ?</a></li>
+                      <li><a href="#q3">Why can’t I register ?</a></li>
+                      <li><a href="#q4">I registered but cannot login!</a></li>
+                      <li><a href="#q5">Why can’t I login ?</a></li>
+                      <li><a href="#q6">I registered in the past but cannot login any more ?!</a></li>
+                      <li><a href="#q7">I’ve lost my password!</a></li>
+                      <li><a href="#q8">Why do I get logged off automatically ?</a></li>
+                      <li><a href="#q9">What does the “Delete all board cookies” do ?</a></li>
+                    </ul>
+
+                    <!-- Query Section 2 -->
+                    <h4>User Preferences and settings</h4>
+                    <ul>
+                      <li><a href="#q10">How do I change my settings ?</a></li>
+                      <li><a href="#q11">How do I prevent my username appearing in the online user listings ?</a></li>
+                      <li><a href="#q12">The times are not correct!</a></li>
+                      <li><a href="#q13">I changed the timezone and the time is still wrong!</a></li>
+                      <li><a href="#q14">My language is not in the list!</a></li>
+                      <li><a href="#q15">What are the images next to my username ?</a></li>
+                      <li><a href="#q16">How do I display an avatar ?</a></li>
+                      <li><a href="#q17">What is my rank and how do I change it ?</a></li>
+                      <li><a href="#q18">When I click the email link for a user it asks me to login ?</a></li>
+                    </ul>
+
+                    <!-- Query Section 3 -->
+                    <h4>Posting Issues</h4>
+                    <ul>
+                      <li><a href="#q19">How do I create a new topic or post a reply ?</a></li>
+                      <li><a href="#q20">How do I edit or delete a post ?</a></li>
+                      <li><a href="#q21">How do I add a signature to my post ?</a></li>
+                      <li><a href="#q22">How do I create a poll ?</a></li>
+                      <li><a href="#q23">Why can’t I add more poll options ?</a></li>
+                      <li><a href="#q24">How do I edit or delete a poll ?</a></li>
+                      <li><a href="#q25">Why can’t I access a forum ?</a></li>
+                      <li><a href="#q26">Why can’t I add attachments ?</a></li>
+                      <li><a href="#q27">Why did I receive a warning ?</a></li>
+                      <li><a href="#q28">How can I report posts to a moderator ?</a></li>
+                      <li><a href="#q29">What is the “Save” button for in topic posting ?</a></li>
+                      <li><a href="#q30">Why does my post need to be approved ?</a></li>
+                      <li><a href="#q31">How do I bump my topic ?</a></li>
+                    </ul>
+
+                    <!-- Query Section 4 -->
+                    <h4>Formatting and Topic Types</h4>
+                    <ul>
+                      <li><a href="#q32">What is BBCode ?</a></li>
+                      <li><a href="#q33">Can I use HTML ?</a></li>
+                      <li><a href="#q34">What are Smilies ?</a></li>
+                      <li><a href="#q35">Can I post images ?</a></li>
+                      <li><a href="#q36">What are global announcements ?</a></li>
+                      <li><a href="#q37">What are announcements ?</a></li>
+                      <li><a href="#q38">What are sticky topics ?</a></li>
+                      <li><a href="#q39">What are locked topics ?</a></li>
+                      <li><a href="#q40">What are topic icons ?</a></li>
+                    </ul>
+
+                  </div>
+                  <div class="col-md-6 faq-query-list">
+
+                    <!-- Query Section 5 -->
+                    <h4>User Levels and Groups</h4>
+                    <ul>
+                      <li><a href="#q41">What are Administrators ?</a></li>
+                      <li><a href="#q42">What are Moderators ?</a></li>
+                      <li><a href="#q43">What are usergroups ?</a></li>
+                      <li><a href="#q44">Where are the usergroups and how do I join one ?</a></li>
+                      <li><a href="#q45">How do I become a usergroup leader ?</a></li>
+                      <li><a href="#q46">Why do some usergroups appear in a different colour ?</a></li>
+                      <li><a href="#q47">What is a “Default usergroup” ?</a></li>
+                      <li><a href="#q48">What is “The team” link ?</a></li>
+                    </ul>
+
+                    <!-- Query Section 6 -->
+                    <h4>Private Messaging</h4>
+                    <ul>
+                      <li><a href="#q49">I cannot send private messages!</a></li>
+                      <li><a href="#q50">I keep getting unwanted private messages!</a></li>
+                      <li><a href="#q51">I have received a spamming or abusive email from someone on this board!</a></li>
+                    </ul>
+
+                    <!-- Query Section 7 -->
+                    <h4>Friends and Foes</h4>
+                    <ul>
+                      <li><a href="#q52">What are my Friends and Foes lists ?</a></li>
+                      <li><a href="#q53">How can I add / remove users to my Friends or Foes list ?</a></li>
+                    </ul>
+
+                    <!-- Query Section 8 -->
+                    <h4>Searching the Forums</h4>
+                    <ul>
+                      <li><a href="#q54">How can I search a forum or forums ?</a></li>
+                      <li><a href="#q55">Why does my search return no results ?</a></li>
+                      <li><a href="#q56">Why does my search return a blank page!?</a></li>
+                      <li><a href="#q57">How do I search for members ?</a></li>
+                      <li><a href="#q58">How can I find my own posts and topics ?</a></li>
+                    </ul>
+
+                    <!-- Query Section 9 -->
+                    <h4>Subscriptions and Bookmarks</h4>
+                    <ul>
+                      <li><a href="#q59">What is the difference between bookmarking and subscribing ?</a></li>
+                      <li><a href="#q60">How do I bookmark or subscribe to specific topics ?</a></li>
+                      <li><a href="#q61">How do I subscribe to specific forums ?</a></li>
+                      <li><a href="#q62">How do I remove my subscriptions ?</a></li>
+                    </ul>
+
+                    <!-- Query Section 10 -->
+                    <h4>Attachments</h4>
+                    <ul>
+                      <li><a href="#q63">What attachments are allowed on this board ?</a></li>
+                      <li><a href="#q64">How do I find all my attachments ?</a></li>
+                    </ul>
+
+                    <!-- Query Section 10 -->
+                    <h4>phpBB Issues</h4>
+                    <ul>
+                      <li><a href="#q65">Who wrote this bulletin board ?</a></li>
+                      <li><a href="#q66">Why isn’t X feature available ?</a></li>
+                      <li><a href="#q67">Who do I contact about abusive and/or legal matters related to this board ?</a></li>
+                      <li><a href="#q68">How do I contact a board administrator ?</a></li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>    
+            </div>
+
+
+            <div class="forum-faq-main-container mt-1-half">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> LOGIN AND REGISTRATION ISSUES</a>
+                  <span class="forum-toggle toogle-btn-2" data-name="2"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-2">
+                  <h4 id="q1">Why do I need to register ?</h4>
+                  <p>You may not have to, it is up to the administrator of the board as to whether you need to register in order to post messages. However; registration will give you access to additional features not available to guest users such as definable avatar images, private messaging, emailing of fellow users, usergroup subscription, etc. It only takes a few moments to register so it is recommended you do so.</p>
+                  <hr>
+
+                  <h4 id="q2">What is COPPA ?</h4>
+                  <p>COPPA, or the Children’s Online Privacy Protection Act of 1998, is a law in the United States requiring websites which can potentially collect information from minors under the age of 13 to have written parental consent or some other method of legal guardian acknowledgment, allowing the collection of personally identifiable information from a minor under the age of 13. If you are unsure if this applies to you as someone trying to register or to the website you are trying to register on, contact legal counsel for assistance. Please note that phpBB Limited and the owners of this board cannot provide legal advice and is not a point of contact for legal concerns of any kind, except as outlined in question “Who do I contact about abusive and/or legal matters related to this board?”.</p>
+                  <hr>
+
+                  <h4 id="q3">Why can’t I register ?</h4>
+                  <p>It is possible a board administrator has disabled registration to prevent new visitors from signing up. A board administrator could have also banned your IP address or disallowed the username you are attempting to register. Contact a board administrator for assistance.</p>
+                  <hr>
+
+                  <h4 id="q4">I registered but cannot login!</h4>
+                  <p>First, check your username and password. If they are correct, then one of two things may have happened. If COPPA support is enabled and you specified being under 13 years old during registration, you will have to follow the instructions you received. Some boards will also require new registrations to be activated, either by yourself or by an administrator before you can logon; this information was present during registration. If you were sent an email, follow the instructions. If you did not receive an email, you may have provided an incorrect email address or the email may have been picked up by a spam filer. If you are sure the email address you provided is correct, try contacting an administrator.</p>
+                  <hr>
+
+                  <h4 id="q5">Why can’t I login ?</h4>
+                  <p>There are several reasons why this could occur. First, ensure your username and password are correct. If they are, contact a board administrator to make sure you haven’t been banned. It is also possible the website owner has a configuration error on their end, and they would need to fix it.</p>
+                  <hr>
+
+                  <h4 id="q6">I registered in the past but cannot login any more ?!</h4>
+                  <p>It is possible an administrator has deactivated or deleted your account for some reason. Also, many boards periodically remove users who have not posted for a long time to reduce the size of the database. If this has happened, try registering again and being more involved in discussions.</p>
+                  <hr>
+
+                  <h4 id="q7">I’ve lost my password!</h4>
+                  <p>Don’t panic! While your password cannot be retrieved, it can easily be reset. Visit the login page and click I forgot my password. Follow the instructions and you should be able to log in again shortly. However, if you are not able to reset your password, contact a board administrator.</p>
+                  <hr>
+
+                  <h4 id="q8">Why do I get logged off automatically ?</h4>
+                  <p>If you do not check the Remember me box when you login, the board will only keep you logged in for a preset time. This prevents misuse of your account by anyone else. To stay logged in, check the Remember me box during login. This is not recommended if you access the board from a shared computer, e.g. library, internet cafe, university computer lab, etc. If you do not see this checkbox, it means a board administrator has disabled this feature.</p>
+                  <hr>
+
+                  <h4 id="q9">What does the “Delete all board cookies” do ?</h4>
+                  <p>“Delete all board cookies” deletes the cookies created by phpBB which keep you authenticated and logged into the board. Cookies also provide functions such as read tracking if they have been enabled by a board administrator. If you are having login or logout problems, deleting board cookies may help.</p>
+              </div>    
+            </div>
+
+            <div class="forum-faq-main-container mt-1-half">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> USER PREFERENCES AND SETTINGS</a>
+                  <span class="forum-toggle toogle-btn-3" data-name="3"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-3">
+                  <h4 id="q10">How do I change my settings ?</h4>
+                  <p>If you are a registered user, all your settings are stored in the board database. To alter them, visit your User Control Panel; a link can usually be found by clicking on your username at the top of board pages. This system will allow you to change all your settings and preferences.</p>
+                  <hr>
+
+                  <h4 id="q11">How do I prevent my username appearing in the online user listings ?</h4>
+                  <p>Within your User Control Panel, under “Board preferences”, you will find the option Hide your online status. Enable this option and you will only appear to the administrators, moderators and yourself. You will be counted as a hidden user.</p>
+                  <hr>
+
+                  <h4 id="q12">The times are not correct!</h4>
+                  <p>It is possible the time displayed is from a timezone different from the one you are in. If this is the case, visit your User Control Panel and change your timezone to match your particular area, e.g. London, Paris, New York, Sydney, etc. Please note that changing the timezone, like most settings, can only be done by registered users. If you are not registered, this is a good time to do so.</p>
+                  <hr>
+
+                  <h4 id="q13">I changed the timezone and the time is still wrong!</h4>
+                  <p>If you are sure you have set the timezone correctly and the time is still incorrect, then the time stored on the server clock is incorrect. Please notify an administrator to correct the problem.</p>
+                  <hr>
+
+                  <h4 id="q14">My language is not in the list!</h4>
+                  <p>Either the administrator has not installed your language or nobody has translated this board into your language. Try asking a board administrator if they can install the language pack you need. If the language pack does not exist, feel free to create a new translation. More information can be found at the <a href="https://www.phpbb.com/">phpBB</a></p>
+                  <hr>
+
+                  <h4 id="q15">What are the images next to my username ?</h4>
+                  <p>There are two images which may appear along with a username when viewing posts. One of them may be an image associated with your rank, generally in the form of stars, blocks or dots, indicating how many posts you have made or your status on the board. Another, usually larger, image is known as an avatar and is generally unique or personal to each user.</p>
+                  <hr>
+
+                  <h4 id="q16">How do I display an avatar ?</h4>
+                  <p>Within your User Control Panel, under “Profile” you can add an avatar by using one of the four following methods: Gravatar, Gallery, Remote or Upload. It is up to the board administrator to enable avatars and to choose the way in which avatars can be made available. If you are unable to use avatars, contact a board administrator.</p>
+                  <hr>
+
+                  <h4 id="q17">What is my rank and how do I change it ?</h4>
+                  <p>Ranks, which appear below your username, indicate the number of posts you have made or identify certain users, e.g. moderators and administrators. In general, you cannot directly change the wording of any board ranks as they are set by the board administrator. Please do not abuse the board by posting unnecessarily just to increase your rank. Most boards will not tolerate this and the moderator or administrator will simply lower your post count.</p>
+                  <hr>
+
+                  <h4 id="q18">When I click the email link for a user it asks me to login ?</h4>
+                  <p>Only registered users can send email to other users via the built-in email form, and only if the administrator has enabled this feature. This is to prevent malicious use of the email system by anonymous users.</p>
+              </div>    
+            </div>
+
+            <div class="forum-faq-main-container mt-1-half">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> POSTING ISSUES</a>
+                  <span class="forum-toggle toogle-btn-4" data-name="4"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-4">
+                  <h4 id="q19">How do I create a new topic or post a reply ?</h4>
+                  <p>To post a new topic in a forum, click "New Topic". To post a reply to a topic, click "Post Reply". You may need to register before you can post a message. A list of your permissions in each forum is available at the bottom of the forum and topic screens. Example: You can post new topics, You can post attachments, etc.</p>
+                  <hr>
+
+                  <h4 id="q20">How do I edit or delete a post ?</h4>
+                  <p>Within your User Control Panel, under “Board preferences”, you will find the option Hide your online status. Enable this option and you will only appear to the administrators, moderators and yourself. You will be counted as a hidden user.</p>
+                  <hr>
+
+                  <h4 id="q21">How do I add a signature to my post ?</h4>
+                  <p>To add a signature to a post you must first create one via your User Control Panel. Once created, you can check the Attach a signature box on the posting form to add your signature. You can also add a signature by default to all your posts by checking the appropriate radio button in the User Control Panel. If you do so, you can still prevent a signature being added to individual posts by un-checking the add signature box within the posting form.</p>
+                  <hr>
+
+                  <h4 id="q22">How do I create a poll ?</h4>
+                  <p>When posting a new topic or editing the first post of a topic, click the “Poll creation” tab below the main posting form; if you cannot see this, you do not have appropriate permissions to create polls. Enter a title and at least two options in the appropriate fields, making sure each option is on a separate line in the textarea. You can also set the number of options users may select during voting under “Options per user”, a time limit in days for the poll (0 for infinite duration) and lastly the option to allow users to amend their votes.</p>
+                  <hr>
+
+                  <h4 id="q23">Why can’t I add more poll options ?</h4>
+                  <p>The limit for poll options is set by the board administrator. If you feel you need to add more options to your poll than the allowed amount, contact the board administrator.</p>
+                  <hr>
+
+                  <h4 id="q24">How do I edit or delete a poll ?</h4>
+                  <p>As with posts, polls can only be edited by the original poster, a moderator or an administrator. To edit a poll, click to edit the first post in the topic; this always has the poll associated with it. If no one has cast a vote, users can delete the poll or edit any poll option. However, if members have already placed votes, only moderators or administrators can edit or delete it. This prevents the poll’s options from being changed mid-way through a poll.</p>
+                  <hr>
+
+                  <h4 id="q25">Why can’t I access a forum ?</h4>
+                  <p>Some forums may be limited to certain users or groups. To view, read, post or perform another action you may need special permissions. Contact a moderator or board administrator to grant you access.</p>
+                  <hr>
+
+                  <h4 id="q26">Why can’t I add attachments ?</h4>
+                  <p>Attachment permissions are granted on a per forum, per group, or per user basis. The board administrator may not have allowed attachments to be added for the specific forum you are posting in, or perhaps only certain groups can post attachments. Contact the board administrator if you are unsure about why you are unable to add attachments.</p>
+                  <hr>
+
+                  <h4 id="q27">Why did I receive a warning ?</h4>
+                  <p>Each board administrator has their own set of rules for their site. If you have broken a rule, you may be issued a warning. Please note that this is the board administrator’s decision, and the phpBB Limited has nothing to do with the warnings on the given site. Contact the board administrator if you are unsure about why you were issued a warning.</p>
+                  <hr>
+
+                  <h4 id="q28">How can I report posts to a moderator ?</h4>
+                  <p>If the board administrator has allowed it, you should see a button for reporting posts next to the post you wish to report. Clicking this will walk you through the steps necessary to report the post.</p>
+                  <hr>
+
+                  <h4 id="q29">What is the “Save” button for in topic posting ?</h4>
+                  <p>This allows you to save drafts to be completed and submitted at a later date. To reload a saved draft, visit the User Control Panel.</p>
+
+                  <h4 id="q30">Why does my post need to be approved ?</h4>
+                  <p>The board administrator may have decided that posts in the forum you are posting to require review before submission. It is also possible that the administrator has placed you in a group of users whose posts require review before submission. Please contact the board administrator for further details.</p>
+                  <hr>
+
+                  <h4 id="q31">How do I bump my topic ?</h4>
+                  <p>By clicking the “Bump topic” link when you are viewing it, you can “bump” the topic to the top of the forum on the first page. However, if you do not see this, then topic bumping may be disabled or the time allowance between bumps has not yet been reached. It is also possible to bump the topic simply by replying to it, however, be sure to follow the board rules when doing so.</p>
+
+              </div>    
+            </div>
+
+            <div class="forum-faq-main-container mt-1-half">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> FORMATTING AND TOPIC TYPES</a>
+                  <span class="forum-toggle toogle-btn-5" data-name="5"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-5">
+                  <h4 id="q32">What is BBCode ?</h4>
+                  <p>BBCode is a special implementation of HTML, offering great formatting control on particular objects in a post. The use of BBCode is granted by the administrator, but it can also be disabled on a per post basis from the posting form. BBCode itself is similar in style to HTML, but tags are enclosed in square brackets [ and ] rather than < and >. For more information on BBCode see the guide which can be accessed from the posting page.</p>
+                  <hr>
+
+                  <h4 id="q33">Can I use HTML ?</h4>
+                  <p>No. It is not possible to post HTML on this board and have it rendered as HTML. Most formatting which can be carried out using HTML can be applied using BBCode instead.</p>
+                  <hr>
+
+                  <h4 id="q34">What are Smilies ?</h4>
+                  <p>Smilies, or Emoticons, are small images which can be used to express a feeling using a short code, e.g. :) denotes happy, while :( denotes sad. The full list of emoticons can be seen in the posting form. Try not to overuse smilies, however, as they can quickly render a post unreadable and a moderator may edit them out or remove the post altogether. The board administrator may also have set a limit to the number of smilies you may use within a post.</p>
+                  <hr>
+
+                  <h4 id="q35">Can I post images ?</h4>
+                  <p>Yes, images can be shown in your posts. If the administrator has allowed attachments, you may be able to upload the image to the board. Otherwise, you must link to an image stored on a publicly accessible web server, e.g. http://www.example.com/my-picture.gif. You cannot link to pictures stored on your own PC (unless it is a publicly accessible server) nor images stored behind authentication mechanisms, e.g. hotmail or yahoo mailboxes, password protected sites, etc. To display the image use the BBCode [img] tag.</p>
+                  <hr>
+
+                  <h4 id="q36">What are global announcements ?</h4>
+                  <p>Global announcements contain important information and you should read them whenever possible. They will appear at the top of every forum and within your User Control Panel. Global announcement permissions are granted by the board administrator.</p>
+                  <hr>
+
+                  <h4 id="q37">What are announcements ?</h4>
+                  <p>Announcements often contain important information for the forum you are currently reading and you should read them whenever possible. Announcements appear at the top of every page in the forum to which they are posted. As with global announcements, announcement permissions are granted by the board administrator.</p>
+                  <hr>
+
+                  <h4 id="q38">What are sticky topics ?</h4>
+                  <p>Sticky topics within the forum appear below announcements and only on the first page. They are often quite important so you should read them whenever possible. As with announcements and global announcements, sticky topic permissions are granted by the board administrator.</p>
+                  <hr>
+
+                  <h4 id="q39">What are locked topics ?</h4>
+                  <p>Locked topics are topics where users can no longer reply and any poll it contained was automatically ended. Topics may be locked for many reasons and were set this way by either the forum moderator or board administrator. You may also be able to lock your own topics depending on the permissions you are granted by the board administrator.</p>
+                  <hr>
+
+                  <h4 id="q40">What are topic icons ?</h4>
+                  <p>Topic icons are author chosen images associated with posts to indicate their content. The ability to use topic icons depends on the permissions set by the board administrator.</p>
+
+              </div>    
+            </div>
+
+            <div class="forum-faq-main-container mt-1-half">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> USER LEVELS AND GROUPS</a>
+                  <span class="forum-toggle toogle-btn-6" data-name="6"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-6">
+                  <h4 id="q41">What are Administrators ?</h4>
+                  <p>Administrators are members assigned with the highest level of control over the entire board. These members can control all facets of board operation, including setting permissions, banning users, creating usergroups or moderators, etc., dependent upon the board founder and what permissions he or she has given the other administrators. They may also have full moderator capabilities in all forums, depending on the settings put forth by the board founder.</p>
+                  <hr>
+
+                  <h4 id="q42">What are Moderators ?</h4>
+                  <p>Moderators are individuals (or groups of individuals) who look after the forums from day to day. They have the authority to edit or delete posts and lock, unlock, move, delete and split topics in the forum they moderate. Generally, moderators are present to prevent users from going off-topic or posting abusive or offensive material.</p>
+                  <hr>
+
+                  <h4 id="q43">What are usergroups ?</h4>
+                  <p>Usergroups are groups of users that divide the community into manageable sections board administrators can work with. Each user can belong to several groups and each group can be assigned individual permissions. This provides an easy way for administrators to change permissions for many users at once, such as changing moderator permissions or granting users access to a private forum.</p>
+                  <hr>
+
+                  <h4 id="q44">Where are the usergroups and how do I join one ?</h4>
+                  <p>You can view all usergroups via the “Usergroups” link within your User Control Panel. If you would like to join one, proceed by clicking the appropriate button. Not all groups have open access, however. Some may require approval to join, some may be closed and some may even have hidden memberships. If the group is open, you can join it by clicking the appropriate button. If a group requires approval to join you may request to join by clicking the appropriate button. The user group leader will need to approve your request and may ask why you want to join the group. Please do not harass a group leader if they reject your request; they will have their reasons.</p>
+                  <hr>
+
+                  <h4 id="q45">How do I become a usergroup leader ?</h4>
+                  <p>A usergroup leader is usually assigned when usergroups are initially created by a board administrator. If you are interested in creating a usergroup, your first point of contact should be an administrator; try sending a private message.</p>
+                  <hr>
+
+                  <h4 id="q46">Why do some usergroups appear in a different colour ?</h4>
+                  <p>It is possible for the board administrator to assign a colour to the members of a usergroup to make it easy to identify the members of this group.</p>
+                  <hr>
+
+                  <h4 id="q47">What is a “Default usergroup” ?</h4>
+                  <p>If you are a member of more than one usergroup, your default is used to determine which group colour and group rank should be shown for you by default. The board administrator may grant you permission to change your default usergroup via your User Control Panel.</p>
+                  <hr>
+
+                  <h4 id="q48">WWhat is “The team” link ?</h4>
+                  <p>This page provides you with a list of board staff, including board administrators and moderators and other details such as the forums they moderate.</p>
+                  
+
+              </div>    
+            </div>
+
+            <div class="forum-faq-main-container mt-1-half">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> PRIVATE MESSAGING</a>
+                  <span class="forum-toggle toogle-btn-7" data-name="7"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-7">
+                  <h4 id="q49">I cannot send private messages!</h4>
+                  <p>There are three reasons for this; you are not registered and/or not logged on, the board administrator has disabled private messaging for the entire board, or the board administrator has prevented you from sending messages. Contact a board administrator for more information.</p>
+                  <hr>
+
+                  <h4 id="q50">I keep getting unwanted private messages!</h4>
+                  <p>You can automatically delete private messages from a user by using message rules within your User Control Panel. If you are receiving abusive private messages from a particular user, report the messages to the moderators; they have the power to prevent a user from sending private messages.</p>
+                  <hr>
+
+                  <h4 id="q51">I have received a spamming or abusive email from someone on this board! ?</h4>
+                  <p>We are sorry to hear that. The email form feature of this board includes safeguards to try and track users who send such posts, so email the board administrator with a full copy of the email you received. It is very important that this includes the headers that contain the details of the user that sent the email. The board administrator can then take action.</p>
+                  
+              </div>    
+            </div>
+
+            <div class="forum-faq-main-container mt-1-half">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> FRIENDS AND FOES</a>
+                  <span class="forum-toggle toogle-btn-8" data-name="8"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-8">
+                  <h4 id="q52">What are my Friends and Foes lists ?</h4>
+                  <p>You can use these lists to organise other members of the board. Members added to your friends list will be listed within your User Control Panel for quick access to see their online status and to send them private messages. Subject to template support, posts from these users may also be highlighted. If you add a user to your foes list, any posts they make will be hidden by default.</p>
+                  <hr>
+
+                  <h4 id="q53">How can I add / remove users to my Friends or Foes list ?</h4>
+                  <p>You can add users to your list in two ways. Within each user’s profile, there is a link to add them to either your Friend or Foe list. Alternatively, from your User Control Panel, you can directly add users by entering their member name. You may also remove users from your list using the same page.</p>
+              </div>    
+            </div>
+
+            <div class="forum-faq-main-container mt-1-half">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> SEARCHING THE FORUMS</a>
+                  <span class="forum-toggle toogle-btn-9" data-name="9"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-9">
+                  <h4 id="q54">How can I search a forum or forums ?</h4>
+                  <p>Enter a search term in the search box located on the index, forum or topic pages. Advanced search can be accessed by clicking the “Advance Search” link which is available on all pages on the forum. How to access the search may depend on the style used.</p>
+                  <hr>
+
+                  <h4 id="q55">Why does my search return no results ?</h4>
+                  <p>Your search was probably too vague and included many common terms which are not indexed by phpBB. Be more specific and use the options available within Advanced search.</p>
+                  <hr>
+
+                  <h4 id="q56">Why does my search return a blank page !?</h4>
+                  <p>Your search returned too many results for the webserver to handle. Use “Advanced search” and be more specific in the terms used and forums that are to be searched.</p>
+                  <hr>
+
+                  <h4 id="q57">How do I search for members ?</h4>
+                  <p>Visit to the “Members” page and click the “Find a member” link.</p>
+                  <hr>
+
+                  <h4 id="q58">How can I find my own posts and topics ?</h4>
+                  <p>Your own posts can be retrieved either by clicking the “Show your posts” link within the User Control Panel or by clicking the “Search user’s posts” link via your own profile page or by clicking the “Quick links” menu at the top of the board. To search for your topics, use the Advanced search page and fill in the various options appropriately.</p>
+              </div>    
+            </div>
+
+            <div class="forum-faq-main-container mt-1-half">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> SUBSCRIPTIONS AND BOOKMARKS</a>
+                  <span class="forum-toggle toogle-btn-10" data-name="10"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-10">
+                  <h4 id="q59">What is the difference between bookmarking and subscribing ?</h4>
+                  <p>In phpBB 3.0, bookmarking topics worked much like bookmarking in a web browser. You were not alerted when there was an update. As of phpBB 3.1, bookmarking is more like subscribing to a topic. You can be notified when a bookmarked topic is updated. Subscribing, however, will notify you when there is an update to a topic or forum on the board. Notification options for bookmarks and subscriptions can be configured in the User Control Panel, under “Board preferences”.</p>
+                  <hr>
+
+                  <h4 id="q60">How do I bookmark or subscribe to specific topics ?</h4>
+                  <p>You can bookmark or subscribe to a specific topic by clicking the appropriate link in the “Topic tools” menu, conveniently located near the top and bottom of a topic discussion. Replying to a topic with the “Notify me when a reply is posted” option checked will also subscribe you to the topic.</p>
+                  <hr>
+
+                  <h4 id="q61">How do I subscribe to specific forums ?</h4>
+                  <p>To subscribe to a specific forum, click the “Subscribe forum” link, at the bottom of page, upon entering the forum.</p>
+                  <hr>
+
+                  <h4 id="q62">How do I remove my subscriptions ?</h4>
+                  <p>To remove your subscriptions, go to your User Control Panel and follow the links to your subscriptions.</p>
+              </div>    
+            </div>
+
+            <div class="forum-faq-main-container mt-1-half">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> ATTACHMENTS</a>
+                  <span class="forum-toggle toogle-btn-11" data-name="11"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-11">
+                  <h4 id="q63">What attachments are allowed on this board ?</h4>
+                  <p>Each board administrator can allow or disallow certain attachment types. If you are unsure what is allowed to be uploaded, contact the board administrator for assistance.</p>
+                  <hr>
+
+                  <h4 id="q64">How do I find all my attachments ?</h4>
+                  <p>To find your list of attachments that you have uploaded, go to your User Control Panel and follow the links to the attachments section.</p>
+                  
+              </div>    
+            </div>
+
+            <div class="forum-faq-main-container mt-1-half">
+              <div class="forum-header">
+                  <a href="javascript:void(0)" class="header-leftside"><i class="fa fa-info-circle"></i> PHPBB ISSUES</a>
+                  <span class="forum-toggle toogle-btn-12" data-name="12"><i class="fa fa-minus"></i></span>
+              </div>
+              <div class="forum-faq forum-12">
+                  <h4 id="q65">Who wrote this bulletin board ?</h4>
+                  <p>This software (in its unmodified form) is produced, released and is copyright phpBB Limited. It is made available under the GNU General Public License, version 2 (GPL-2.0) and may be freely distributed. See About phpBB for more details.</p>
+                  <hr>
+
+                  <h4 id="q66">Why isn’t X feature available ?</h4>
+                  <p>This software was written by and licensed through phpBB Limited. If you believe a feature needs to be added please visit the phpBB Ideas Centre, where you can upvote existing ideas or suggest new features.</p>
+                  <hr>
+
+                  <h4 id="q67">Who do I contact about abusive and/or legal matters related to this board ?</h4>
+                  <p>Any of the administrators listed on the “The team” page should be an appropriate point of contact for your complaints. If this still gets no response then you should contact the owner of the domain (do a whois lookup) or, if this is running on a free service (e.g. Yahoo!, free.fr, f2s.com, etc.), the management or abuse department of that service. Please note that the phpBB Limited has absolutely no jurisdiction and cannot in any way be held liable over how, where or by whom this board is used. Do not contact the phpBB Limited in relation to any legal (cease and desist, liable, defamatory comment, etc.) matter not directly related to the phpBB.com website or the discrete software of phpBB itself. If you do email phpBB Limited about any third party use of this software then you should expect a terse response or no response at all.</p>
+                  <hr>
+
+                  <h4 id="q68">How do I contact a board administrator ?</h4>
+                  <p>All users of the board can use the “Contact us” form, if the option was enabled by the board administrator. Members of the board can also use the “The team” link.</p>
+
+              </div>    
+            </div>
+
+
+          </div>
+          <div class="col-lg-3 col-sm-6 col " id="thirddiv">
+            <div class="row">
+              <!-- Start Right-navigation -->
+              <div class="col-lg-12 col-md-12 col-sm-12 order-md-2 order-lg-3">
+                <div class="forum-right-container mt-1">
+                  <div class="position-relative forum-right-side mb-1-half">
+                    <h4 class="trading-session-header">STATISTICS</h4>
+                    <span class="forum-toggle toogle-btn-r1" data-name="r1"><i class="fa fa-minus"></i></span>
+                    <div class="forum-r1">
+                      <table class="downborder1 lbg3 conurl text-left v-middle">
+                        <tr class="table table-resonsive statistic-table ">
+                          <td>TOTAL POSTS</td>
+                          <td class="text-right">7</td>
+                        </tr>
+                        <tr class="table table-resonsive statistic-table ">
+                          <td>TOTAL TOPICS</td>
+                          <td class="text-right">6</td>
+                        </tr>
+                        <tr class="table table-resonsive statistic-table ">
+                          <td>TOTAL MEMBERS</td>
+                          <td class="text-right">2</td>
+                        </tr>
+                        <tr class="table table-resonsive statistic-table ">
+                          <td>USERS ONLINE</td>
+                          <td class="text-right">6</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="forum-right-container">
+                  <div class="row signal-table">
+                    <div class="col-md-12">
+                      <div class="position-relative forum-right-side">
+                        <h4 class="trading-session-header">TRADING SESSION</h4>
+                        <span class="forum-toggle toogle-btn-r2" data-name="r2"><i class="fa fa-minus"></i></span>
+                        <div class="forum-r2">
+                          <table class="downborder1 lbg3 conurl text-left v-middle">
+                            <tr class="table table-resonsive lhsize3 ">
+                              <td>
+                                <img src="../assets/img/flag/aud.jpg" class="banglaimg">Sydeny
+                              </td>
+                              <td>
+                                <span class="badge badge-danger badge-edit">Closed</span>
+                              </td>
+                              <td class="clocktable" style="padding-left: 11px;"><span id="sydney"></span></td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize3 ">
+                              <td>
+                                <img src="../assets/img/flag/tokyo.png" class="banglaimg">Tokyo
+                              </td>
+                              <td>
+                                <span class="badge badge-danger badge-edit">Closed</span>
+                              </td>
+                              <td class="clocktable" style="padding-left: 11px;"><span id="tokyo"></span></td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize3 ">
+                              <td>
+                                <img src="../assets/img/flag/london.png" class="banglaimg">London
+                              </td>
+                              <td>
+                                <span class="badge badge-success badge-edit">Open</span>
+                              </td>
+                              <td class="clocktable" style="padding-left: 11px;"><span id="london"></span></td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize3 ">
+                              <td>
+                                <img src="../assets/img/flag/newyork.png" class="banglaimg">New York
+                              </td>
+                              <td>
+                                <span class="badge badge-warning badge-edit">Closing</span>
+                              </td>
+                              <td class="clocktable" style="padding-left: 11px;"><span id="newyork"></span></td>
+                            </tr>
+                            <script type="text/javascript">
+                              new showLocalTime("sydney", "Australia/Sydney", "hh:mm:ss A (ddd)")
+                              new showLocalTime("tokyo", "Asia/Tokyo", "hh:mm:ss A (ddd)")
+                              new showLocalTime("london", "Europe/London", "hh:mm:ss A (ddd)")
+                              new showLocalTime("newyork", "America/New_York", "hh:mm:ss A (ddd)")
+                            </script>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Analysis -->
+                <div class="forum-right-container">
+                  <div class="position-relative forum-right-side">
+                    <h4 class="trading-session-header mt-1-half">Popular Post</h4>
+                    <span class="forum-toggle toogle-btn-r3" data-name="r3"><i class="fa fa-minus"></i></span>
+                    <div class="forum-r3">
+                      <div class="recent-analysis-container" data-simplebar>
+                        <ul class="profile-list">
+                          <li>
+                            <div class="analysis-discription">
+                              <div class="right-info-container">
+                                <span>
+                                <span class="color-medium-dark font-custum-weight">April 15, 2015 </span>
+                                </span>
+                                <span>
+                                <i class="zmdi zmdi-time  color-info"></i>
+                                <span class="color-medium-dark font-custum-weight">5:45 PM</span>
+                                </span>
+                                <h4 class="profile-name">Forex Research</h4>
+                                <p class="popular-post">Forex is a signal based trading system. It has become very popular.</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="analysis-discription">
+                              <div class="right-info-container">
+                                <span>
+                                <span class="color-medium-dark font-custum-weight">April 15, 2015 </span>
+                                </span>
+                                <span>
+                                <i class="zmdi zmdi-time  color-info"></i>
+                                <span class="color-medium-dark font-custum-weight">5:45 PM</span>
+                                </span>
+                                <h4 class="profile-name">Forex Research</h4>
+                                <p class="popular-post">Forex is a signal based trading system. It has become very popular.Forex is a signal based trading system. It has become very popular.</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="analysis-discription">
+                              <div class="right-info-container">
+                                <span>
+                                <span class="color-medium-dark font-custum-weight">April 15, 2015 </span>
+                                </span>
+                                <span>
+                                <i class="zmdi zmdi-time  color-info"></i>
+                                <span class="color-medium-dark font-custum-weight">5:45 PM</span>
+                                </span>
+                                <h4 class="profile-name">Forex Research</h4>
+                                <p class="popular-post">Forex is a signal based trading system. It has become very popular.</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="analysis-discription">
+                              <div class="right-info-container">
+                                <span>
+                                <span class="color-medium-dark font-custum-weight">April 15, 2015 </span>
+                                </span>
+                                <span>
+                                <i class="zmdi zmdi-time  color-info"></i>
+                                <span class="color-medium-dark font-custum-weight">5:45 PM</span>
+                                </span>
+                                <h4 class="profile-name">Forex Research</h4>
+                                <p class="popular-post">Forex is a signal based trading system. It has become very popular.Forex is a signal based trading system. It has become very popular.</p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Analysis END -->
+                <!-- Top Forex Brokers BEGIN -->
+                <div class="forum-right-container">
+                  <div class="position-relative forum-right-side">
+                    <h4 class="trading-session-header mt-1-half">Advertisement</h4>
+                    <span class="forum-toggle toogle-btn-r4" data-name="r4"><i class="fa fa-minus"></i></span>
+                    <div class="forum-r4">
+                      <table class="ad-table">
+                        <tbody>
+                          <tr>
+                            <td colspan="2">
+                              <a href="http://www.bestfxvps.com" target="_blank">
+                              <img src="../assets/img/add/best-fxvps.png">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="http://www.FXSVPS.com" target="_blank">
+                              <img src="../assets/img/add/fxsvps.png">
+                              </a>
+                            </td>
+                            <td>
+                              <a href="https://www.Fxvpspro.com" target="_blank">
+                              <img src="../assets/img/add/fxvpspro.png">
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- Top Forex Brokers END -->
+              </div>
+              <!-- end Left-navigation -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="ms-footbar no-mt no-pt">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 ms-footer-col">
+            <div class="ms-footbar-block">
+              <h3 class="ms-footbar-title">Sitemap</h3>
+              <ul class="list-unstyled ms-icon-list three_cols">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Portafolio</a>
+                </li>
+                <li>
+                  <a href="#">Works</a>
+                </li>
+                <li>
+                  <a href="#">Timeline</a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Our Team</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Login</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 ms-footer-col ms-footer-alt-color" align="center" style="padding-top:10px">
+            <div class="ms-footbar-block">
+              <h3 class="ms-footbar-title">Social Media</h3>
+              <div class="ms-footbar-social">
+                <a href="javascript:void(0)" class="btn-circle btn-facebook" style="background-color:#607d8b">
+                <i class="zmdi zmdi-facebook"></i>
+                </a>
+                <a href="javascript:void(0)" class="btn-circle btn-twitter" style="background-color:#607d8b">
+                <i class="zmdi zmdi-twitter"></i>
+                </a>
+                <a href="javascript:void(0)" class="btn-circle btn-youtube" style="background-color:#607d8b">
+                <i class="zmdi zmdi-youtube-play"></i>
+                </a>
+                <br>
+                <a href="javascript:void(0)" class="btn-circle btn-google" style="background-color:#607d8b">
+                <i class="zmdi zmdi-google"></i>
+                </a>
+                <a href="javascript:void(0)" class="btn-circle btn-instagram" style="background-color:#607d8b">
+                <i class="zmdi zmdi-instagram"></i>
+                </a>
+                <a href="javascript:void(0)" class="btn-circle btn-github" style="background-color:#607d8b">
+                <i class="zmdi zmdi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 ms-footer-col ">
+            <div class="ms-footbar-block ">
+              <h3 class="ms-footbar-title">Subscribe</h3>
+              <p class="">To get further updates of our edu site or you want then please do subscribe us.</p>
+              <form>
+                <div class="form-group label-floating mt-2 mb-1">
+                  <div class="input-group ms-input-subscribe">
+                    <label class="control-label" for="ms-subscribe">
+                    <i class="zmdi zmdi-email"></i> Email Adress</label>
+                    <input type="email" id="ms-subscribe" class="form-control"> 
+                  </div>
+                </div>
+                <button class="ms-subscribre-btn" type="button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer class="ms-footer">
+      <div class="container">
+        <p>Copyright &copy; FX EDU 2018</p>
+      </div>
+      <hr>
+      <div class="container-fluid">
+        <p align="justify">
+          <strong style="color:#70BF44">Risk Disclaimer : </strong>FX Academy will not be held liable for any loss or damage resulting from reliance on the information contained within this website including market news, analysis, trading signals
+          and Forex broker reviews. The data contained in this website is not necessarily real-time nor accurate, and analyses are the opinions of the author and do not represent the recommendations of FX Academy or its employees. Currency trading
+          on margin involves high risk, and is not suitable for all investors. As a leveraged product losses are able to exceed initial deposits and capital is at risk. Before deciding to trade Forex or any other financial instrument you should
+          carefully consider your investment objectives, level of experience, and risk appetite.
+        </p>
+      </div>
+    </footer>
+    <!--start end footer list-->
+    <div class="ms-footer conurl">
+      <span class="pr-1">
+      <a href="">Risk Warning</a>
+      </span>
+      <span class="">|</span>
+      <span class="pl-1">
+      <a href="javascript:void(0)">Disclaimer</a>
+      </span>
+      <span class="pl-1">|</span>
+      <span class="pl-1">
+      <a href="javascript:void(0)">Privacy</a>
+      </span>
+      <span class="pl-1">|</span>
+      <span class="pl-1">
+      <a href="javascript:void(0)">Terms & Condition</a>
+      </span>
+      <span class="pl-1">|</span>
+      <span class="pl-1">
+      <a href="javascript:void(0)">Complaints Handling</a>
+      </span>
+    </div>
+    <!--end end footer list-->
+    <div class="btn-back-top">
+      <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">
+      <i class="zmdi zmdi-long-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+    <!-- end footer -->
+    <!-- ms-site-container -->
+    <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+      <div class="sb-slidebar-container ">
+        <div class="container-full" style="overflow:hidden;">
+          <div class="row">
+            <!-- Start Left-navigation -->
+            <div class="col-lg-12 col-sm-12 order-md-2 order-lg-3">
+              <div class="no-mt no-mb card card-warning1">
+                <div class="card-header conurl" align="center">
+                  <h4 class="card-title" style="font-size: 18px">
+                    <a role="button " href="profile.html">
+                    <span>
+                    <i class="fa fa-dashcube"></i>
+                    <strong>MY DASHBOARD</strong>
+                    </span>
+                    </a>
+                  </h4>
+                </div>
+              </div>
+              <div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3  lbg3 conurl ">
+                  <div class="card-header " role="tab" id="headingeighteen5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseeighteen5" aria-expanded="false" aria-controls="collapseeighteen5">
+                      <i class="fa fa-pencil"></i>User Update</a>
+                    </h4>
+                  </div>
+                  <div id="collapseeighteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingeighteen5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Post New Update</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3  lbg3 conurl ">
+                  <div class="card-header " role="tab" id="headingSix5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseSix5" aria-expanded="false" aria-controls="collapseSix5">
+                      <i class="fa fa-key"></i>FXEDU Courses</a>
+                    </h4>
+                  </div>
+                  <div id="collapseSix5" class="card-collapse collapse  num-spacing" role="tabpanel" aria-labelledby="headingSix5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="courses_basic.html">
+                        <span class="list-word-spacing ">
+                        <i class="fa fa-check-square-o"></i> Basic Course</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="courses_advance.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Advance Course</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="courses_proffesional.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Professional Course</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="cryptocurrency.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Cryptocurrency</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingthirty5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirty5" aria-expanded="false" aria-controls="collapsethirty5">
+                      <i class="fa fa-magnet"></i> Price Action</a>
+                    </h4>
+                  </div>
+                  <div id="collapsethirty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirty5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="short_day.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Candlestick Portal </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingTwo5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+                      <i class="fa fa-bar-chart"></i> Trading Strategies</a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingTwo5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="short_day.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Short/Day Strategies </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="long_strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Long/Swing Stratgies </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="news_strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> News Strategies </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="others_strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Others Strategies </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingThirtythree5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseThirtythree5" aria-expanded="false" aria-controls="collapseThirtythree5">
+                      <i class="fa fa-bar-chart"></i> Trading Signal</a>
+                    </h4>
+                  </div>
+                  <div id="collapseThirtythree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingThirtythree5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="intra_day.html">
+                        <span class="list-word-spacing"><i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="weekly_trade.html">
+                        <span class="list-word-spacing"><i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="long_term_trade.html">
+                        <span class="list-word-spacing"><i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="">
+                        <span class="list-word-spacing"><i class="fa fa-check-square-o"></i> Post New Signal</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingFour5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFour5" aria-expanded="false" aria-controls="collapseFour5">
+                      <i class="fa fa-book"></i> Books</a>
+                    </h4>
+                  </div>
+                  <div id="collapseFour5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFour5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="profile_books.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Book Library</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingFive5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
+                      <i class="fa fa-download"></i> Download Portal </a>
+                    </h4>
+                  </div>
+                  <div id="collapseFive5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="download_indicators.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Indicators Gallery</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="download_expert.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Expert Advisor</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="trading_tools.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Trading Tools</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingFifteen5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFifteen5" aria-expanded="false" aria-controls="collapseFifteen5">
+                      <i class="fa fa-codiepie"></i> PAMM Management </a>
+                    </h4>
+                  </div>
+                  <div id="collapseFifteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFifteen5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="pamm_portfolio.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Portfolio Management</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingthirtyone5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtyone5" aria-expanded="false" aria-controls="collapsethirtyone5">
+                      <i class="fa fa-money"></i> Investment Module </a>
+                    </h4>
+                  </div>
+                  <div id="collapsethirtyone5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtyone5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="investment_packages.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Investment Packages</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingtwenty5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsetwenty5" aria-expanded="false" aria-controls="collapsetwenty5">
+                      <i class="fa fa-users"></i> Forum </a>
+                    </h4>
+                  </div>
+                  <div id="collapsetwenty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingtwenty5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> FXEDU Forum</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Left-navigation -->
+          </div>
+          <div class="row no-mt mb-1-half">
+            <div class="col-md-12 ">
+              <table class=" downborder1 lbg3">
+                <tr class="table table-resonsive lhsize2">
+                  <td colspan="5" class="abor3 text-center" style="font-size: 11px">Recent Closed Trades</td>
+                </tr>
+                <tr class="table table-resonsive lhsize2 ">
+                  <td class="abor3 text-center">
+                    <span>Currency</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>Signal</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>Entry</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>Exit</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>Profit</span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class=" text-center" style="color: #10ff00">+40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class=" text-center" style="color: #10ff00">+40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- Advertise Start -->
+          <div class="row no-m">
+            <div class="col-md-12 no-pl">
+              <div class="ad-container pro-ad" data-name="2">
+                <h4 class="ad-header-bg">ADVERTISEMENT</h4>
+                <span class="ad-toggle toogle-btn-2" data-name="2"><i class="fa fa-minus"></i></span>
+                <div class="ad-2">
+                  <table class="ad-table">
+                    <tbody>
+                      <tr>
+                        <td colspan="2">
+                          <a href="http://www.fxhoster.com" target="_blank">
+                          <img src="assets/img/add/fxhoster.png">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <a href="http://www.fxvps.pro" target="_blank">
+                          <img src="assets/img/add/fxvps.png">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <a href="https://www.forexcheapvps.com/pricing" target="_blank">
+                          <img src="assets/img/add/cheaper.png">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <a href="http://www.ecnhost.com" target="_blank">
+                          <img src="assets/img/add/ecnhost.png">
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Advertise End -->
+        </div>
+      </div>
+    </div>
+    <!--Hidden Site Bar Right-->
+    <div class="ms-slidebar1 sb-slidebar1 sb-left sb-style-overlay" id="ms-slidebar1">
+      <div class="sb-slidebar1-container">
+        <div class="container-full" style="overflow:hidden;">
+          <div class="mb-1-half no-mt card card-warning1">
+            <div class="card-header conurl" align="center">
+              <h4 class="card-title" style="font-size: 18px">
+                <a href="profile.html" role="button">
+                <i class="fa fa-comments"></i><strong>TRADING ROOM</strong></a>
+              </h4>
+            </div>
+          </div>
+          <div class="row no-mt mb-1-half">
+            <div class="col-md-12 ">
+              <table class=" downborder1 lbg1 conurl">
+                <tr class="table table-resonsive lhsize2 ">
+                  <td class="text-center" colspan="3" style="font-size: 11px">Trading Session
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td>
+                    <img src="assets/img/flag/aud.jpg" class="banglaimg">Sydeny
+                  </td>
+                  <td style="text-align: center;">Closed</td>
+                  <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td>
+                    <img src="assets/img/flag/tokyo.png" class="banglaimg">Tokyo
+                  </td>
+                  <td style="text-align: center;">Closed</td>
+                  <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td>
+                    <img src="assets/img/flag/london.png" class="banglaimg">London
+                  </td>
+                  <td style="text-align: center;">Closed</td>
+                  <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td>
+                    <img src="assets/img/flag/newyork.png" class="banglaimg">New York
+                  </td>
+                  <td style="text-align: center;">Closed</td>
+                  <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="row no-mt mb-1-half ">
+            <div class="col-md-12 ">
+              <table class=" downborder1 lbg1">
+                <tr class="table table-resonsive lhsize2">
+                  <td colspan="4" class="abor3 text-center" style="font-size: 11px">Live Market</td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3">
+                    <span>1.2563</span>
+                  </td>
+                  <td>
+                    <span style="color: #10ff00">+1.25%</span>
+                  </td>
+                  <td>
+                    <span style="color: #fa0800">-0.25%</span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3">
+                    <span>1.2563</span>
+                  </td>
+                  <td>
+                    <span style="color: #10ff00">+1.25%</span>
+                  </td>
+                  <td>
+                    <span style="color: #fa0800">-0.25%</span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3">
+                    <span>1.2563</span>
+                  </td>
+                  <td>
+                    <span style="color: #10ff00">+1.25%</span>
+                  </td>
+                  <td>
+                    <span style="color: #fa0800">-0.25%</span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3">
+                    <span>1.2563</span>
+                  </td>
+                  <td>
+                    <span style="color: #10ff00">+1.25%</span>
+                  </td>
+                  <td>
+                    <span style="color: #fa0800">-0.25%</span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3">
+                    <span>1.2563</span>
+                  </td>
+                  <td>
+                    <span style="color: #10ff00">+1.25%</span>
+                  </td>
+                  <td>
+                    <span style="color: #fa0800">-0.25%</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="row ">
+            <!-- Start Right-navigation -->
+            <div class="col-lg-12 col-md-12 col-sm-12 order-md-2 order-lg-3">
+              <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="no-mb no-mt card card-primary3 lbg3">
+                  <div class="card-header" role="tab" id="headingeleven5">
+                    <h4 class="card-title">
+                      <a class="withripple" role="button" data-toggle="collapse" href="#collapseeleven5" aria-expanded="true" aria-controls="collapseeleven5">
+                      <i class="fa fa-cogs"></i>Technical Analysis</a>
+                    </h4>
+                  </div>
+                  <div id="collapseeleven5" class="card-collapse collapse show num-spacing lbg3" role="tabpanel" aria-labelledby="headingeleven5" data-parent="#accordion5">
+                    <ul>
+                      <li class="conurl ">
+                        <a class="withripple " href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="seel1">
+                      <a class="withripple" href="profile_courses.html">
+                      <span class="list-word-spacing abor1">See All</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="no-mb card card-primary3  lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingthirtythree5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtythree5" aria-expanded="false" aria-controls="collapsethirtythree5">
+                      <i class="fa fa-wrench"></i> Trading Tools</a>
+                    </h4>
+                  </div>
+                  <div id="collapsethirtythree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtythree5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Economic Calender </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="popular_strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Pips Calculator </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="no-mb card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingTwelve5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwelve5" aria-expanded="false" aria-controls="collapseTwelve5">
+                      <i class="fa fa-shopping-cart"></i> FXEDU Market Place</a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwelve5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingTwelve5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Copy Trade Service </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="popular_strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Open Market Place </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="no-mb card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingthirteen5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirteen5" aria-expanded="false" aria-controls="collapsethirteen5">
+                      <i class="fa fa-fire"></i> Daily Market Update</a>
+                    </h4>
+                  </div>
+                  <div id="collapsethirteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirteen5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="profile_signals.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="no-mb card card-primary3">
+                  <div class="card-header" role="tab" id="headingthirtyfive5">
+                    <h4 class="card-title">
+                      <a class="withripple" role="button" data-toggle="collapse" href="#collapsethirtyfive5" aria-expanded="true" aria-controls="collapsethirtyfive5">
+                      <i class="fa fa-globe"></i>News Portal</a>
+                    </h4>
+                  </div>
+                  <div id="collapsethirtyfive5" class="card-collapse collapse show num-spacing lbg3" role="tabpanel" aria-labelledby="headingthirtyfive5" data-parent="#accordion5">
+                    <ul>
+                      <li class="conurl ">
+                        <a class="withripple " href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="seel1">
+                      <a class="withripple" href="profile_courses.html">
+                      <span class="list-word-spacing abor1">See All</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Left-navigation -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Signal Ticker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Forum Content Js -->
+    <script type="text/javascript">
+      $('.forum-toggle').click(function(){
+         var targetForum=$(this).attr('data-name');
+         $('.forum-'+targetForum).slideToggle("slow");
+         $(this).find('.fa-minus,.fa-plus').toggleClass('fa-plus fa-minus');
+      });
+    </script>
+    <!-- Forum Content Js End -->
+    
+    <script>
+      $(document).ready(function () {
+         if ($(window).width() <= 991) {
+            $("#seconddiv").remove().insertAfter("#thirddiv");
+         } else {
+            $("#thirddiv").remove().insertAfter("#seconddiv");
+         }
+      
+      });
+    </script>
+    <!--New JS end-->
+    <!-- End Signal Ticker -->
+    <script src="../assets/js/plugins.min.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <script src="../assets/js/portfolio.js"></script>
+    <script src="../assets/js/sidebar-right.js"></script>
+    <script>
+      $(document).ready(function(){
+      
+      if ($(window).width() < 768 ) {
+          length = 570;
+      }
+      
+      else{
+          length = 2600;
+      }
+      
+      cHtml = $(".school-content").html();
+      cText = $(".school-content").html().substr(0, length).trim();
+      
+      if(cHtml.length>length){
+      
+      $(".school-content").addClass("compressed").html(cText + "... <a href='javascript:void(0)' data-target='#description' id='toggle' class='reply exp see-more-button'>Read More <i class=' fa fa-chevron-down'></i></a>");
+      window.handler = function()
+      {
+          $('.exp').click(function(){
+              if ($(".school-content").hasClass("compressed"))
+              {
+                  $(".school-content").html(cHtml + "<a href='javascript:void(0)' data-target='#description' id='toggle' class='exp reply see-more-button no-ml'>Read Less <i class= 'fa fa-chevron-up'></i></a>");
+                  $(".school-content").removeClass("compressed");
+                  $('.school-content p').last().addClass('no-m');
+                  handler();
+                  return false;
+              }
+              else
+              {
+                  $(".school-content").html(cText  + "...<a href='javascript:void(0)' data-target='#description' id='toggle' class='exp reply see-more-button'>Read More <i class=' fa fa-chevron-down'></i></a>" );
+                  $(".school-content").addClass("compressed");
+                  $(".school-content p:last-child").css('margin-bottom','0');
+                  handler();
+                  return false;
+              }
+          });
+      }
+      handler();
+      }
+      
+      });
+    </script>
+    <script>
+      $('.side-toggle').click(function(){
+        $('#thirddiv').fadeToggle();
+        $('#seconddiv').toggleClass('no-pr');
+        $('#seconddiv').toggleClass('col-lg-12 col-lg-9');
+        $('.toggle-adjust-left').toggleClass('col-md-3 col-md-4');
+        $('.toggle-adjust-right').toggleClass('col-md-9 col-md-8');
+      })
+    </script>
+    <script src="../assets/js/simplebar.js"></script>
+    <script>
+      $('#quickLink').click(function(){
+        $('#quickLinkNav').slideToggle();
+      })
+    </script>
+    
+<!-- Trauncate Text -->
+      <script>
+        $('.popular-post').each(function(){
+      var discriptionText = $(this).text();
+        if (discriptionText.length > 80) {
+        var truncated = discriptionText.trim().substring(0, 82) + "…";
+        $(this).text(truncated);
+        }
+        })
+    </script>
+<!-- Trauncate Text -->
+
+<script>
+ $('.subscribe-forum').on('click',function(){
+        if($('.change-icon').hasClass('fa-check-circle')){
+          $('.change-icon').removeClass('fa-check-circle').addClass('fa-times-circle');
+          $('.changehtml').text('Unsubscribe');
+        }
+        else{
+          $('.change-icon').removeClass('fa-times-circle').addClass('fa-check-circle');
+          $('.changehtml').text('Subscribe');
+        }
+      
+      })
+</script>
+
+<script>
+      var box=$('#profile2');
+        $('.button-effect').on('click', function(){
+          box.addClass('visuallyhidden');
+          $('.button-effect').addClass('visuallyhidden');
+          box.one('transitionend', function(e) {
+            box.addClass('hidden');
+          });
+          $('.button-effect').one('transitionend', function(e) {
+             $('.button-effect').addClass('hidden');
+          });
+        $('.button-effect-2').removeClass('hidden')
+        });
+
+        $('.button-effect-2').on('click',function(){
+          box.removeClass('hidden');
+            $('.button-effect').removeClass('hidden');
+            setTimeout(function () {
+              box.removeClass('visuallyhidden');
+              $('.button-effect').removeClass('visuallyhidden');
+            }, 20);
+            $('.button-effect-2').addClass('hidden')
+        })
+    </script>
+
+    <script>
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+    </script>
+
+    
+  </body>
+</html>

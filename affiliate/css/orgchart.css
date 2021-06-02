@@ -1,0 +1,33 @@
+
+
+#chart-container {
+  position: relative;
+  display: inline-block;
+  top: 10px;
+  left: 10px;
+  height: auto;
+  width: calc(100% - 24px);
+  border-radius: 5px;
+  overflow: auto;
+  text-align: center;
+  background: #041936;
+  padding: 10px 5px 5px;
+}
+
+.orgchart table tr{
+  background-color: transparent;
+}
+
+#chart-container-sm {
+  position: relative;
+  display: inline-block;
+  top: 10px;
+  left: 10px;
+  height: auto;
+  width: calc(100% - 24px);
+  border-radius: 5px;
+  overflow: auto;
+  text-align: center;
+  background: #041936;
+  padding: 10px 5px 5px;
+}

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="theme-color" content="#333">
+        <title>FX TUTOR</title>
+        <meta name="description" content="Material Style Theme">
+        <link rel="shortcut icon" href="assets/img/favicon.png?v=3">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="assets/css/preload.min.css">
+        <link rel="stylesheet" href="assets/css/plugins.min.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+        <link rel="stylesheet" href="assets/css/style.light-blue-500.min.css">
+    </head>
+    <body>
+        <div class="bg-full-page ms-hero-bg-dark ms-hero-img-airplane back-fixed position-relative" >
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <div class="main-title form-block animated zoomInDown animation-delay-5 mt-3 no-pb w-45" style="background-color:rgba(26, 59, 78, 0.42)">
+                    <div class="login-top-logo">
+                        <a href="{{ route('home.index') }}">
+                        <span>FX</span>TUTOR
+                        </a>
+                    </div>
+                    <div id="login-title">
+                        <h1>RESET PASSWORD</h1>
+                    </div>
+                    <form action="#" method="post">
+                        <p><input placeholder="Email" name="username" type="email" id="email" class="field"/></p>
+                    </form>
+                    <div class="row ">
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-raised btn-primary btn-block">Go Back
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="page_register.html" class="btn btn-raised btn-primary btn-block">SEND
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center animated fadeInUp animation-delay-7">
+                        <a href="{{ route('home.index') }}" class="btn btn-white">
+                        <i class="zmdi zmdi-home"></i> Go Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/plugins.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+        <script src="assets/js/TweenMax.min.js"></script>
+        <script>
+            (function() {
+            
+            var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
+            
+            // Main
+            initHeader();
+            initAnimation();
+            addListeners();
+            
+            function initHeader() {
+              width = window.innerWidth;
+              height = window.innerHeight;
+              target = {y: height/2};
+            
+              largeHeader = document.getElementById('large-header');
+              largeHeader.style.height = height+'px';
+            
+              canvas = document.getElementById('demo-canvas');
+              canvas.width = width;
+              canvas.height = height;
+              ctx = canvas.getContext('2d');
+            
+              // create points
+              points = [];
+              for(var x = 0; x < width; x = x + width/20) {
+                  for(var y = 0; y < height; y = y + height/20) {
+                      var px = x + Math.random()*width/20;
+                      var py = y + Math.random()*height/20;
+                      var p = {x: px, originX: px, y: py, originY: py };
+                      points.push(p);
+                  }
+              }
+            
+              // for each point find the 5 closest points
+              for(var i = 0; i < points.length; i++) {
+                  var closest = [];
+                  var p1 = points[i];
+                  for(var j = 0; j < points.length; j++) {
+                      var p2 = points[j]
+                      if(!(p1 == p2)) {
+                          var placed = false;
+                          for(var k = 0; k < 5; k++) {
+                              if(!placed) {
+                                  if(closest[k] == undefined) {
+                                      closest[k] = p2;
+                                      placed = true;
+                                  }
+                              }
+                          }
+            
+                          for(var k = 0; k < 5; k++) {
+                              if(!placed) {
+                                  if(getDistance(p1, p2) < getDistance(p1, closest[k])) {
+                                      closest[k] = p2;
+                                      placed = true;
+                                  }
+                              }
+                          }
+                      }
+                  }
+                  p1.closest = closest;
+              }
+            
+              // assign a circle to each point
+              for(var i in points) {
+                  var c = new Circle(points[i], 2+Math.random()*2, 'rgba(255,255,255,0.3)');
+                  points[i].circle = c;
+              }
+            }
+            
+            // Event handling
+            function addListeners() {
+              if(!('ontouchstart' in window)) {
+                  window.addEventListener('mousemove', mouseMove);
+              }
+              window.addEventListener('scroll', scrollCheck);
+              window.addEventListener('resize', resize);
+            }
+            
+            function mouseMove(e) {
+              var posx = posy = 0;
+              if (e.pageX || e.pageY) {
+                  posx = e.pageX;
+                  posy = e.pageY;
+              }
+              else if (e.clientX || e.clientY)    {
+                  posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+                  posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+              }
+              target.x = posx;
+              target.y = posy;
+            }
+            
+            function scrollCheck() {
+              if(document.body.scrollTop > height) animateHeader = false;
+              else animateHeader = true;
+            }
+            
+            function resize() {
+              width = window.innerWidth;
+              height = window.innerHeight;
+              largeHeader.style.height = height+'px';
+              canvas.width = width;
+              canvas.height = height;
+            }
+            
+            // animation
+            function initAnimation() {
+              animate();
+              for(var i in points) {
+                  shiftPoint(points[i]);
+              }
+            }
+            
+            function animate() {
+              if(animateHeader) {
+                  ctx.clearRect(0,0,width,height);
+                  for(var i in points) {
+                      // detect points in range
+                      if(Math.abs(getDistance(target, points[i])) < 4000) {
+                          points[i].active = 0.3;
+                          points[i].circle.active = 0.6;
+                      } else if(Math.abs(getDistance(target, points[i])) < 20000) {
+                          points[i].active = 0.1;
+                          points[i].circle.active = 0.3;
+                      } else if(Math.abs(getDistance(target, points[i])) < 40000) {
+                          points[i].active = 0.02;
+                          points[i].circle.active = 0.1;
+                      } else {
+                          points[i].active = 0;
+                          points[i].circle.active = 0;
+                      }
+            
+                      drawLines(points[i]);
+                      points[i].circle.draw();
+                  }
+              }
+              requestAnimationFrame(animate);
+            }
+            
+            function shiftPoint(p) {
+              TweenLite.to(p, 1+1*Math.random(), {x:p.originX-50+Math.random()*100,
+                  y: p.originY-50+Math.random()*100, ease:Circ.easeInOut,
+                  onComplete: function() {
+                      shiftPoint(p);
+                  }});
+            }
+            
+            // Canvas manipulation
+            function drawLines(p) {
+              if(!p.active) return;
+              for(var i in p.closest) {
+                  ctx.beginPath();
+                  ctx.moveTo(p.x, p.y);
+                  ctx.lineTo(p.closest[i].x, p.closest[i].y);
+                  ctx.strokeStyle = 'rgba(156,217,249,'+ p.active+')';
+                  ctx.stroke();
+              }
+            }
+            
+            function Circle(pos,rad,color) {
+              var _this = this;
+            
+              // constructor
+              (function() {
+                  _this.pos = pos || null;
+                  _this.radius = rad || null;
+                  _this.color = color || null;
+              })();
+            
+              this.draw = function() {
+                  if(!_this.active) return;
+                  ctx.beginPath();
+                  ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
+                  ctx.fillStyle = 'rgba(156,217,249,'+ _this.active+')';
+                  ctx.fill();
+              };
+            }
+            
+            // Util
+            function getDistance(p1, p2) {
+              return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
+            }
+            
+            })();
+        </script>
+        <script>
+            var email = document.querySelector("#username"),
+            password = document.querySelector("#password"),
+            mySVG = document.querySelector(".svgContainer"),
+            armL = document.querySelector(".armL"),
+            armR = document.querySelector(".armR"),
+            eyeL = document.querySelector(".eyeL"),
+            eyeR = document.querySelector(".eyeR"),
+            nose = document.querySelector(".nose"),
+            mouth = document.querySelector(".mouth"),
+            mouthBG = document.querySelector(".mouthBG"),
+            mouthSmallBG = document.querySelector(".mouthSmallBG"),
+            mouthMediumBG = document.querySelector(".mouthMediumBG"),
+            mouthLargeBG = document.querySelector(".mouthLargeBG"),
+            mouthMaskPath = document.querySelector("#mouthMaskPath"),
+            mouthOutline = document.querySelector(".mouthOutline"),
+            tooth = document.querySelector(".tooth"),
+            tongue = document.querySelector(".tongue"),
+            chin = document.querySelector(".chin"),
+            face = document.querySelector(".face"),
+            eyebrow = document.querySelector(".eyebrow"),
+            outerEarL = document.querySelector(".earL .outerEar"),
+            outerEarR = document.querySelector(".earR .outerEar"),
+            earHairL = document.querySelector(".earL .earHair"),
+            earHairR = document.querySelector(".earR .earHair"),
+            hair = document.querySelector(".hair");
+            var caretPos,
+            curEmailIndex,
+            screenCenter,
+            svgCoords,
+            eyeMaxHorizD = 20,
+            eyeMaxVertD = 10,
+            noseMaxHorizD = 23,
+            noseMaxVertD = 10,
+            dFromC,
+            eyeDistH,
+            eyeLDistV,
+            eyeRDistV,
+            eyeDistR,
+            mouthStatus = "small";
+            
+            function getCoord(e) {
+            var carPos = email.selectionEnd,
+             div = document.createElement("div"),
+             span = document.createElement("span"),
+             copyStyle = getComputedStyle(email),
+             emailCoords = {},
+             caretCoords = {},
+             centerCoords = {};
+            [].forEach.call(copyStyle, function(prop) {
+             div.style[prop] = copyStyle[prop];
+            });
+            div.style.position = "absolute";
+            document.body.appendChild(div);
+            div.textContent = email.value.substr(0, carPos);
+            span.textContent = email.value.substr(carPos) || ".";
+            div.appendChild(span);
+            
+            emailCoords = getPosition(email); //console.log("emailCoords.x: " + emailCoords.x + ", emailCoords.y: " + emailCoords.y);
+            caretCoords = getPosition(span); //console.log("caretCoords.x " + caretCoords.x + ", caretCoords.y: " + caretCoords.y);
+            centerCoords = getPosition(mySVG); //console.log("centerCoords.x: " + centerCoords.x);
+            svgCoords = getPosition(mySVG);
+            screenCenter = centerCoords.x + mySVG.offsetWidth / 2; //console.log("screenCenter: " + screenCenter);
+            caretPos = caretCoords.x + emailCoords.x; //console.log("caretPos: " + caretPos);
+            
+            dFromC = screenCenter - caretPos; //console.log("dFromC: " + dFromC);
+            var pFromC = Math.round(caretPos / screenCenter * 100) / 100;
+            if (pFromC < 1) {
+            } else if (pFromC > 1) {
+             pFromC -= 2;
+             pFromC = Math.abs(pFromC);
+            }
+            
+            eyeDistH = -dFromC * 0.05;
+            if (eyeDistH > eyeMaxHorizD) {
+             eyeDistH = eyeMaxHorizD;
+            } else if (eyeDistH < -eyeMaxHorizD) {
+             eyeDistH = -eyeMaxHorizD;
+            }
+            
+            var eyeLCoords = { x: svgCoords.x + 84, y: svgCoords.y + 76 };
+            var eyeRCoords = { x: svgCoords.x + 113, y: svgCoords.y + 76 };
+            var noseCoords = { x: svgCoords.x + 97, y: svgCoords.y + 81 };
+            var mouthCoords = { x: svgCoords.x + 100, y: svgCoords.y + 100 };
+            var eyeLAngle = getAngle(
+             eyeLCoords.x,
+             eyeLCoords.y,
+             emailCoords.x + caretCoords.x,
+             emailCoords.y + 25
+            );
+            var eyeLX = Math.cos(eyeLAngle) * eyeMaxHorizD;
+            var eyeLY = Math.sin(eyeLAngle) * eyeMaxVertD;
+            var eyeRAngle = getAngle(
+             eyeRCoords.x,
+             eyeRCoords.y,
+             emailCoords.x + caretCoords.x,
+             emailCoords.y + 25
+            );
+            var eyeRX = Math.cos(eyeRAngle) * eyeMaxHorizD;
+            var eyeRY = Math.sin(eyeRAngle) * eyeMaxVertD;
+            var noseAngle = getAngle(
+             noseCoords.x,
+             noseCoords.y,
+             emailCoords.x + caretCoords.x,
+             emailCoords.y + 25
+            );
+            var noseX = Math.cos(noseAngle) * noseMaxHorizD;
+            var noseY = Math.sin(noseAngle) * noseMaxVertD;
+            var mouthAngle = getAngle(
+             mouthCoords.x,
+             mouthCoords.y,
+             emailCoords.x + caretCoords.x,
+             emailCoords.y + 25
+            );
+            var mouthX = Math.cos(mouthAngle) * noseMaxHorizD;
+            var mouthY = Math.sin(mouthAngle) * noseMaxVertD;
+            var mouthR = Math.cos(mouthAngle) * 6;
+            var chinX = mouthX * 0.8;
+            var chinY = mouthY * 0.5;
+            var chinS = 1 - dFromC * 0.15 / 100;
+            if (chinS > 1) {
+             chinS = 1 - (chinS - 1);
+            }
+            var faceX = mouthX * 0.3;
+            var faceY = mouthY * 0.4;
+            var faceSkew = Math.cos(mouthAngle) * 5;
+            var eyebrowSkew = Math.cos(mouthAngle) * 25;
+            var outerEarX = Math.cos(mouthAngle) * 4;
+            var outerEarY = Math.cos(mouthAngle) * 5;
+            var hairX = Math.cos(mouthAngle) * 6;
+            var hairS = 1.2;
+            
+            TweenMax.to(eyeL, 1, { x: -eyeLX, y: -eyeLY, ease: Expo.easeOut });
+            TweenMax.to(eyeR, 1, { x: -eyeRX, y: -eyeRY, ease: Expo.easeOut });
+            TweenMax.to(nose, 1, {
+             x: -noseX,
+             y: -noseY,
+             rotation: mouthR,
+             transformOrigin: "center center",
+             ease: Expo.easeOut
+            });
+            TweenMax.to(mouth, 1, {
+             x: -mouthX,
+             y: -mouthY,
+             rotation: mouthR,
+             transformOrigin: "center center",
+             ease: Expo.easeOut
+            });
+            TweenMax.to(chin, 1, {
+             x: -chinX,
+             y: -chinY,
+             scaleY: chinS,
+             ease: Expo.easeOut
+            });
+            TweenMax.to(face, 1, {
+             x: -faceX,
+             y: -faceY,
+             skewX: -faceSkew,
+             transformOrigin: "center top",
+             ease: Expo.easeOut
+            });
+            TweenMax.to(eyebrow, 1, {
+             x: -faceX,
+             y: -faceY,
+             skewX: -eyebrowSkew,
+             transformOrigin: "center top",
+             ease: Expo.easeOut
+            });
+            TweenMax.to(outerEarL, 1, { x: outerEarX, y: -outerEarY, ease: Expo.easeOut });
+            TweenMax.to(outerEarR, 1, { x: outerEarX, y: outerEarY, ease: Expo.easeOut });
+            TweenMax.to(earHairL, 1, { x: -outerEarX, y: -outerEarY, ease: Expo.easeOut });
+            TweenMax.to(earHairR, 1, { x: -outerEarX, y: outerEarY, ease: Expo.easeOut });
+            TweenMax.to(hair, 1, {
+             x: hairX,
+             scaleY: hairS,
+             transformOrigin: "center bottom",
+             ease: Expo.easeOut
+            });
+            
+            document.body.removeChild(div);
+            }
+            
+            function onEmailInput(e) {
+            getCoord(e);
+            var value = e.target.value;
+            curEmailIndex = value.length;
+            
+            // very crude email validation for now to trigger effects
+            if (curEmailIndex > 0) {
+             if (mouthStatus == "small") {
+                 mouthStatus = "medium";
+                 TweenMax.to([mouthBG, mouthOutline, mouthMaskPath], 1, {
+                     morphSVG: mouthMediumBG,
+                     shapeIndex: 8,
+                     ease: Expo.easeOut
+                 });
+                 TweenMax.to(tooth, 1, { x: 0, y: 0, ease: Expo.easeOut });
+                 TweenMax.to(tongue, 1, { x: 0, y: 1, ease: Expo.easeOut });
+                 TweenMax.to([eyeL, eyeR], 1, {
+                     scaleX: 0.85,
+                     scaleY: 0.85,
+                     ease: Expo.easeOut
+                 });
+             }
+             if (value.includes("@")) {
+                 mouthStatus = "large";
+                 TweenMax.to([mouthBG, mouthOutline, mouthMaskPath], 1, {
+                     morphSVG: mouthLargeBG,
+                     ease: Expo.easeOut
+                 });
+                 TweenMax.to(tooth, 1, { x: 3, y: -2, ease: Expo.easeOut });
+                 TweenMax.to(tongue, 1, { y: 2, ease: Expo.easeOut });
+                 TweenMax.to([eyeL, eyeR], 1, {
+                     scaleX: 0.65,
+                     scaleY: 0.65,
+                     ease: Expo.easeOut,
+                     transformOrigin: "center center"
+                 });
+             } else {
+                 mouthStatus = "medium";
+                 TweenMax.to([mouthBG, mouthOutline, mouthMaskPath], 1, {
+                     morphSVG: mouthMediumBG,
+                     ease: Expo.easeOut
+                 });
+                 TweenMax.to(tooth, 1, { x: 0, y: 0, ease: Expo.easeOut });
+                 TweenMax.to(tongue, 1, { x: 0, y: 1, ease: Expo.easeOut });
+                 TweenMax.to([eyeL, eyeR], 1, {
+                     scaleX: 0.85,
+                     scaleY: 0.85,
+                     ease: Expo.easeOut
+                 });
+             }
+            } else {
+             mouthStatus = "small";
+             TweenMax.to([mouthBG, mouthOutline, mouthMaskPath], 1, {
+                 morphSVG: mouthSmallBG,
+                 shapeIndex: 9,
+                 ease: Expo.easeOut
+             });
+             TweenMax.to(tooth, 1, { x: 0, y: 0, ease: Expo.easeOut });
+             TweenMax.to(tongue, 1, { y: 0, ease: Expo.easeOut });
+             TweenMax.to([eyeL, eyeR], 1, { scaleX: 1, scaleY: 1, ease: Expo.easeOut });
+            }
+            }
+            
+            function onEmailFocus(e) {
+            e.target.parentElement.classList.add("focusWithText");
+            getCoord();
+            }
+            
+            function onEmailBlur(e) {
+            if (e.target.value == "") {
+             e.target.parentElement.classList.remove("focusWithText");
+            }
+            resetFace();
+            }
+            
+            function onPasswordFocus(e) {
+            coverEyes();
+            }
+            
+            function onPasswordBlur(e) {
+            uncoverEyes();
+            }
+            
+            function coverEyes() {
+            TweenMax.to(armL, 0.45, { x: -93, y: 2, rotation: 0, ease: Quad.easeOut });
+            TweenMax.to(armR, 0.45, {
+             x: -93,
+             y: 2,
+             rotation: 0,
+             ease: Quad.easeOut,
+             delay: 0.1
+            });
+            }
+            
+            function uncoverEyes() {
+            TweenMax.to(armL, 1.35, { y: 220, ease: Quad.easeOut });
+            TweenMax.to(armL, 1.35, { rotation: 105, ease: Quad.easeOut, delay: 0.1 });
+            TweenMax.to(armR, 1.35, { y: 220, ease: Quad.easeOut });
+            TweenMax.to(armR, 1.35, { rotation: -105, ease: Quad.easeOut, delay: 0.1 });
+            }
+            
+            function resetFace() {
+            TweenMax.to([eyeL, eyeR], 1, { x: 0, y: 0, ease: Expo.easeOut });
+            TweenMax.to(nose, 1, { x: 0, y: 0, scaleX: 1, scaleY: 1, ease: Expo.easeOut });
+            TweenMax.to(mouth, 1, { x: 0, y: 0, rotation: 0, ease: Expo.easeOut });
+            TweenMax.to(chin, 1, { x: 0, y: 0, scaleY: 1, ease: Expo.easeOut });
+            TweenMax.to([face, eyebrow], 1, { x: 0, y: 0, skewX: 0, ease: Expo.easeOut });
+            TweenMax.to([outerEarL, outerEarR, earHairL, earHairR, hair], 1, {
+             x: 0,
+             y: 0,
+             scaleY: 1,
+             ease: Expo.easeOut
+            });
+            }
+            
+            function getAngle(x1, y1, x2, y2) {
+            var angle = Math.atan2(y1 - y2, x1 - x2);
+            return angle;
+            }
+            
+            function getPosition(el) {
+            var xPos = 0;
+            var yPos = 0;
+            
+            while (el) {
+             if (el.tagName == "BODY") {
+                 // deal with browser quirks with body/window/document and page scroll
+                 var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
+                 var yScroll = el.scrollTop || document.documentElement.scrollTop;
+            
+                 xPos += el.offsetLeft - xScroll + el.clientLeft;
+                 yPos += el.offsetTop - yScroll + el.clientTop;
+             } else {
+                 // for all other non-BODY elements
+                 xPos += el.offsetLeft - el.scrollLeft + el.clientLeft;
+                 yPos += el.offsetTop - el.scrollTop + el.clientTop;
+             }
+            
+             el = el.offsetParent;
+            }
+            return {
+             x: xPos,
+             y: yPos
+            };
+            }
+            
+            email.addEventListener("focus", onEmailFocus);
+            email.addEventListener("blur", onEmailBlur);
+            email.addEventListener("input", onEmailInput);
+            password.addEventListener("focus", onPasswordFocus);
+            password.addEventListener("blur", onPasswordBlur);
+            TweenMax.set(armL, {
+            x: -93,
+            y: 220,
+            rotation: 105,
+            transformOrigin: "top left"
+            });
+            TweenMax.set(armR, {
+            x: -93,
+            y: 220,
+            rotation: -105,
+            transformOrigin: "top right"
+            });
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#333">
+    <title>FX TUTOR</title>
+    <meta name="description" content="Material Style Theme">
+    <link rel="shortcut icon" href="../assets/img/favicon.png?v=3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Font Awesome Animation-->
+    <link rel="stylesheet" href="../assets/css/font-animation.css">
+    <!-- Reveloution Slider -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/revolution/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/revolution/revolution/css/settings.css">
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/revolution/revolution/css/layers.css">
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/revolution/revolution/css/navigation.css">
+    <link rel="stylesheet" href="../assets/css/preload.min.css">
+    <link rel="stylesheet" href="../assets/css/plugins.min.css">
+    <!--bottom slider-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick/slick-theme.css">
+    <!-- TYPEWRITER ADDON -->
+    <script type="text/javascript" src="../assets/plugins/revolution/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/revolution/revolution-addons/typewriter/css/typewriter.css">
+    <link rel="stylesheet" href="../assets/css/style.light-blue-500.min.css">
+    <link rel="stylesheet" href="../assets/css/flipclock.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Custom CSS & Signal Ticker -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/bum.css">
+    <link rel="stylesheet" href="../assets/css/simplebar.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="forum.css">
+    <script src="../assets/js/moment.js"></script>
+    <script src="../assets/js/moment-timezone.js"></script>
+    <script type="text/javascript">
+      /***********************************************
+      * Local Time script- By Dynamic Drive (http://www.dynamicdrive.com)
+      * Please keep this notice intact
+      * Visit http://www.dynamicdrive.com/ for this script and 100s more.
+      ***********************************************/
+      function showLocalTime(container, zoneString, formatString){
+         var thisobj=this
+         this.container=document.getElementById(container)
+         this.localtime = moment.tz(new Date(), zoneString)
+         this.formatString = formatString
+         this.container.innerHTML = this.localtime.format( this.formatString )
+         setInterval(function(){thisobj.updateContainer()}, 1000) //update container every second
+      }
+      
+      showLocalTime.prototype.updateContainer=function(){
+         this.localtime.second(this.localtime.seconds() + 1 )
+         this.container.innerHTML = this.localtime.format( this.formatString )
+      }
+      
+    </script>
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Preloader Start -->
+    <!--  <div id="preloader" class="ms-preload">
+      <div id="status">
+        <div class="spinner">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+        </div>
+      </div>
+      </div> -->
+    <!-- Preloader End -->
+    <!--header bar end-->
+    <div class="ms-site-container container-bg ">
+      <header class="ms-header ms-header-primary1 headerfix">
+        <!--ms-header-primary-->
+        <div class="container container-full">
+          <div class="ms-title ">
+            <div class="row logo-margin-top conurl">
+              <a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-left huda ">
+              <i class="zmdi zmdi-menu mho "></i>
+              </a>
+              <a href="index.html">
+                <!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
+                <span class="ms-logo animated zoomInDown animation-delay-5">FX</span>
+                <h1 class="animated fadeInRight animation-delay-6">
+                  <span>EDU</span>
+                </h1>
+              </a>
+            </div>
+          </div>
+          <div class="header-right ml-4 " style="margin-top: 4px">
+            <div class="row">
+              <div class="dropdown profile-button-pull d-none d-md-block">
+                <button class="btn btn-default btn-city dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <img src="assets/img/profile.jpg" class="banglaprof">
+                <span class="profile-name">Raj Shah
+                <i class="fa fa-ellipsis-v"> </i>
+                </span>
+                <span class="caret caret-search"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenu1">
+                  <li>
+                    <a href="#">My Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">My Wallet</a>
+                  </li>
+                  <li>
+                    <a class="lp_bottom" href="#" style="border-bottom: none">
+                    <i class="fa fa-sign-out"></i>Logout</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Notification Menu -->
+              <div class="dropdown bell-color">
+                <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+                <i class="glyphicon glyphicon-bell"></i>
+                <span class="badge-pill badge-pill-warning badge-pill-move">10</span>
+                </a>
+                <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel" id="notification-dropdown">
+                  <div class="notification-heading">
+                    <h4 class="menu-title">Notifications</h4>
+                    <h4 class="menu-title float-right">
+                      <a href="#">Mark all as read
+                      </a>
+                    </h4>
+                  </div>
+                  <div class="notifications-wrapper conurl">
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                    <a class="content" href="#">
+                      <div class="notification-item">
+                        <p class="item-info">Marketing 101, Video Assignment</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="notification-footer">
+                    <a href="#">
+                      <h4 class="footer-menu-title ">View all&nbsp. . </h4>
+                    </a>
+                  </div>
+                </ul>
+              </div>
+              <!-- End Notification Menu -->
+              <div class="conurl mt-2">
+                <a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-right huda ">
+                <i class="zmdi zmdi-menu " style="font-size:28px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Stat Header Sliders -->
+      <div class="extra-container">
+        <div class="container-fluid currency-slider-iframe">
+          <iframe src="https://www.currency.me.uk/remote/CUK-LFOREXRTICKER-2.php?ws=http://www.fxtutor.net/&amp;s=1&amp;f=verdana&amp;fc=ffffff&amp;fs=12px&amp;mbg=03357B&amp;bs=no&amp;bc=03357B&amp;vc=fff&amp;lc=eee&amp;lhc=1E5881" height="30" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="width: 100%;position: relative;top: -2px"></iframe>
+        </div>
+      </div>
+      <!-- forum nav -->
+      <div class="forum-nav-container container-fluid bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent no-pr no-pl">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto text-dark-brown">
+              <li class="nav-item text-uppercase">
+                <a href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false" data-name="daily signal" id="quickLink"><i class="fa fa-align-justify"></i> Quick Links</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a href="faq.html" role="button" aria-haspopup="true" aria-expanded="false" data-name="daily signal"><i class="fa fa-question-circle"></i> Faq</a>
+              </li>
+            </ul>
+            <form class="d-inline-flex my-2 my-lg-0 review-form form-group field-radius is-empty search-nav-box">
+              <p class="form-group no-m">
+                <input type="text" class="search-forum" placeholder="Search" name="search" >
+              </p>
+              <button class="btn btn-raised btn-forum-nav no-m" type="submit"><i class="fa fa-search"></i></button>
+              <a href="search.html" class="btn btn-raised btn-forum-nav no-m"><i class="fa fa-gear"></i></a>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="forum-nav-container container-fluid bg-gray" id="quickLinkNav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent no-pr no-pl">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto text-dark-brown">
+              <li class="nav-item text-uppercase">
+                <a href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false" data-name="daily signal"><i class="fa fa-check-square-o"></i> New Post</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false" data-name="daily signal"><i class="fa fa-check-square-o"></i> Today's Post</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false" data-name="daily signal"><i class="fa fa-check-square-o"></i> Subscribed threads</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- forum nav end -->
+      <div class="container-fluid mb-1-half mt-1-half" style="background-color: #000E22">
+        <div class="row">
+          <div class="col-lg-9 col-sm-12 no-pr" id="seconddiv">
+            <div class="mid-content bg-transparent position-relative">
+              <i class="fa fa-align-justify side-toggle toggle-pos-forum"></i>
+              <header class="title-container bg-light mt-1 mb-1-half">
+                <h2 class="forex-header-second header-forum-edit-2"><i class="fa fa-home ml-1"></i><span>FORUM / Main / Search</span></h2>
+              </header>
+
+             <div class="forum-search-main-container">
+              <div class="new-thread">
+                <h4> SEARCH</h4>
+              </div>
+              <div class="forum-search">
+                <h4>Seach Query</h4>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="search-title">Search for keywords :</p>
+                    <p class="search-instructions">Place + in front of a word which must be found and - in front of a word which must not be found. Put a list of words separated by | into brackets if only one of the words must be found. Use * as a wildcard for partial matches.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="form-group no-m">
+                      <input type="text" class="form-control form-custom" placeholder=" " name="" >
+                    </p>
+                    <p class="checkbox radiofix sm-pt-1 text-left no-mb">
+                      <label class="mr-1 radiofix">
+                      <input type="radio"  name="query" value="all">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">Search for all terms or use query as entered</span>
+                      </label>
+                      <label class="mr-1 radiofix">
+                      <input type="radio"  name="query" value="any">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">Search for any terms</span>
+                      </label>
+                  </p>
+                  </div>
+                </div>
+
+                <div class="row mt-1">
+                  <div class="col-md-6">
+                    <p class="search-title">Search for author :</p>
+                    <p class="search-instructions">Use * as a wildcard for partial matches.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="form-group no-m">
+                    <input type="text" class="form-control form-custom" placeholder=" " name="" >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="forum-search mt-1-half">
+                <h4>SEARCH OPTIONS</h4>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="search-title">Search in forums :</p>
+                    <p class="search-instructions">Select the forum or forums you wish to search in. Subforums are searched automatically if you do not disable “search subforums“ below.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <select name="" id="search_forum" multiple="multiple" size="8" title="Search in forums">
+                      <option value="1">Main</option>
+                      <option value="2">&nbsp; &nbsp;Informations</option>
+                      <option value="3">&nbsp; &nbsp;General Examples</option>
+                      <option value="8">Themes</option>
+                      <option value="9">&nbsp; &nbsp;BizLinks</option>
+                      <option value="10">&nbsp; &nbsp;MatRoz</option>
+                      <option value="11">&nbsp; &nbsp;ComeLooks</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row mt-1">
+                  <div class="col-md-6">
+                    <p class="search-title">Search subforums :</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="checkbox radiofix sm-pt-1 text-left no-mb">
+                      <label class="mr-1 radiofix">
+                      <input type="radio"  name="sub_forums" value="yes" checked="checked">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">Yes</span>
+                      </label>
+                      <label class="mr-1 radiofix">
+                      <input type="radio"  name="sub_forums" value="no">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">No</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row mt-1">
+                  <div class="col-md-6">
+                    <p class="search-title">Search within :</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="checkbox radiofix sm-pt-1 text-left no-mb">
+                      <label class="mr-1 radiofix">
+                      <input type="radio"  name="search-within" value="1" checked="checked">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">Post subjects and message text</span>
+                      </label>
+                    </p>
+                    <p class="checkbox radiofix sm-pt-1 text-left no-mb">
+                       <label class="mr-1 radiofix">
+                      <input type="radio"  name="search-within" value="2">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">Message text only</span>
+                      </label>
+                    </p>
+                    <p class="checkbox radiofix sm-pt-1 text-left no-mb">
+                      <label class="mr-1 radiofix">
+                      <input type="radio"  name="search-within" value="3"">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">Topic titles only</span>
+                      </label>
+                    </p>
+                    <p class="checkbox radiofix sm-pt-1 text-left no-mb">
+                      <label class="mr-1 radiofix">
+                      <input type="radio"  name="search-within" value="4">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">First post of topics only</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="search-title">Display results as :</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="checkbox radiofix sm-pt-1 text-left no-mb">
+                      <label class="mr-1 radiofix">
+                      <input type="radio"  name="result-type" value="post" checked="checked">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">Posts</span>
+                      </label>
+                      <label class="mr-1 radiofix">
+                      <input type="radio"  name="result-type" value="topic">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">Topics</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row mt-1">
+                  <div class="col-md-6">
+                    <p class="search-title">Sort results by :</p>
+                  </div>
+                  <div class="col-md-6">
+                    <select name="sk" id="sk">
+                      <option value="a">Author</option>
+                      <option value="t" selected="selected">Post time</option>
+                      <option value="f">Forum</option>
+                      <option value="i">Topic title</option>
+                      <option value="s">Post subject</option>
+                    </select>
+                    <p class="checkbox radiofix sm-pt-1 text-left no-mb mt-1-half">
+                      <label class="mr-1 radiofix">
+                      <input type="radio"  name="result-type" value="asc" checked="checked">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">Ascending</span>
+                      </label>
+                      <label class="mr-1 radiofix">
+                      <input type="radio"  name="result-type" value="des">
+                      <span class="redio-check"></span>
+                      <span class="ac-name">Descending</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row mt-1">
+                  <div class="col-md-6">
+                    <p class="search-title">Limit results to previous :</p>
+                  </div>
+                  <div class="col-md-6">
+                    <select name="st" id="st">
+                      <option value="0" selected="selected">All results</option>
+                      <option value="1">1 day</option>
+                      <option value="7">7 days</option>
+                      <option value="14">2 weeks</option>
+                      <option value="30">1 month</option>
+                      <option value="90">3 months</option>
+                      <option value="180">6 months</option>
+                      <option value="365">1 year</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row mt-1">
+                  <div class="col-md-6">
+                    <p class="search-title">Return first :</p>
+                  </div>
+                  <div class="col-md-6">
+                    <select name="ch" title="Return first">
+                      <option value="-1">All available</option>
+                      <option value="0">0</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      <option value="300" selected="selected">300</option>
+                      <option value="400">400</option>
+                      <option value="500">500</option>
+                      <option value="600">600</option>
+                      <option value="700">700</option>
+                      <option value="800">800</option>
+                      <option value="900">900</option>
+                      <option value="1000">1000</option>
+                    </select>
+                    <span>characters of posts</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="forum-search text-center mt-1-half">
+                  <button class="btn btn-raised btn-primary-light no-m">Reset</button>
+                  <button class="btn btn-raised btn-primary-light no-m">Search</button>
+              </div>
+          
+          </div>
+                
+                
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col " id="thirddiv">
+            <div class="row">
+              <!-- Start Right-navigation -->
+              <div class="col-lg-12 col-md-12 col-sm-12 order-md-2 order-lg-3">
+                <div class="forum-right-container mt-1">
+                  <div class="position-relative forum-right-side mb-1-half">
+                    <h4 class="trading-session-header">STATISTICS</h4>
+                    <span class="forum-toggle toogle-btn-r1" data-name="r1"><i class="fa fa-minus"></i></span>
+                    <div class="forum-r1">
+                      <table class="downborder1 lbg3 conurl text-left v-middle">
+                        <tr class="table table-resonsive statistic-table ">
+                          <td>TOTAL POSTS</td>
+                          <td class="text-right">7</td>
+                        </tr>
+                        <tr class="table table-resonsive statistic-table ">
+                          <td>TOTAL TOPICS</td>
+                          <td class="text-right">6</td>
+                        </tr>
+                        <tr class="table table-resonsive statistic-table ">
+                          <td>TOTAL MEMBERS</td>
+                          <td class="text-right">2</td>
+                        </tr>
+                        <tr class="table table-resonsive statistic-table ">
+                          <td>USERS ONLINE</td>
+                          <td class="text-right">6</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="forum-right-container">
+                  <div class="row signal-table">
+                    <div class="col-md-12">
+                      <div class="position-relative forum-right-side">
+                        <h4 class="trading-session-header">TRADING SESSION</h4>
+                        <span class="forum-toggle toogle-btn-r2" data-name="r2"><i class="fa fa-minus"></i></span>
+                        <div class="forum-r2">
+                          <table class="downborder1 lbg3 conurl text-left v-middle">
+                            <tr class="table table-resonsive lhsize3 ">
+                              <td>
+                                <img src="../assets/img/flag/aud.jpg" class="banglaimg">Sydeny
+                              </td>
+                              <td>
+                                <span class="badge badge-danger badge-edit">Closed</span>
+                              </td>
+                              <td class="clocktable" style="padding-left: 11px;"><span id="sydney"></span></td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize3 ">
+                              <td>
+                                <img src="../assets/img/flag/tokyo.png" class="banglaimg">Tokyo
+                              </td>
+                              <td>
+                                <span class="badge badge-danger badge-edit">Closed</span>
+                              </td>
+                              <td class="clocktable" style="padding-left: 11px;"><span id="tokyo"></span></td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize3 ">
+                              <td>
+                                <img src="../assets/img/flag/london.png" class="banglaimg">London
+                              </td>
+                              <td>
+                                <span class="badge badge-success badge-edit">Open</span>
+                              </td>
+                              <td class="clocktable" style="padding-left: 11px;"><span id="london"></span></td>
+                            </tr>
+                            <tr class="table table-resonsive lhsize3 ">
+                              <td>
+                                <img src="../assets/img/flag/newyork.png" class="banglaimg">New York
+                              </td>
+                              <td>
+                                <span class="badge badge-warning badge-edit">Closing</span>
+                              </td>
+                              <td class="clocktable" style="padding-left: 11px;"><span id="newyork"></span></td>
+                            </tr>
+                            <script type="text/javascript">
+                              new showLocalTime("sydney", "Australia/Sydney", "hh:mm:ss A (ddd)")
+                              new showLocalTime("tokyo", "Asia/Tokyo", "hh:mm:ss A (ddd)")
+                              new showLocalTime("london", "Europe/London", "hh:mm:ss A (ddd)")
+                              new showLocalTime("newyork", "America/New_York", "hh:mm:ss A (ddd)")
+                            </script>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Analysis -->
+                <div class="forum-right-container">
+                  <div class="position-relative forum-right-side">
+                    <h4 class="trading-session-header mt-1-half">Popular Post</h4>
+                    <span class="forum-toggle toogle-btn-r3" data-name="r3"><i class="fa fa-minus"></i></span>
+                    <div class="forum-r3">
+                      <div class="recent-analysis-container" data-simplebar>
+                        <ul class="profile-list">
+                          <li>
+                            <div class="analysis-discription">
+                              <div class="right-info-container">
+                                <span>
+                                <span class="color-medium-dark font-custum-weight">April 15, 2015 </span>
+                                </span>
+                                <span>
+                                <i class="zmdi zmdi-time  color-info"></i>
+                                <span class="color-medium-dark font-custum-weight">5:45 PM</span>
+                                </span>
+                                <h4 class="profile-name">Forex Research</h4>
+                                <p class="popular-post">Forex is a signal based trading system. It has become very popular.</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="analysis-discription">
+                              <div class="right-info-container">
+                                <span>
+                                <span class="color-medium-dark font-custum-weight">April 15, 2015 </span>
+                                </span>
+                                <span>
+                                <i class="zmdi zmdi-time  color-info"></i>
+                                <span class="color-medium-dark font-custum-weight">5:45 PM</span>
+                                </span>
+                                <h4 class="profile-name">Forex Research</h4>
+                                <p class="popular-post">Forex is a signal based trading system. It has become very popular.Forex is a signal based trading system. It has become very popular.</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="analysis-discription">
+                              <div class="right-info-container">
+                                <span>
+                                <span class="color-medium-dark font-custum-weight">April 15, 2015 </span>
+                                </span>
+                                <span>
+                                <i class="zmdi zmdi-time  color-info"></i>
+                                <span class="color-medium-dark font-custum-weight">5:45 PM</span>
+                                </span>
+                                <h4 class="profile-name">Forex Research</h4>
+                                <p class="popular-post">Forex is a signal based trading system. It has become very popular.</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="analysis-discription">
+                              <div class="right-info-container">
+                                <span>
+                                <span class="color-medium-dark font-custum-weight">April 15, 2015 </span>
+                                </span>
+                                <span>
+                                <i class="zmdi zmdi-time  color-info"></i>
+                                <span class="color-medium-dark font-custum-weight">5:45 PM</span>
+                                </span>
+                                <h4 class="profile-name">Forex Research</h4>
+                                <p class="popular-post">Forex is a signal based trading system. It has become very popular.Forex is a signal based trading system. It has become very popular.</p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Analysis END -->
+                <!-- Top Forex Brokers BEGIN -->
+                <div class="forum-right-container">
+                  <div class="position-relative forum-right-side">
+                    <h4 class="trading-session-header mt-1-half">Advertisement</h4>
+                    <span class="forum-toggle toogle-btn-r4" data-name="r4"><i class="fa fa-minus"></i></span>
+                    <div class="forum-r4">
+                      <table class="ad-table">
+                        <tbody>
+                          <tr>
+                            <td colspan="2">
+                              <a href="http://www.bestfxvps.com" target="_blank">
+                              <img src="../assets/img/add/best-fxvps.png">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="http://www.FXSVPS.com" target="_blank">
+                              <img src="../assets/img/add/fxsvps.png">
+                              </a>
+                            </td>
+                            <td>
+                              <a href="https://www.Fxvpspro.com" target="_blank">
+                              <img src="../assets/img/add/fxvpspro.png">
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- Top Forex Brokers END -->
+              </div>
+              <!-- end Left-navigation -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="ms-footbar no-mt no-pt">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 ms-footer-col">
+            <div class="ms-footbar-block">
+              <h3 class="ms-footbar-title">Sitemap</h3>
+              <ul class="list-unstyled ms-icon-list three_cols">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Portafolio</a>
+                </li>
+                <li>
+                  <a href="#">Works</a>
+                </li>
+                <li>
+                  <a href="#">Timeline</a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Our Team</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Login</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 ms-footer-col ms-footer-alt-color" align="center" style="padding-top:10px">
+            <div class="ms-footbar-block">
+              <h3 class="ms-footbar-title">Social Media</h3>
+              <div class="ms-footbar-social">
+                <a href="javascript:void(0)" class="btn-circle btn-facebook" style="background-color:#607d8b">
+                <i class="zmdi zmdi-facebook"></i>
+                </a>
+                <a href="javascript:void(0)" class="btn-circle btn-twitter" style="background-color:#607d8b">
+                <i class="zmdi zmdi-twitter"></i>
+                </a>
+                <a href="javascript:void(0)" class="btn-circle btn-youtube" style="background-color:#607d8b">
+                <i class="zmdi zmdi-youtube-play"></i>
+                </a>
+                <br>
+                <a href="javascript:void(0)" class="btn-circle btn-google" style="background-color:#607d8b">
+                <i class="zmdi zmdi-google"></i>
+                </a>
+                <a href="javascript:void(0)" class="btn-circle btn-instagram" style="background-color:#607d8b">
+                <i class="zmdi zmdi-instagram"></i>
+                </a>
+                <a href="javascript:void(0)" class="btn-circle btn-github" style="background-color:#607d8b">
+                <i class="zmdi zmdi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 ms-footer-col ">
+            <div class="ms-footbar-block ">
+              <h3 class="ms-footbar-title">Subscribe</h3>
+              <p class="">To get further updates of our edu site or you want then please do subscribe us.</p>
+              <form>
+                <div class="form-group label-floating mt-2 mb-1">
+                  <div class="input-group ms-input-subscribe">
+                    <label class="control-label" for="ms-subscribe">
+                    <i class="zmdi zmdi-email"></i> Email Adress</label>
+                    <input type="email" id="ms-subscribe" class="form-control"> 
+                  </div>
+                </div>
+                <button class="ms-subscribre-btn" type="button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer class="ms-footer">
+      <div class="container">
+        <p>Copyright &copy; FX EDU 2018</p>
+      </div>
+      <hr>
+      <div class="container-fluid">
+        <p align="justify">
+          <strong style="color:#70BF44">Risk Disclaimer : </strong>FX Academy will not be held liable for any loss or damage resulting from reliance on the information contained within this website including market news, analysis, trading signals
+          and Forex broker reviews. The data contained in this website is not necessarily real-time nor accurate, and analyses are the opinions of the author and do not represent the recommendations of FX Academy or its employees. Currency trading
+          on margin involves high risk, and is not suitable for all investors. As a leveraged product losses are able to exceed initial deposits and capital is at risk. Before deciding to trade Forex or any other financial instrument you should
+          carefully consider your investment objectives, level of experience, and risk appetite.
+        </p>
+      </div>
+    </footer>
+    <!--start end footer list-->
+    <div class="ms-footer conurl">
+      <span class="pr-1">
+      <a href="">Risk Warning</a>
+      </span>
+      <span class="">|</span>
+      <span class="pl-1">
+      <a href="javascript:void(0)">Disclaimer</a>
+      </span>
+      <span class="pl-1">|</span>
+      <span class="pl-1">
+      <a href="javascript:void(0)">Privacy</a>
+      </span>
+      <span class="pl-1">|</span>
+      <span class="pl-1">
+      <a href="javascript:void(0)">Terms & Condition</a>
+      </span>
+      <span class="pl-1">|</span>
+      <span class="pl-1">
+      <a href="javascript:void(0)">Complaints Handling</a>
+      </span>
+    </div>
+    <!--end end footer list-->
+    <div class="btn-back-top">
+      <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">
+      <i class="zmdi zmdi-long-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+    <!-- end footer -->
+    <!-- ms-site-container -->
+    <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+      <div class="sb-slidebar-container ">
+        <div class="container-full" style="overflow:hidden;">
+          <div class="row">
+            <!-- Start Left-navigation -->
+            <div class="col-lg-12 col-sm-12 order-md-2 order-lg-3">
+              <div class="no-mt no-mb card card-warning1">
+                <div class="card-header conurl" align="center">
+                  <h4 class="card-title" style="font-size: 18px">
+                    <a role="button " href="profile.html">
+                    <span>
+                    <i class="fa fa-dashcube"></i>
+                    <strong>MY DASHBOARD</strong>
+                    </span>
+                    </a>
+                  </h4>
+                </div>
+              </div>
+              <div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3  lbg3 conurl ">
+                  <div class="card-header " role="tab" id="headingeighteen5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseeighteen5" aria-expanded="false" aria-controls="collapseeighteen5">
+                      <i class="fa fa-pencil"></i>User Update</a>
+                    </h4>
+                  </div>
+                  <div id="collapseeighteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingeighteen5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Post New Update</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3  lbg3 conurl ">
+                  <div class="card-header " role="tab" id="headingSix5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseSix5" aria-expanded="false" aria-controls="collapseSix5">
+                      <i class="fa fa-key"></i>FXEDU Courses</a>
+                    </h4>
+                  </div>
+                  <div id="collapseSix5" class="card-collapse collapse  num-spacing" role="tabpanel" aria-labelledby="headingSix5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="courses_basic.html">
+                        <span class="list-word-spacing ">
+                        <i class="fa fa-check-square-o"></i> Basic Course</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="courses_advance.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Advance Course</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="courses_proffesional.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Professional Course</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="cryptocurrency.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Cryptocurrency</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingthirty5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirty5" aria-expanded="false" aria-controls="collapsethirty5">
+                      <i class="fa fa-magnet"></i> Price Action</a>
+                    </h4>
+                  </div>
+                  <div id="collapsethirty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirty5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="short_day.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Candlestick Portal </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingTwo5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+                      <i class="fa fa-bar-chart"></i> Trading Strategies</a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingTwo5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="short_day.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Short/Day Strategies </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="long_strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Long/Swing Stratgies </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="news_strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> News Strategies </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="others_strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Others Strategies </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingThirtythree5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseThirtythree5" aria-expanded="false" aria-controls="collapseThirtythree5">
+                      <i class="fa fa-bar-chart"></i> Trading Signal</a>
+                    </h4>
+                  </div>
+                  <div id="collapseThirtythree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingThirtythree5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="intra_day.html">
+                        <span class="list-word-spacing"><i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="weekly_trade.html">
+                        <span class="list-word-spacing"><i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="long_term_trade.html">
+                        <span class="list-word-spacing"><i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="">
+                        <span class="list-word-spacing"><i class="fa fa-check-square-o"></i> Post New Signal</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingFour5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFour5" aria-expanded="false" aria-controls="collapseFour5">
+                      <i class="fa fa-book"></i> Books</a>
+                    </h4>
+                  </div>
+                  <div id="collapseFour5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFour5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="profile_books.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Book Library</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingFive5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
+                      <i class="fa fa-download"></i> Download Portal </a>
+                    </h4>
+                  </div>
+                  <div id="collapseFive5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="download_indicators.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Indicators Gallery</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="download_expert.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Expert Advisor</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="trading_tools.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Trading Tools</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingFifteen5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFifteen5" aria-expanded="false" aria-controls="collapseFifteen5">
+                      <i class="fa fa-codiepie"></i> PAMM Management </a>
+                    </h4>
+                  </div>
+                  <div id="collapseFifteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFifteen5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="pamm_portfolio.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Portfolio Management</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingthirtyone5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtyone5" aria-expanded="false" aria-controls="collapsethirtyone5">
+                      <i class="fa fa-money"></i> Investment Module </a>
+                    </h4>
+                  </div>
+                  <div id="collapsethirtyone5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtyone5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="investment_packages.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Investment Packages</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse no-mt mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="mb-0 card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingtwenty5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsetwenty5" aria-expanded="false" aria-controls="collapsetwenty5">
+                      <i class="fa fa-users"></i> Forum </a>
+                    </h4>
+                  </div>
+                  <div id="collapsetwenty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingtwenty5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> FXEDU Forum</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Left-navigation -->
+          </div>
+          <div class="row no-mt mb-1-half">
+            <div class="col-md-12 ">
+              <table class=" downborder1 lbg3">
+                <tr class="table table-resonsive lhsize2">
+                  <td colspan="5" class="abor3 text-center" style="font-size: 11px">Recent Closed Trades</td>
+                </tr>
+                <tr class="table table-resonsive lhsize2 ">
+                  <td class="abor3 text-center">
+                    <span>Currency</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>Signal</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>Entry</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>Exit</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>Profit</span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class=" text-center" style="color: #10ff00">+40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class=" text-center" style="color: #10ff00">+40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl text-center">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>BUY</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center">
+                    <span>1.2563</span>
+                  </td>
+                  <td class="abor3 text-center" style="color: red">-40&nbsp
+                    <span class="abor3">pips
+                    <sub>1D 5H ago</sub>
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- Advertise Start -->
+          <div class="row no-m">
+            <div class="col-md-12 no-pl">
+              <div class="ad-container pro-ad" data-name="2">
+                <h4 class="ad-header-bg">ADVERTISEMENT</h4>
+                <span class="ad-toggle toogle-btn-2" data-name="2"><i class="fa fa-minus"></i></span>
+                <div class="ad-2">
+                  <table class="ad-table">
+                    <tbody>
+                      <tr>
+                        <td colspan="2">
+                          <a href="http://www.fxhoster.com" target="_blank">
+                          <img src="assets/img/add/fxhoster.png">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <a href="http://www.fxvps.pro" target="_blank">
+                          <img src="assets/img/add/fxvps.png">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <a href="https://www.forexcheapvps.com/pricing" target="_blank">
+                          <img src="assets/img/add/cheaper.png">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <a href="http://www.ecnhost.com" target="_blank">
+                          <img src="assets/img/add/ecnhost.png">
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Advertise End -->
+        </div>
+      </div>
+    </div>
+    <!--Hidden Site Bar Right-->
+    <div class="ms-slidebar1 sb-slidebar1 sb-left sb-style-overlay" id="ms-slidebar1">
+      <div class="sb-slidebar1-container">
+        <div class="container-full" style="overflow:hidden;">
+          <div class="mb-1-half no-mt card card-warning1">
+            <div class="card-header conurl" align="center">
+              <h4 class="card-title" style="font-size: 18px">
+                <a href="profile.html" role="button">
+                <i class="fa fa-comments"></i><strong>TRADING ROOM</strong></a>
+              </h4>
+            </div>
+          </div>
+          <div class="row no-mt mb-1-half">
+            <div class="col-md-12 ">
+              <table class=" downborder1 lbg1 conurl">
+                <tr class="table table-resonsive lhsize2 ">
+                  <td class="text-center" colspan="3" style="font-size: 11px">Trading Session
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td>
+                    <img src="assets/img/flag/aud.jpg" class="banglaimg">Sydeny
+                  </td>
+                  <td style="text-align: center;">Closed</td>
+                  <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td>
+                    <img src="assets/img/flag/tokyo.png" class="banglaimg">Tokyo
+                  </td>
+                  <td style="text-align: center;">Closed</td>
+                  <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td>
+                    <img src="assets/img/flag/london.png" class="banglaimg">London
+                  </td>
+                  <td style="text-align: center;">Closed</td>
+                  <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td>
+                    <img src="assets/img/flag/newyork.png" class="banglaimg">New York
+                  </td>
+                  <td style="text-align: center;">Closed</td>
+                  <td style="text-align: center;">12:05:12 AM (Thu)</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="row no-mt mb-1-half ">
+            <div class="col-md-12 ">
+              <table class=" downborder1 lbg1">
+                <tr class="table table-resonsive lhsize2">
+                  <td colspan="4" class="abor3 text-center" style="font-size: 11px">Live Market</td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3">
+                    <span>1.2563</span>
+                  </td>
+                  <td>
+                    <span style="color: #10ff00">+1.25%</span>
+                  </td>
+                  <td>
+                    <span style="color: #fa0800">-0.25%</span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3">
+                    <span>1.2563</span>
+                  </td>
+                  <td>
+                    <span style="color: #10ff00">+1.25%</span>
+                  </td>
+                  <td>
+                    <span style="color: #fa0800">-0.25%</span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3">
+                    <span>1.2563</span>
+                  </td>
+                  <td>
+                    <span style="color: #10ff00">+1.25%</span>
+                  </td>
+                  <td>
+                    <span style="color: #fa0800">-0.25%</span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3">
+                    <span>1.2563</span>
+                  </td>
+                  <td>
+                    <span style="color: #10ff00">+1.25%</span>
+                  </td>
+                  <td>
+                    <span style="color: #fa0800">-0.25%</span>
+                  </td>
+                </tr>
+                <tr class="table table-resonsive lhsize2">
+                  <td class="conurl">
+                    <a href="#">
+                    <span>EUR/USD</span>
+                    </a>
+                  </td>
+                  <td class="abor3">
+                    <span>1.2563</span>
+                  </td>
+                  <td>
+                    <span style="color: #10ff00">+1.25%</span>
+                  </td>
+                  <td>
+                    <span style="color: #fa0800">-0.25%</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="row ">
+            <!-- Start Right-navigation -->
+            <div class="col-lg-12 col-md-12 col-sm-12 order-md-2 order-lg-3">
+              <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="no-mb no-mt card card-primary3 lbg3">
+                  <div class="card-header" role="tab" id="headingeleven5">
+                    <h4 class="card-title">
+                      <a class="withripple" role="button" data-toggle="collapse" href="#collapseeleven5" aria-expanded="true" aria-controls="collapseeleven5">
+                      <i class="fa fa-cogs"></i>Technical Analysis</a>
+                    </h4>
+                  </div>
+                  <div id="collapseeleven5" class="card-collapse collapse show num-spacing lbg3" role="tabpanel" aria-labelledby="headingeleven5" data-parent="#accordion5">
+                    <ul>
+                      <li class="conurl ">
+                        <a class="withripple " href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="seel1">
+                      <a class="withripple" href="profile_courses.html">
+                      <span class="list-word-spacing abor1">See All</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="no-mb card card-primary3  lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingthirtythree5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtythree5" aria-expanded="false" aria-controls="collapsethirtythree5">
+                      <i class="fa fa-wrench"></i> Trading Tools</a>
+                    </h4>
+                  </div>
+                  <div id="collapsethirtythree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtythree5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Economic Calender </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="popular_strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Pips Calculator </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="no-mb card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingTwelve5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwelve5" aria-expanded="false" aria-controls="collapseTwelve5">
+                      <i class="fa fa-shopping-cart"></i> FXEDU Market Place</a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwelve5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingTwelve5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Copy Trade Service </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="popular_strategies.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Open Market Place </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="no-mb card card-primary3 lbg3 conurl">
+                  <div class="card-header" role="tab" id="headingthirteen5">
+                    <h4 class="card-title">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirteen5" aria-expanded="false" aria-controls="collapsethirteen5">
+                      <i class="fa fa-fire"></i> Daily Market Update</a>
+                    </h4>
+                  </div>
+                  <div id="collapsethirteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirteen5" data-parent="#accordion5">
+                    <ul>
+                      <li>
+                        <a class="withripple" href="profile_signals.html">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="withripple" href="">
+                        <span class="list-word-spacing">
+                        <i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+                        <span class="badge badge-success pull-right">1.2</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="no-mb card card-primary3">
+                  <div class="card-header" role="tab" id="headingthirtyfive5">
+                    <h4 class="card-title">
+                      <a class="withripple" role="button" data-toggle="collapse" href="#collapsethirtyfive5" aria-expanded="true" aria-controls="collapsethirtyfive5">
+                      <i class="fa fa-globe"></i>News Portal</a>
+                    </h4>
+                  </div>
+                  <div id="collapsethirtyfive5" class="card-collapse collapse show num-spacing lbg3" role="tabpanel" aria-labelledby="headingthirtyfive5" data-parent="#accordion5">
+                    <ul>
+                      <li class="conurl ">
+                        <a class="withripple " href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                      <li class="conurl ">
+                        <a class="withripple" href="profile_courses.html">
+                        <span class="list-word-spacing abor">
+                        <i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="seel1">
+                      <a class="withripple" href="profile_courses.html">
+                      <span class="list-word-spacing abor1">See All</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Left-navigation -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Signal Ticker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Forum Content Js -->
+    <script type="text/javascript">
+      $('.forum-toggle').click(function(){
+         var targetForum=$(this).attr('data-name');
+         $('.forum-'+targetForum).slideToggle("slow");
+         $(this).find('.fa-minus,.fa-plus').toggleClass('fa-plus fa-minus');
+      });
+    </script>
+    <!-- Forum Content Js End -->
+    
+    <script>
+      $(document).ready(function () {
+         if ($(window).width() <= 991) {
+            $("#seconddiv").remove().insertAfter("#thirddiv");
+         } else {
+            $("#thirddiv").remove().insertAfter("#seconddiv");
+         }
+      
+      });
+    </script>
+    <!--New JS end-->
+    <!-- End Signal Ticker -->
+    <script src="../assets/js/plugins.min.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <script src="../assets/js/portfolio.js"></script>
+    <script src="../assets/js/sidebar-right.js"></script>
+    <script>
+      $(document).ready(function(){
+      
+      if ($(window).width() < 768 ) {
+          length = 570;
+      }
+      
+      else{
+          length = 2600;
+      }
+      
+      cHtml = $(".school-content").html();
+      cText = $(".school-content").html().substr(0, length).trim();
+      
+      if(cHtml.length>length){
+      
+      $(".school-content").addClass("compressed").html(cText + "... <a href='javascript:void(0)' data-target='#description' id='toggle' class='reply exp see-more-button'>Read More <i class=' fa fa-chevron-down'></i></a>");
+      window.handler = function()
+      {
+          $('.exp').click(function(){
+              if ($(".school-content").hasClass("compressed"))
+              {
+                  $(".school-content").html(cHtml + "<a href='javascript:void(0)' data-target='#description' id='toggle' class='exp reply see-more-button no-ml'>Read Less <i class= 'fa fa-chevron-up'></i></a>");
+                  $(".school-content").removeClass("compressed");
+                  $('.school-content p').last().addClass('no-m');
+                  handler();
+                  return false;
+              }
+              else
+              {
+                  $(".school-content").html(cText  + "...<a href='javascript:void(0)' data-target='#description' id='toggle' class='exp reply see-more-button'>Read More <i class=' fa fa-chevron-down'></i></a>" );
+                  $(".school-content").addClass("compressed");
+                  $(".school-content p:last-child").css('margin-bottom','0');
+                  handler();
+                  return false;
+              }
+          });
+      }
+      handler();
+      }
+      
+      });
+    </script>
+    <script>
+      $('.side-toggle').click(function(){
+        $('#thirddiv').fadeToggle();
+        $('#seconddiv').toggleClass('no-pr');
+        $('#seconddiv').toggleClass('col-lg-12 col-lg-9');
+        $('.toggle-adjust-left').toggleClass('col-md-3 col-md-4');
+        $('.toggle-adjust-right').toggleClass('col-md-9 col-md-8');
+      })
+    </script>
+    <script src="../assets/js/simplebar.js"></script>
+    <script>
+      $('#quickLink').click(function(){
+        $('#quickLinkNav').slideToggle();
+      })
+    </script>
+    
+<!-- Trauncate Text -->
+      <script>
+        $('.popular-post').each(function(){
+      var discriptionText = $(this).text();
+        if (discriptionText.length > 80) {
+        var truncated = discriptionText.trim().substring(0, 82) + "…";
+        $(this).text(truncated);
+        }
+        })
+    </script>
+<!-- Trauncate Text -->
+
+<script>
+ $('.subscribe-forum').on('click',function(){
+        if($('.change-icon').hasClass('fa-check-circle')){
+          $('.change-icon').removeClass('fa-check-circle').addClass('fa-times-circle');
+          $('.changehtml').text('Unsubscribe');
+        }
+        else{
+          $('.change-icon').removeClass('fa-times-circle').addClass('fa-check-circle');
+          $('.changehtml').text('Subscribe');
+        }
+      
+      })
+</script>
+
+<script>
+      var box=$('#profile2');
+        $('.button-effect').on('click', function(){
+          box.addClass('visuallyhidden');
+          $('.button-effect').addClass('visuallyhidden');
+          box.one('transitionend', function(e) {
+            box.addClass('hidden');
+          });
+          $('.button-effect').one('transitionend', function(e) {
+             $('.button-effect').addClass('hidden');
+          });
+        $('.button-effect-2').removeClass('hidden')
+        });
+
+        $('.button-effect-2').on('click',function(){
+          box.removeClass('hidden');
+            $('.button-effect').removeClass('hidden');
+            setTimeout(function () {
+              box.removeClass('visuallyhidden');
+              $('.button-effect').removeClass('visuallyhidden');
+            }, 20);
+            $('.button-effect-2').addClass('hidden')
+        })
+    </script>
+    
+  </body>
+</html>

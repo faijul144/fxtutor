@@ -1,0 +1,2153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="theme-color" content="#333">
+		<title>FX EDU</title>
+		<meta name="description" content="Material Style Theme">
+		<link rel="shortcut icon" href="../assets/img/favicon.png?v=3">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="../assets/css/preload.min.css">
+		<link rel="stylesheet" href="../assets/css/plugins.min.css">
+		<link rel="stylesheet" href="../assets/css/style.light-blue-500.min.css">
+		<link rel="stylesheet" href="../assets/css/app.css">
+		<link rel="stylesheet" href="../assets/css/custom.css">
+		<link rel="stylesheet" href="../assets/css/bum.css">
+		<link rel="stylesheet" href="../assets/css/faeffect.css">
+		<link rel="stylesheet" href="../assets/css/jquery.simpleTicker.css">
+		<link rel="stylesheet" href="../assets/css/footable.bootstrap.css">
+		<!--Flag Icon-->
+		<link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+		<!-- Notification -->
+	</head>
+	<body>
+		<div id="ms-preload" class="ms-preload">
+			<div id="status">
+				<div class="spinner">
+					<div class="dot1"></div>
+					<div class="dot2"></div>
+				</div>
+			</div>
+		</div>
+		<div class="ms-site-container">
+		<!-- Modal -->
+		<div class="modal modal-primary" id="ms-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog animated zoomIn animated-3x" role="document">
+				<div class="modal-content">
+					<div class="modal-header d-block shadow-2dp no-pb">
+						<button type="button" class="close d-inline pull-right mt-2" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">
+						<i class="zmdi zmdi-close"></i>
+						</span>
+						</button>
+						<div class="modal-title text-center">
+							<span class="ms-logo ms-logo-white ms-logo-sm mr-1">FX</span>
+							<h3 class="no-m ms-site-title">EDU
+							</h3>
+						</div>
+						<div class="modal-header-tabs">
+							<ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-primary" role="tablist">
+								<li class="nav-item" role="presentation">
+									<a href="#ms-login-tab" aria-controls="ms-login-tab" role="tab" data-toggle="tab" class="nav-link active withoutripple">
+									<i class="zmdi zmdi-account"></i> Login</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab" class="nav-link withoutripple">
+									<i class="zmdi zmdi-account-add"></i> Register</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a href="#ms-recovery-tab" aria-controls="ms-recovery-tab" role="tab" data-toggle="tab" class="nav-link withoutripple">
+									<i class="zmdi zmdi-key"></i> Recovery Pass</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane fade active show" id="ms-login-tab">
+								<form autocomplete="off">
+									<fieldset>
+										<div class="form-group label-floating">
+											<div class="input-group">
+												<span class="input-group-addon">
+												<i class="zmdi zmdi-account"></i>
+												</span>
+												<label class="control-label" for="ms-form-user">Username</label>
+												<input type="text" id="ms-form-user" class="form-control">
+											</div>
+										</div>
+										<div class="form-group label-floating">
+											<div class="input-group">
+												<span class="input-group-addon">
+												<i class="zmdi zmdi-lock"></i>
+												</span>
+												<label class="control-label" for="ms-form-pass">Password</label>
+												<input type="password" id="ms-form-pass" class="form-control">
+											</div>
+										</div>
+										<div class="row mt-2">
+											<div class="col-md-6">
+												<div class="form-group no-mt">
+													<div class="checkbox">
+														<label>
+														<input type="checkbox"> Remember Me </label>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<button class="btn btn-raised btn-primary pull-right">Login</button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+								<div class="text-center">
+									<h3>Login with</h3>
+									<a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-facebook">
+									<i class="zmdi zmdi-facebook"></i> Facebook</a>
+									<a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-twitter">
+									<i class="zmdi zmdi-twitter"></i> Twitter</a>
+									<a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-google">
+									<i class="zmdi zmdi-google"></i> Google</a>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="ms-register-tab">
+								<form>
+									<fieldset>
+										<div class="form-group label-floating">
+											<div class="input-group">
+												<span class="input-group-addon">
+												<i class="zmdi zmdi-account"></i>
+												</span>
+												<label class="control-label" for="ms-form-user-r">Username</label>
+												<input type="text" id="ms-form-user-r" class="form-control">
+											</div>
+										</div>
+										<div class="form-group label-floating">
+											<div class="input-group">
+												<span class="input-group-addon">
+												<i class="zmdi zmdi-email"></i>
+												</span>
+												<label class="control-label" for="ms-form-email-r">Email</label>
+												<input type="email" id="ms-form-email-r" class="form-control">
+											</div>
+										</div>
+										<div class="form-group label-floating">
+											<div class="input-group">
+												<span class="input-group-addon">
+												<i class="zmdi zmdi-lock"></i>
+												</span>
+												<label class="control-label" for="ms-form-pass-r">Password</label>
+												<input type="password" id="ms-form-pass-r" class="form-control">
+											</div>
+										</div>
+										<div class="form-group label-floating">
+											<div class="input-group">
+												<span class="input-group-addon">
+												<i class="zmdi zmdi-lock"></i>
+												</span>
+												<label class="control-label" for="ms-form-pass-rn">Re-type Password</label>
+												<input type="password" id="ms-form-pass-rn" class="form-control">
+											</div>
+										</div>
+										<button class="btn btn-raised btn-block btn-primary">Register Now</button>
+									</fieldset>
+								</form>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="ms-recovery-tab">
+								<fieldset>
+									<div class="form-group label-floating">
+										<div class="input-group">
+											<span class="input-group-addon">
+											<i class="zmdi zmdi-account"></i>
+											</span>
+											<label class="control-label" for="ms-form-user-re">Username</label>
+											<input type="text" id="ms-form-user-re" class="form-control">
+										</div>
+									</div>
+									<div class="form-group label-floating">
+										<div class="input-group">
+											<span class="input-group-addon">
+											<i class="zmdi zmdi-email"></i>
+											</span>
+											<label class="control-label" for="ms-form-email-re">Email</label>
+											<input type="email" id="ms-form-email-re" class="form-control">
+										</div>
+									</div>
+									<button class="btn btn-raised btn-block btn-primary">Send Password</button>
+								</fieldset>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="ms-header ms-header-primary1 headerfix">
+			<!--ms-header-primary-->
+			<div class="container container-full">
+				<div class="ms-title ">
+					<div class="row logo-margin-top conurl">
+						<a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-left huda ">
+						<i class="zmdi zmdi-menu mho "></i>
+						</a>
+						<a href="../index.html">
+							<!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
+							<span class="ms-logo animated zoomInDown animation-delay-5">FX</span>
+							<h1 class="animated fadeInRight animation-delay-6">
+								<span>EDU</span>
+							</h1>
+						</a>
+					</div>
+				</div>
+				<div class="header-right ml-4 " style="margin-top: 4px">
+					<div class="row">
+						<div class="dropdown profile-button-pull d-none d-md-block">
+							<button class="btn btn-default btn-city dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+								aria-expanded="true">
+							<img src="../assets/img/profile.jpg" class="banglaprof">
+							<span class="profile-name">Raj Shah
+							<i class="fa fa-ellipsis-v"> </i>
+							</span>
+							<span class="caret caret-search"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenu1">
+								<li>
+									<a href="#">My Profile</a>
+								</li>
+								<li>
+									<a href="#">My Wallet</a>
+								</li>
+								<li>
+									<a class="lp_bottom" href="#" style="border-bottom: none">
+									<i class="fa fa-sign-out"></i>Logout</a>
+								</li>
+							</ul>
+						</div>
+						<!-- Notification Menu -->
+						<div class="dropdown bell-color">
+							<a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+							<i class="glyphicon glyphicon-bell"></i>
+							<span class="badge-pill badge-pill-warning badge-pill-move">10</span>
+							</a>
+							<ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel" id="notification-dropdown">
+								<div class="notification-heading">
+									<h4 class="menu-title">Notifications</h4>
+									<h4 class="menu-title float-right">
+										<a href="#">Mark all as read
+										</a>
+									</h4>
+								</div>
+								<div class="notifications-wrapper conurl">
+									<a class="content" href="#">
+										<div class="notification-item">
+											<p class="item-info">Marketing 101, Video Assignment</p>
+										</div>
+									</a>
+									<a class="content" href="#">
+										<div class="notification-item">
+											<p class="item-info">Marketing 101, Video Assignment</p>
+										</div>
+									</a>
+									<a class="content" href="#">
+										<div class="notification-item">
+											<p class="item-info">Marketing 101, Video Assignment</p>
+										</div>
+									</a>
+									<a class="content" href="#">
+										<div class="notification-item">
+											<p class="item-info">Marketing 101, Video Assignment</p>
+										</div>
+									</a>
+									<a class="content" href="#">
+										<div class="notification-item">
+											<p class="item-info">Marketing 101, Video Assignment</p>
+										</div>
+									</a>
+									<a class="content" href="#">
+										<div class="notification-item">
+											<p class="item-info">Marketing 101, Video Assignment</p>
+										</div>
+									</a>
+									<a class="content" href="#">
+										<div class="notification-item">
+											<p class="item-info">Marketing 101, Video Assignment</p>
+										</div>
+									</a>
+									<a class="content" href="#">
+										<div class="notification-item">
+											<p class="item-info">Marketing 101, Video Assignment</p>
+										</div>
+									</a>
+								</div>
+								<div class="notification-footer">
+									<a href="#">
+										<h4 class="footer-menu-title ">View all&nbsp. . </h4>
+									</a>
+								</div>
+							</ul>
+						</div>
+						<!-- End Notification Menu -->
+						<div class="conurl mt-2">
+							<a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-right huda ">
+							<i class="zmdi zmdi-menu " style="font-size:28px"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End REVOLUTION SLIDER 5.3.0.2 fullscreen mode -->
+		<div class="container-fluid no-pl no-pr no-ml no-mr redwine ">
+			<div class="container-fluid stickermtp2 " id="ticker">
+				<div id="carouselTicker" class="carouselTicker">
+					<ul class="carouselTicker__list ">
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li>
+									<li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class=" lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="carouselTicker__item ">
+							<ul class="carouselTicker__list " style="margin-top:0px;margin-bottom:0px">
+								<div class="card  ">
+									<li class="  ">
+									<li class="lbg" style="padding-top:3px;padding-bottom:3px;color:#fff;">
+										<strong>USDHF : 1.225457 </strong>
+									</li>
+									</li>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- body start -->
+		<div class="container-fluid no-p fixed-gap-last5" style="background-color: #001129">
+		<div class="table-wrap" >
+			<div class="conurl slave-above text-uppercase"><span>Activity on John Doe</span></div>
+			<div class="conurl slave-above"><a href="my-slaves.html"><i class="fa fa-backward"></i><span>Back to My Signals</span></a>
+				<a href="my-slaves-edit-signal.html"><i class="fa fa-pencil-square-o pull-right no-mr"></i></a>
+			</div>
+			<div class="wrap wrap-slave-edit mt-1 color-dark d-none d-md-block d-lg-block" >
+				<ul class="custum-nav-indicator slave-sm-none nav nav-tabs nav-tabs-transparent indicator-primary market-panal-bg" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link withoutripple active" href="#general_information" aria-controls="cat" role="tab" data-toggle="tab">
+						<span class="d-none d-sm-inline">General Information</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link withoutripple" href="#open_trade"  aria-controls="cat1" role="tab" data-toggle="tab">
+						<span class="d-none d-sm-inline">Open Trade </span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link withoutripple" href="#trade_history" aria-controls="cat2" role="tab" data-toggle="tab">
+						<span class="d-none d-sm-inline">Trade History </span>
+						</a>
+					</li>
+				</ul>
+				<div class="panel-body">
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active show fade" id="general_information">
+							<div class="container-full">
+								<div class="row">
+									<div class="col-md-6 left-slave-activity">
+										<div class="col-md-12 no-p">
+											<div class="card slave-activity-card">
+												<div class="card-header">
+													<p>Account Details</p>
+												</div>
+												<div class="card-body">
+													<table>
+														<tr>
+															<td>Account Number</td>
+															<td>543543543</td>
+														</tr>
+														<tr>
+															<td>Last Account Update</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>Last Account Update Time</td>
+															<td>Never</td>
+														</tr>
+														<tr>
+															<td>Account Balance</td>
+															<td>Unknown</td>
+														</tr>
+														<tr>
+															<td>Floating Profit/Loss</td>
+															<td>Unknown</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 no-p">
+											<div class="card slave-activity-card">
+												<div class="card-header">
+													<p>Account Updates</p>
+												</div>
+												<div class="card-body">
+													<p>Account updates are balance and profit/loss updates. These are performed periodically and may vary from updating every few seconds to 5 minutes. We only update your account balances when the copier is not busy managing your trades.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 right-slave-activity">
+										<div class="card slave-activity-card">
+											<div class="card-header">
+												<p>Information</p>
+											</div>
+											<div class="card-body">
+												<p>The activity of your account is displayed on this page including open and closed trades. You can use this to confirm that everything is looking correct with your account.</p>
+												<p>Please note: We only store open trades from signals we provide. If you have open trades from other sources this will reflect in the equity but will not show in the open trades table.</p>
+												<p>Open trades and trade history is displayed at the bottom of this page beneath your signal statistics.</p>
+												<p>Slippage introduced - We have introduced a slippage value in the history table - please read this wiki article to understand the calculation.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="open_trade">
+							<div class="radious-slave-activity-container">
+								<div class="container-fluid mt-1">
+									<div class="row  search-bg-trasparent">
+										<div class="col-12 d-inline-flex no-p">
+											<span class="search-text">Search</span>
+											<form action="" class="form-group search-custom field-radius">
+												<input id="" type="text"class="form-control form-custom" placeholder="Search...." name="q">
+											</form>
+										</div>
+									</div>
+								</div>
+								<table class="table slave-activity-table " data-show-toggle="true" data-expand-first="false">
+									<thead>
+										<tr>
+											<th >Signal</th>
+											<th data-breakpoints="xs sm md">Open Time</th>
+											<th data-breakpoints="xs sm md">Open Price</th>
+											<th >Lots</th>
+											<th data-breakpoints="xs sm md">Type</th>
+											<th data-breakpoints="xs sm md">Pair</th>
+											<th data-breakpoints="xs sm md">Profit</th>
+											<th data-breakpoints="xs sm md">Pips</th>
+											<th >ID</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Dennise</td>
+											<td>10.00 p.m.</td>
+											<td>5000$</td>
+											<td>0</td>
+											<td>Unknown</td>
+											<td>Unknown</td>
+											<td>10%</td>
+											<td>0</td>
+											<td>00111335</td>
+										</tr>
+										<tr>
+											<td>Dennise</td>
+											<td>10.00 p.m.</td>
+											<td>5000$</td>
+											<td>0</td>
+											<td>Unknown</td>
+											<td>Unknown</td>
+											<td>10%</td>
+											<td>0</td>
+											<td>00111335</td>
+										</tr>
+										<tr>
+											<td>Dennise</td>
+											<td>10.00 p.m.</td>
+											<td>5000$</td>
+											<td>0</td>
+											<td>Unknown</td>
+											<td>Unknown</td>
+											<td>10%</td>
+											<td>0</td>
+											<td>00111335</td>
+										</tr>
+										<tr>
+											<td>Dennise</td>
+											<td>10.00 p.m.</td>
+											<td>5000$</td>
+											<td>0</td>
+											<td>Unknown</td>
+											<td>Unknown</td>
+											<td>10%</td>
+											<td>0</td>
+											<td>00111335</td>
+										</tr>
+										<tr>
+											<td>Dennise</td>
+											<td>10.00 p.m.</td>
+											<td>5000$</td>
+											<td>0</td>
+											<td>Unknown</td>
+											<td>Unknown</td>
+											<td>10%</td>
+											<td>0</td>
+											<td>00111335</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="trade_history">
+							<p class="slave-tip no-mt">Below you can select currency pairs that you wish to stop trading on your chart. For example, if you find that EURUSD isn't trading well on your account, simply select EURUSD and this will stop allowing this currency pair from trading.</p>
+							<h4 class="slave-inner-heading">Trade History </h4>
+							<div class="slave-bottom"></div>
+							<p class="slave-tip">Partial Trade - When the trade is partial, we display the lots remaining. When using your trading platform, it will most likely show the lots closed. Please take note of this difference.</p>
+							<div class="radious-slave-activity-container">
+								<div class="container-fluid mt-1">
+									<div class="row  search-bg-trasparent">
+										<div class="col-12 d-inline-flex no-p">
+											<span class="search-text">Search</span>
+											<form action="" class="form-group search-custom field-radius">
+												<input id="" type="text"class="form-control form-custom" placeholder="Search...." name="q">
+											</form>
+										</div>
+									</div>
+								</div>
+								<table class="table slave-activity-table " data-show-toggle="true" data-expand-first="false">
+									<thead>
+										<tr>
+											<th >Signal</th>
+											<th data-breakpoints="xs sm md">Open Time</th>
+											<th data-breakpoints="xs sm md">Close Time</th>
+											<th data-breakpoints="xs sm md">Open Price</th>
+											<th data-breakpoints="xs sm md">Close Price</th>
+											<th >Lots</th>
+											<th data-breakpoints="xs sm md">Type</th>
+											<th data-breakpoints="xs sm md">Pair</th>
+											<th data-breakpoints="xs sm md">Profit</th>
+											<th data-breakpoints="xs sm md">Pips</th>
+											<th >ID</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Dennise</td>
+											<td>10.00 p.m.</td>
+											<td>10.00 a.m.</td>
+											<td>5000$</td>
+											<td>5000$</td>
+											<td>0</td>
+											<td>Unknown</td>
+											<td>Unknown</td>
+											<td>10%</td>
+											<td>0</td>
+											<td>00111335</td>
+										</tr>
+										<tr>
+											<td>Dennise</td>
+											<td>10.00 p.m.</td>
+											<td>10.00 a.m.</td>
+											<td>5000$</td>
+											<td>5000$</td>
+											<td>0</td>
+											<td>Unknown</td>
+											<td>Unknown</td>
+											<td>10%</td>
+											<td>0</td>
+											<td>00111335</td>
+										</tr>
+										<tr>
+											<td>Dennise</td>
+											<td>10.00 p.m.</td>
+											<td>10.00 a.m.</td>
+											<td>5000$</td>
+											<td>5000$</td>
+											<td>0</td>
+											<td>Unknown</td>
+											<td>Unknown</td>
+											<td>10%</td>
+											<td>0</td>
+											<td>00111335</td>
+										</tr>
+										<tr>
+											<td>Dennise</td>
+											<td>10.00 p.m.</td>
+											<td>10.00 a.m.</td>
+											<td>5000$</td>
+											<td>5000$</td>
+											<td>0</td>
+											<td>Unknown</td>
+											<td>Unknown</td>
+											<td>10%</td>
+											<td>0</td>
+											<td>00111335</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row d-sm-block d-lg-none d-md-none sm-slave-edit-possition">
+				<div class="col-lg-12">
+					<div class="card card-slave-blue card-hero animated fadeInUp animation-delay-7">
+						<div class="panel-group ms-collapse no-margin" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="card card-primary1 ">
+								<div class="card-header border-bottom" role="tab" id="headingOne">
+									<h4 class="card-title ms-rotate-icon">
+										<a class="withripple" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											<div class="fa fa-chain-broken mr-1"></div>
+											General Information
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="card-collapse collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body wrap-slave-edit-sm">
+										<div class="container-full">
+											<div class="row">
+												<div class="col-md-6 left-slave-activity">
+													<div class="col-md-12 no-p">
+														<div class="card slave-activity-card">
+															<div class="card-header">
+																<p>Account Details</p>
+															</div>
+															<div class="card-body">
+																<table>
+																	<tr>
+																		<td>Account Number</td>
+																		<td>543543543</td>
+																	</tr>
+																	<tr>
+																		<td>Last Account Update</td>
+																		<td></td>
+																	</tr>
+																	<tr>
+																		<td>Last Account Update Time</td>
+																		<td>Never</td>
+																	</tr>
+																	<tr>
+																		<td>Account Balance</td>
+																		<td>Unknown</td>
+																	</tr>
+																	<tr>
+																		<td>Floating Profit/Loss</td>
+																		<td>Unknown</td>
+																	</tr>
+																</table>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-12 no-p">
+														<div class="card slave-activity-card">
+															<div class="card-header">
+																<p>Account Updates</p>
+															</div>
+															<div class="card-body">
+																<p>Account updates are balance and profit/loss updates. These are performed periodically and may vary from updating every few seconds to 5 minutes. We only update your account balances when the copier is not busy managing your trades.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6 right-slave-activity">
+													<div class="card slave-activity-card">
+														<div class="card-header">
+															<p>Information</p>
+														</div>
+														<div class="card-body">
+															<p>The activity of your account is displayed on this page including open and closed trades. You can use this to confirm that everything is looking correct with your account.</p>
+															<p>Please note: We only store open trades from signals we provide. If you have open trades from other sources this will reflect in the equity but will not show in the open trades table.</p>
+															<p>Open trades and trade history is displayed at the bottom of this page beneath your signal statistics.</p>
+															<p>Slippage introduced - We have introduced a slippage value in the history table - please read this wiki article to understand the calculation.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card card-primary1 slave-card-bottom-border">
+									<div class="card-header" role="tab" id="headingTwo">
+										<h4 class="card-title ms-rotate-icon">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												<div class="fa fa-chain-broken mr-1"></div>
+												Open Trade
+											</a>
+										</h4>
+									</div>
+									<div id="collapseTwo" class="card-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+										<div class="card-body wrap-slave-edit-sm">
+											<div class="radious-slave-activity-container">
+												<div class="container-fluid mt-1">
+													<div class="row  search-bg-trasparent">
+														<div class="col-12 d-inline-flex no-p">
+															<span class="search-text">Search</span>
+															<form action="" class="form-group search-custom field-radius">
+																<input id="" type="text"class="form-control form-custom" placeholder="Search...." name="q">
+															</form>
+														</div>
+													</div>
+												</div>
+												<table class="table slave-activity-table " data-show-toggle="true" data-expand-first="false">
+													<thead>
+														<tr>
+															<th >Signal</th>
+															<th data-breakpoints="xs sm md">Open Time</th>
+															<th data-breakpoints="xs sm md">Open Price</th>
+															<th >Lots</th>
+															<th data-breakpoints="xs sm md">Type</th>
+															<th data-breakpoints="xs sm md">Pair</th>
+															<th data-breakpoints="xs sm md">Profit</th>
+															<th data-breakpoints="xs sm md">Pips</th>
+															<th >ID</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Dennise</td>
+															<td>10.00 p.m.</td>
+															<td>5000$</td>
+															<td>0</td>
+															<td>Unknown</td>
+															<td>Unknown</td>
+															<td>10%</td>
+															<td>0</td>
+															<td>00111335</td>
+														</tr>
+														<tr>
+															<td>Dennise</td>
+															<td>10.00 p.m.</td>
+															<td>5000$</td>
+															<td>0</td>
+															<td>Unknown</td>
+															<td>Unknown</td>
+															<td>10%</td>
+															<td>0</td>
+															<td>00111335</td>
+														</tr>
+														<tr>
+															<td>Dennise</td>
+															<td>10.00 p.m.</td>
+															<td>5000$</td>
+															<td>0</td>
+															<td>Unknown</td>
+															<td>Unknown</td>
+															<td>10%</td>
+															<td>0</td>
+															<td>00111335</td>
+														</tr>
+														<tr>
+															<td>Dennise</td>
+															<td>10.00 p.m.</td>
+															<td>5000$</td>
+															<td>0</td>
+															<td>Unknown</td>
+															<td>Unknown</td>
+															<td>10%</td>
+															<td>0</td>
+															<td>00111335</td>
+														</tr>
+														<tr>
+															<td>Dennise</td>
+															<td>10.00 p.m.</td>
+															<td>5000$</td>
+															<td>0</td>
+															<td>Unknown</td>
+															<td>Unknown</td>
+															<td>10%</td>
+															<td>0</td>
+															<td>00111335</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card card-primary1 slave-card-bottom-border">
+									<div class="card-header" role="tab" id="headingThree">
+										<h4 class="card-title ms-rotate-icon">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+												<div class="fa fa-chain-broken mr-1"></div>
+												Trade History
+											</a>
+										</h4>
+									</div>
+									<div id="collapseThree" class="card-collapse collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+										<div class="card-body wrap-slave-edit-sm">
+											<p class="slave-tip">Below you can select currency pairs that you wish to stop trading on your chart. For example, if you find that EURUSD isn't trading well on your account, simply select EURUSD and this will stop allowing this currency pair from trading.</p>
+											<h4 class="slave-inner-heading">Trade History </h4>
+											<div class="slave-bottom"></div>
+											<p class="slave-tip">Partial Trade - When the trade is partial, we display the lots remaining. When using your trading platform, it will most likely show the lots closed. Please take note of this difference.</p>
+											<div class="radious-slave-activity-container">
+												<div class="container-fluid mt-1">
+													<div class="row  search-bg-trasparent">
+														<div class="col-12 d-inline-flex no-p">
+															<span class="search-text">Search</span>
+															<form action="" class="form-group search-custom field-radius">
+																<input id="" type="text"class="form-control form-custom" placeholder="Search...." name="q">
+															</form>
+														</div>
+													</div>
+												</div>
+												<table class="table slave-activity-table " data-show-toggle="true" data-expand-first="false">
+													<thead>
+														<tr>
+															<th >Signal</th>
+															<th data-breakpoints="xs sm md">Open Time</th>
+															<th data-breakpoints="xs sm md">Close Time</th>
+															<th data-breakpoints="xs sm md">Open Price</th>
+															<th data-breakpoints="xs sm md">Close Price</th>
+															<th >Lots</th>
+															<th data-breakpoints="xs sm md">Type</th>
+															<th data-breakpoints="xs sm md">Pair</th>
+															<th data-breakpoints="xs sm md">Profit</th>
+															<th data-breakpoints="xs sm md">Pips</th>
+															<th >ID</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Dennise</td>
+															<td>10.00 p.m.</td>
+															<td>10.00 a.m.</td>
+															<td>5000$</td>
+															<td>5000$</td>
+															<td>0</td>
+															<td>Unknown</td>
+															<td>Unknown</td>
+															<td>10%</td>
+															<td>0</td>
+															<td>00111335</td>
+														</tr>
+														<tr>
+															<td>Dennise</td>
+															<td>10.00 p.m.</td>
+															<td>10.00 a.m.</td>
+															<td>5000$</td>
+															<td>5000$</td>
+															<td>0</td>
+															<td>Unknown</td>
+															<td>Unknown</td>
+															<td>10%</td>
+															<td>0</td>
+															<td>00111335</td>
+														</tr>
+														<tr>
+															<td>Dennise</td>
+															<td>10.00 p.m.</td>
+															<td>10.00 a.m.</td>
+															<td>5000$</td>
+															<td>5000$</td>
+															<td>0</td>
+															<td>Unknown</td>
+															<td>Unknown</td>
+															<td>10%</td>
+															<td>0</td>
+															<td>00111335</td>
+														</tr>
+														<tr>
+															<td>Dennise</td>
+															<td>10.00 p.m.</td>
+															<td>10.00 a.m.</td>
+															<td>5000$</td>
+															<td>5000$</td>
+															<td>0</td>
+															<td>Unknown</td>
+															<td>Unknown</td>
+															<td>10%</td>
+															<td>0</td>
+															<td>00111335</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            </div>
+            </div>
+		</div>
+		<!-- footer -->
+		<aside class="ms-footbar no-mt no-pt">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4 ms-footer-col">
+						<div class="ms-footbar-block">
+							<h3 class="ms-footbar-title">Sitemap</h3>
+							<ul class="list-unstyled ms-icon-list three_cols">
+								<li>
+									<a href="#">Home</a>
+								</li>
+								<li>
+									<a href="#">Blog</a>
+								</li>
+								<li>
+									<a href="#">Portafolio</a>
+								</li>
+								<li>
+									<a href="#">Works</a>
+								</li>
+								<li>
+									<a href="#">Timeline</a>
+								</li>
+								<li>
+									<a href="#">Pricing</a>
+								</li>
+								<li>
+									<a href="#">About Us</a>
+								</li>
+								<li>
+									<a href="#">Our Team</a>
+								</li>
+								<li>
+									<a href="#">Services</a>
+								</li>
+								<li>
+									<a href="#">FAQ</a>
+								</li>
+								<li>
+									<a href="#">Login</a>
+								</li>
+								<li>
+									<a href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 ms-footer-col ms-footer-alt-color" align="center" style="padding-top:10px">
+						<div class="ms-footbar-block">
+							<h3 class="ms-footbar-title">Social Media</h3>
+							<div class="ms-footbar-social">
+								<a href="javascript:void(0)" class="btn-circle btn-facebook" style="background-color:#607d8b">
+								<i class="zmdi zmdi-facebook"></i>
+								</a>
+								<a href="javascript:void(0)" class="btn-circle btn-twitter" style="background-color:#607d8b">
+								<i class="zmdi zmdi-twitter"></i>
+								</a>
+								<a href="javascript:void(0)" class="btn-circle btn-youtube" style="background-color:#607d8b">
+								<i class="zmdi zmdi-youtube-play"></i>
+								</a>
+								<br>
+								<a href="javascript:void(0)" class="btn-circle btn-google" style="background-color:#607d8b">
+								<i class="zmdi zmdi-google"></i>
+								</a>
+								<a href="javascript:void(0)" class="btn-circle btn-instagram" style="background-color:#607d8b">
+								<i class="zmdi zmdi-instagram"></i>
+								</a>
+								<a href="javascript:void(0)" class="btn-circle btn-github" style="background-color:#607d8b">
+								<i class="zmdi zmdi-github"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 ms-footer-col ">
+						<div class="ms-footbar-block ">
+							<h3 class="ms-footbar-title">Subscribe</h3>
+							<p class="">To get further updates of our edu site or you want then please do subscribe us.</p>
+							<form>
+								<div class="form-group label-floating mt-2 mb-1">
+									<div class="input-group ms-input-subscribe">
+										<label class="control-label" for="ms-subscribe">
+										<i class="zmdi zmdi-email"></i> Email Adress</label>
+										<input type="email" id="ms-subscribe" class="form-control">
+									</div>
+								</div>
+								<button class="ms-subscribre-btn" type="button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<footer class="ms-footer">
+			<div class="container">
+				<p>Copyright &copy; FX EDU 2018</p>
+			</div>
+			<hr>
+			<div class="container-fluid">
+				<p align="justify">
+					<strong style="color:#70BF44">Risk Disclaimer : </strong>FX Academy will not be held liable for any loss or damage resulting from reliance
+					on the information contained within this website including market news, analysis, trading signals and Forex
+					broker reviews. The data contained in this website is not necessarily real-time nor accurate, and analyses
+					are the opinions of the author and do not represent the recommendations of FX Academy or its employees. Currency
+					trading on margin involves high risk, and is not suitable for all investors. As a leveraged product losses
+					are able to exceed initial deposits and capital is at risk. Before deciding to trade Forex or any other financial
+					instrument you should carefully consider your investment objectives, level of experience, and risk appetite.
+				</p>
+			</div>
+		</footer>
+		<!--start end footer list-->
+		<div class="ms-footer conurl">
+			<span class="pr-1">
+			<a href="">Risk Warning</a>
+			</span>
+			<span class="">|</span>
+			<span class="pl-1">
+			<a href="javascript:void(0)">Disclaimer</a>
+			</span>
+			<span class="pl-1">|</span>
+			<span class="pl-1">
+			<a href="javascript:void(0)">Privacy</a>
+			</span>
+			<span class="pl-1">|</span>
+			<span class="pl-1">
+			<a href="javascript:void(0)">Terms & Condition</a>
+			</span>
+			<span class="pl-1">|</span>
+			<span class="pl-1">
+			<a href="javascript:void(0)">Complaints Handling</a>
+			</span>
+		</div>
+		<!--end end footer list-->
+		<div class="btn-back-top">
+			<a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">
+			<i class="zmdi zmdi-long-arrow-up"></i>
+			</a>
+		</div>
+		<!-- end footer -->
+		<!-- ms-site-container -->
+		<div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+			<div class="sb-slidebar-container ">
+				<div class="container-full" style="overflow:hidden;">
+					<div class="row">
+						<!-- Start Left-navigation -->
+						<div class="col-lg-12 col-sm-12 order-md-2 order-lg-3">
+							<div class="no-mt no-mb card card-warning1">
+								<div class="card-header conurl" align="center">
+									<h4 class="card-title" style="font-size: 18px">
+										<a role="button " href="../profile.html">
+										<span>
+										<i class="fa fa-dashcube"></i>
+										<strong>MY DASHBOARD</strong>
+										</span>
+										</a>
+									</h4>
+								</div>
+							</div>
+							<div class="ms-collapse no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="mb-0 card card-primary3  lbg3 conurl ">
+									<div class="card-header " role="tab" id="headingeighteen5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseeighteen5" aria-expanded="false" aria-controls="collapseeighteen5">
+											<i class="fa fa-pencil"></i>User Update</a>
+										</h4>
+									</div>
+									<div id="collapseeighteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingeighteen5"
+										data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="profile_courses.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Post New Update</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="mb-0 card card-primary3  lbg3 conurl ">
+									<div class="card-header " role="tab" id="headingSix5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseSix5" aria-expanded="false" aria-controls="collapseSix5">
+											<i class="fa fa-key"></i>FXTUTOR Courses</a>
+										</h4>
+									</div>
+									<div id="collapseSix5" class="card-collapse collapse  num-spacing" role="tabpanel" aria-labelledby="headingSix5" data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="../courses_basic.html">
+												<span class="list-word-spacing ">
+												<i class="fa fa-check-square-o"></i> Basic Course</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../courses_advance.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Advance Course</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../courses_proffesional.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Professional Course</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../cryptocurrency.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Cryptocurrency</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="mb-0 card card-primary3 lbg3 conurl">
+									<div class="card-header" role="tab" id="headingthirty5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirty5" aria-expanded="false" aria-controls="collapsethirty5">
+											<i class="fa fa-magnet"></i> Price Action</a>
+										</h4>
+									</div>
+									<div id="collapsethirty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirty5" data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="../short_day.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Candlestick Portal </span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="mb-0 card card-primary3 lbg3 conurl">
+									<div class="card-header" role="tab" id="headingTwo5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+											<i class="fa fa-bar-chart"></i> Trading Strategies</a>
+										</h4>
+									</div>
+									<div id="collapseTwo5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingTwo5" data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="../short_day.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Short/Day Strategies </span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../long_strategies.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Long/Swing Stratgies </span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../news_strategies.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> News Strategies </span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../others_strategies.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Others Strategies </span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="mb-0 card card-primary3 lbg3 conurl">
+									<div class="card-header" role="tab" id="headingThirtythree5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseThirtythree5" aria-expanded="false" aria-controls="collapseThirtythree5">
+											<i class="fa fa-bar-chart"></i> Trading Signal</a>
+										</h4>
+									</div>
+									<div id="collapseThirtythree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingThirtythree5"
+										data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="../intra_day.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../weekly_trade.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../long_term_trade.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="mb-0 card card-primary3 lbg3 conurl">
+									<div class="card-header" role="tab" id="headingFour5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFour5" aria-expanded="false" aria-controls="collapseFour5">
+											<i class="fa fa-book"></i> Books</a>
+										</h4>
+									</div>
+									<div id="collapseFour5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFour5" data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="../profile_books.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Book Library</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="mb-0 card card-primary3 lbg3 conurl">
+									<div class="card-header" role="tab" id="headingFive5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
+											<i class="fa fa-download"></i> Download Portal </a>
+										</h4>
+									</div>
+									<div id="collapseFive5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="../download_indicators.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Indicators Gallery</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../download_expert.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Expert Advisor</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../trading_tools.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Trading Tools</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="mb-0 card card-primary3 lbg3 conurl">
+									<div class="card-header" role="tab" id="headingFifteen5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapseFifteen5" aria-expanded="false" aria-controls="collapseFifteen5">
+											<i class="fa fa-codiepie"></i> PAMM Management </a>
+										</h4>
+									</div>
+									<div id="collapseFifteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingFifteen5" data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="../pamm_portfolio.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Portfolio Management</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse no-mt no-mb" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="mb-0 card card-primary3 lbg3 conurl">
+									<div class="card-header" role="tab" id="headingthirtyone5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtyone5" aria-expanded="false" aria-controls="collapsethirtyone5">
+											<i class="fa fa-money"></i> Investment Module </a>
+										</h4>
+									</div>
+									<div id="collapsethirtyone5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtyone5"
+										data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="../investment_packages.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Investment Packages</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse no-mt mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="mb-0 card card-primary3 lbg3 conurl">
+									<div class="card-header" role="tab" id="headingtwenty5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsetwenty5" aria-expanded="false" aria-controls="collapsetwenty5">
+											<i class="fa fa-users"></i> Forum </a>
+										</h4>
+									</div>
+									<div id="collapsetwenty5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingtwenty5" data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> FXEDU Forum</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end Left-navigation -->
+					</div>
+					<div class="row no-mt mb-1-half">
+						<div class="col-md-12 ">
+							<table class=" downborder1 lbg3">
+								<tr class="table table-resonsive lhsize2">
+									<td colspan="5" class="abor3 text-center" style="font-size: 11px">Recent Closed Trades</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2 ">
+									<td class="abor3 text-center">
+										<span>Currency</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>Signal</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>Entry</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>Exit</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>Profit</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl text-center">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3 text-center">
+										<span>BUY</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class=" text-center" style="color: #10ff00">+40&nbsp
+										<span class="abor3">pips
+										<sub>1D 5H ago</sub>
+										</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl text-center">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3 text-center">
+										<span>BUY</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center" style="color: red">-40&nbsp
+										<span class="abor3">pips
+										<sub>1D 5H ago</sub>
+										</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl text-center">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3 text-center">
+										<span>BUY</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+										<span class="abor3">pips
+										<sub>1D 5H ago</sub>
+										</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl text-center">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3 text-center">
+										<span>BUY</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center" style="color: red">-40&nbsp
+										<span class="abor3">pips
+										<sub>1D 5H ago</sub>
+										</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl text-center">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3 text-center">
+										<span>BUY</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center" style="color: red">-40&nbsp
+										<span class="abor3">pips
+										<sub>1D 5H ago</sub>
+										</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl text-center">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3 text-center">
+										<span>BUY</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class=" text-center" style="color: #10ff00">+40&nbsp
+										<span class="abor3">pips
+										<sub>1D 5H ago</sub>
+										</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl text-center">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3 text-center">
+										<span>BUY</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center" style="color: red">-40&nbsp
+										<span class="abor3">pips
+										<sub>1D 5H ago</sub>
+										</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl text-center">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3 text-center">
+										<span>BUY</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center" style="color: #10ff00">+40&nbsp
+										<span class="abor3">pips
+										<sub>1D 5H ago</sub>
+										</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl text-center">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3 text-center">
+										<span>BUY</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center" style="color: red">-40&nbsp
+										<span class="abor3">pips
+										<sub>1D 5H ago</sub>
+										</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl text-center">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3 text-center">
+										<span>BUY</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center">
+										<span>1.2563</span>
+									</td>
+									<td class="abor3 text-center" style="color: red">-40&nbsp
+										<span class="abor3">pips
+										<sub>1D 5H ago</sub>
+										</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Hidden Site Bar Right-->
+		<div class="ms-slidebar1 sb-slidebar1 sb-left sb-style-overlay" id="ms-slidebar1">
+			<div class="sb-slidebar1-container">
+				<div class="container-full" style="overflow:hidden;">
+					<div class="mb-1-half no-mt card card-warning1">
+						<div class="card-header conurl" align="center">
+							<h4 class="card-title" style="font-size: 18px">
+								<a href="../profile.html" role="button">
+								<i class="fa fa-comments"></i>
+								<strong>TRADING ROOM</strong>
+								</a>
+							</h4>
+						</div>
+					</div>
+					<div class="row no-mt mb-1-half">
+						<div class="col-md-12 ">
+							<table class=" downborder1 lbg1 conurl">
+								<tr class="table table-resonsive lhsize2 ">
+									<td class="text-center" colspan="3" style="font-size: 11px">Trading Session
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td>
+										<img src="../assets/img/flag/aud.jpg" class="banglaimg">Sydeny
+									</td>
+									<td style="text-align: center;">Closed</td>
+									<td style="text-align: center;">12:05:12 AM (Thu)</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td>
+										<img src="../assets/img/flag/tokyo.png" class="banglaimg">Tokyo
+									</td>
+									<td style="text-align: center;">Closed</td>
+									<td style="text-align: center;">12:05:12 AM (Thu)</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td>
+										<img src="../assets/img/flag/london.png" class="banglaimg">London
+									</td>
+									<td style="text-align: center;">Closed</td>
+									<td style="text-align: center;">12:05:12 AM (Thu)</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td>
+										<img src="../assets/img/flag/newyork.png" class="banglaimg">New York
+									</td>
+									<td style="text-align: center;">Closed</td>
+									<td style="text-align: center;">12:05:12 AM (Thu)</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="row no-mt mb-1-half ">
+						<div class="col-md-12 ">
+							<table class=" downborder1 lbg1">
+								<tr class="table table-resonsive lhsize2">
+									<td colspan="4" class="abor3 text-center" style="font-size: 11px">Live Market</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3">
+										<span>1.2563</span>
+									</td>
+									<td>
+										<span style="color: #10ff00">+1.25%</span>
+									</td>
+									<td>
+										<span style="color: #fa0800">-0.25%</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3">
+										<span>1.2563</span>
+									</td>
+									<td>
+										<span style="color: #10ff00">+1.25%</span>
+									</td>
+									<td>
+										<span style="color: #fa0800">-0.25%</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3">
+										<span>1.2563</span>
+									</td>
+									<td>
+										<span style="color: #10ff00">+1.25%</span>
+									</td>
+									<td>
+										<span style="color: #fa0800">-0.25%</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3">
+										<span>1.2563</span>
+									</td>
+									<td>
+										<span style="color: #10ff00">+1.25%</span>
+									</td>
+									<td>
+										<span style="color: #fa0800">-0.25%</span>
+									</td>
+								</tr>
+								<tr class="table table-resonsive lhsize2">
+									<td class="conurl">
+										<a href="#">
+										<span>EUR/USD</span>
+										</a>
+									</td>
+									<td class="abor3">
+										<span>1.2563</span>
+									</td>
+									<td>
+										<span style="color: #10ff00">+1.25%</span>
+									</td>
+									<td>
+										<span style="color: #fa0800">-0.25%</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="row ">
+						<!-- Start Right-navigation -->
+						<div class="col-lg-12 col-md-12 col-sm-12 order-md-2 order-lg-3">
+							<div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="no-mb no-mt card card-primary3 lbg3 conurl">
+									<div class="card-header" role="tab" id="headingTwelve5">
+										<h4 class="card-title shine">
+											<a class=" withripple" role="button" data-toggle="collapse" href="#collapseTwelve5" aria-expanded="true" aria-controls="collapseTwelve5">
+											<i class="fa fa-shopping-cart"></i>Be A FXTUTOR Provider</a>
+										</h4>
+									</div>
+									<div id="collapseTwelve5" class="card-collapse collapse show new-inner-tab num-spacing" role="tabpanel" aria-labelledby="headingTwelve5" data-parent="#accordion5">
+										<ul class="panel-group ms-collapse-nav hidden-menu-market" id="components-nav" role="tablist" aria-multiselectable="true">
+											<li class="card card-inner" role="tab" id="e1">
+												<a role="button" data-toggle="collapse" href="#c1" aria-expanded="true" aria-controls="c1" class=" withripple">
+												<i class="fa fa-area-chart mr-1"></i>Copytrade</a>
+												<ul id="c1" class="panel-collapse show collapse" role="tabpanel" aria-labelledby="e1" data-parent="#components-nav">
+													<li>
+														<a class="withripple hidden-menu" href="#manage-signals">
+														<span  class="active-option">
+														<i class="fa fa-check-square-o"></i> Manage Signals </span>
+														<span class="badge badge1 badge-success pull-right">1.2</span>
+														</a>
+													</li>
+													<li>
+													<li>
+														<a class="withripple hidden-menu" href="add-new-signal.html">
+														<span class="">
+														<i class="fa fa-check-square-o"></i> Add New Signal </span>
+														<span class="badge badge1 badge-success pull-right">1.2</span>
+														</a>
+													</li>
+													<li>
+														<a class="withripple hidden-menu" href="track-my-user.html">
+														<span class="">
+														<i class="fa fa-check-square-o"></i> Track My Users </span>
+														<span class="badge badge1 badge-success pull-right">1.2</span>
+														</a>
+													</li>
+													<li>
+														<a class="withripple hidden-menu" href="#no">
+														<span class="">
+														<i class="fa fa-check-square-o"></i> My Personal Slaves </span>
+														<span class="badge badge1 badge-success pull-right">1.2</span>
+														</a>
+													</li>
+													<li>
+														<a class="withripple hidden-menu" href="signal-status-overview.html">
+														<span>
+														<i class="fa fa-check-square-o"></i> Signal Status Overview </span>
+														<span class="badge badge1 badge-success pull-right">1.2</span>
+														</a>
+													</li>
+													<li>
+															<a class="withripple hidden-menu" href="#no">
+															<span>
+															<i class="fa fa-check-square-o"></i> My Copytrade Billing </span>
+															<span class="badge badge1 badge-success pull-right">1.2</span>
+															</a>
+														</li>
+												</ul>
+											</li>
+											<li class="card card-inner" role="tab" id="e2">
+												<a role="button" data-toggle="collapse" href="#c2" aria-expanded="false" aria-controls="c2" class="collapsed withripple">
+												<i class="fa fa-pencil-square-o mr-1"></i>Be A Instructor</a>
+												<ul id="c2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="e2" data-parent="#components-nav">
+													<li>
+														<a class="withripple hidden-menu" href="#no">
+														<span>
+														<i class="fa fa-check-square-o"></i> Add Course </span>
+														<span class="badge badge1 badge-success pull-right">1.2</span>
+														</a>
+													</li>
+													<li>
+														<a class="withripple hidden-menu" href="#no">
+														<span>
+														<i class="fa fa-check-square-o"></i> Manage Course </span>
+														<span class="badge badge1 badge-success pull-right">1.2</span>
+														</a>
+													</li>
+													<li>
+														<a class="withripple hidden-menu " href="course-market-place.html">
+														<span>
+														<i class="fa fa-shopping-cart"></i> Market Place </span>
+														<span class="badge badge1 badge-success pull-right">1.2</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="no-mb no-mt card card-primary3 lbg3">
+									<div class="card-header" role="tab" id="headingeleven5">
+										<h4 class="card-title">
+											<a class="withripple" role="button" data-toggle="collapse" href="#collapseeleven5" aria-expanded="true" aria-controls="collapseeleven5">
+											<i class="fa fa-cogs"></i>Technical Analysis</a>
+										</h4>
+									</div>
+									<div id="collapseeleven5" class="card-collapse collapse show num-spacing lbg3" role="tabpanel" aria-labelledby="headingeleven5"
+										data-parent="#accordion5">
+										<ul>
+											<li class="conurl ">
+												<a class="withripple " href="../profile_courses.html">
+												<span class="list-word-spacing abor">
+												<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+												</a>
+											</li>
+											<li class="conurl ">
+												<a class="withripple" href="../profile_courses.html">
+												<span class="list-word-spacing abor">
+												<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+												</a>
+											</li>
+											<li class="conurl ">
+												<a class="withripple" href="../profile_courses.html">
+												<span class="list-word-spacing abor">
+												<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+												</a>
+											</li>
+											<li class="conurl ">
+												<a class="withripple" href="../profile_courses.html">
+												<span class="list-word-spacing abor">
+												<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+												</a>
+											</li>
+											<li class="conurl ">
+												<a class="withripple" href="../profile_courses.html">
+												<span class="list-word-spacing abor">
+												<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+												</a>
+											</li>
+										</ul>
+										<div class="seel1">
+											<a class="withripple" href="../profile_courses.html">
+											<span class="list-word-spacing abor1">See All</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="no-mb card card-primary3  lbg3 conurl">
+									<div class="card-header" role="tab" id="headingthirtythree5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirtythree5" aria-expanded="false" aria-controls="collapsethirtythree5">
+											<i class="fa fa-wrench"></i> Trading Tools</a>
+										</h4>
+									</div>
+									<div id="collapsethirtythree5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirtythree5"
+										data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="../strategies.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Economic Calender </span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../popular_strategies.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Pips Calculator </span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="no-mb card card-primary3 lbg3 conurl">
+									<div class="card-header" role="tab" id="headingthirteen5">
+										<h4 class="card-title">
+											<a class="collapsed withripple" role="button" data-toggle="collapse" href="#collapsethirteen5" aria-expanded="false" aria-controls="collapsethirteen5">
+											<i class="fa fa-fire"></i> Daily Market Update</a>
+										</h4>
+									</div>
+									<div id="collapsethirteen5" class="card-collapse collapse num-spacing" role="tabpanel" aria-labelledby="headingthirteen5"
+										data-parent="#accordion5">
+										<ul>
+											<li>
+												<a class="withripple" href="../profile_signals.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Intra Day Signals </span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../weekly_trade.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Weekly Trade Idea</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+											<li>
+												<a class="withripple" href="../long_term_trade.html">
+												<span class="list-word-spacing">
+												<i class="fa fa-check-square-o"></i> Long Term Trade Idea</span>
+												<span class="badge badge-success pull-right">1.2</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ms-collapse mb-1-half" id="accordion5" role="tablist" aria-multiselectable="true">
+								<div class="no-mb card card-primary3">
+									<div class="card-header" role="tab" id="headingthirtyfive5">
+										<h4 class="card-title">
+											<a class="withripple" role="button" data-toggle="collapse" href="#collapsethirtyfive5" aria-expanded="true" aria-controls="collapsethirtyfive5">
+											<i class="fa fa-globe"></i>News Portal</a>
+										</h4>
+									</div>
+									<div id="collapsethirtyfive5" class="card-collapse collapse show num-spacing lbg3" role="tabpanel" aria-labelledby="headingthirtyfive5"
+										data-parent="#accordion5">
+										<ul>
+											<li class="conurl ">
+												<a class="withripple " href="../profile_courses.html">
+												<span class="list-word-spacing abor">
+												<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+												</a>
+											</li>
+											<li class="conurl ">
+												<a class="withripple" href="../profile_courses.html">
+												<span class="list-word-spacing abor">
+												<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+												</a>
+											</li>
+											<li class="conurl ">
+												<a class="withripple" href="../profile_courses.html">
+												<span class="list-word-spacing abor">
+												<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+												</a>
+											</li>
+											<li class="conurl ">
+												<a class="withripple" href="../profile_courses.html">
+												<span class="list-word-spacing abor">
+												<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+												</a>
+											</li>
+											<li class="conurl ">
+												<a class="withripple" href="../profile_courses.html">
+												<span class="list-word-spacing abor">
+												<i class="fa fa-plus-square"></i> USD/JPY on verge of 16m low after</span>
+												</a>
+											</li>
+										</ul>
+										<div class="seel1">
+											<a class="withripple" href="../profile_courses.html">
+											<span class="list-word-spacing abor1">See All</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end Left-navigation -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Signal Ticker -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="../assets/js/jquery.carouselTicker.js"></script>
+		<script>
+			$(".carouselTicker").carouselTicker({
+			// animation speed
+			speed: 1,
+			// animation delay
+			delay: 30,
+			// RTL or LTR
+			reverse: true
+			});
+		</script>
+		<!-- End Signal Ticker -->
+		<script src="../assets/js/plugins.min.js"></script>
+		<!--Right Slidebar-->
+		<script src="../assets/js/sidebar-right.js"></script>
+		<!-- REVOLUTION JS FILES -->
+		<script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="../assets/js/app.min.js"></script>
+		<!-- Reply Toggle -->
+		<script>
+			$(".reply").click(function () {
+			    var myelement = $(this).attr("data-target")
+			    $(myelement).slideToggle("slow");
+			    $(".hidden:visible").not(myelement).show();
+
+			});
+		</script>
+		<script src="../assets/js/footable.js"></script>
+		<script>
+			$('.table').footable();
+
+		</script>
+	</body>
+</html>

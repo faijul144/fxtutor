@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#333">
+    <title>FX EDU</title>
+    <meta name="description" content="Material Style Theme">
+
+
+    <!-- Stylesheets
+    ================================================= -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery.scrollbar.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link href="css/emoji.css" rel="stylesheet">
+    <!--FXEDU-->
+    <link rel="shortcut icon" href="../assets/img/favicon.png?v=3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../assets/css/preload.min.css">
+    <link rel="stylesheet" href="../assets/css/plugins.min.css">
+    <link rel="stylesheet" href="../assets/css/style.light-blue-500.min.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/bum.css">
+    <link rel="stylesheet" href="../assets/css/faeffect.css">
+    <link rel="stylesheet" href="../assets/css/jquery.simpleTicker.css">
+    <!--Flag Icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
+
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="ms-preload" class="ms-preload">
+        <div id="status">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="ms-site-container">
+        <!-- Modal -->
+        <div class="modal modal-primary" id="ms-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog animated zoomIn animated-3x" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-block shadow-2dp no-pb">
+                        <button type="button" class="close d-inline pull-right mt-2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="zmdi zmdi-close"></i>
+                            </span>
+                        </button>
+                        <div class="modal-title text-center">
+                            <span class="ms-logo ms-logo-white ms-logo-sm mr-1">FX</span>
+                            <h3 class="no-m ms-site-title">EDU
+                            </h3>
+                        </div>
+                        <div class="modal-header-tabs">
+                            <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-primary" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a href="#ms-login-tab" aria-controls="ms-login-tab" role="tab" data-toggle="tab" class="nav-link active withoutripple">
+                                        <i class="zmdi zmdi-account"></i> Login</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab" class="nav-link withoutripple">
+                                        <i class="zmdi zmdi-account-add"></i> Register</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#ms-recovery-tab" aria-controls="ms-recovery-tab" role="tab" data-toggle="tab" class="nav-link withoutripple">
+                                        <i class="zmdi zmdi-key"></i> Recovery Pass</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active show" id="ms-login-tab">
+                                <form autocomplete="off">
+                                    <fieldset>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-account"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-user">Username</label>
+                                                <input type="text" id="ms-form-user" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-lock"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-pass">Password</label>
+                                                <input type="password" id="ms-form-pass" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-md-6">
+                                                <div class="form-group no-mt">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Remember Me </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button class="btn btn-raised btn-primary pull-right">Login</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <div class="text-center">
+                                    <h3>Login with</h3>
+                                    <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-facebook">
+                                        <i class="zmdi zmdi-facebook"></i> Facebook</a>
+                                    <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-twitter">
+                                        <i class="zmdi zmdi-twitter"></i> Twitter</a>
+                                    <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-google">
+                                        <i class="zmdi zmdi-google"></i> Google</a>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="ms-register-tab">
+                                <form>
+                                    <fieldset>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-account"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-user-r">Username</label>
+                                                <input type="text" id="ms-form-user-r" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-email"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-email-r">Email</label>
+                                                <input type="email" id="ms-form-email-r" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-lock"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-pass-r">Password</label>
+                                                <input type="password" id="ms-form-pass-r" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="zmdi zmdi-lock"></i>
+                                                </span>
+                                                <label class="control-label" for="ms-form-pass-rn">Re-type Password</label>
+                                                <input type="password" id="ms-form-pass-rn" class="form-control">
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-raised btn-block btn-primary">Register Now</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="ms-recovery-tab">
+                                <fieldset>
+                                    <div class="form-group label-floating">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="zmdi zmdi-account"></i>
+                                            </span>
+                                            <label class="control-label" for="ms-form-user-re">Username</label>
+                                            <input type="text" id="ms-form-user-re" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group label-floating">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="zmdi zmdi-email"></i>
+                                            </span>
+                                            <label class="control-label" for="ms-form-email-re">Email</label>
+                                            <input type="email" id="ms-form-email-re" class="form-control">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-raised btn-block btn-primary">Send Password</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="ms-header ms-header-primary1" style="display:block;min-height:87px;color:#fff">
+            <!--ms-header-primary-->
+            <div class="container container-full">
+                <div class="ms-title ">
+                    <div class="row logo-margin-top conurl">
+                        <a href="javascript:void(0)" class="btn-ms-menu  ml-1 mr-2  ms-toggle-left huda ">
+                            <i class="zmdi zmdi-menu mho "></i>
+                        </a>
+                        <a href="../index.html">
+                            <!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
+                            <span class="ms-logo animated zoomInDown animation-delay-5">FX</span>
+                            <h1 class="animated fadeInRight animation-delay-6">
+                                <span>EDU</span>
+                            </h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right ml-4 " style="margin-top: 4px">
+                    <div class="row">
+
+                        <div class="dropdown profile-button-pull d-none d-md-block">
+                            <button class="btn btn-default btn-city dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="true">
+                                <img src="../assets/img/profile.jpg" class="banglaprof">
+                                <span class="profile-name">Raj Shah
+                                    <i class="fa fa-ellipsis-v"> </i>
+                                </span>
+                                <span class="caret caret-search"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <a href="my_profile.html">My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Wallet</a>
+                                </li>
+                                <li>
+                                    <a class="lp_bottom" href="#" style="border-bottom: none">
+                                        <i class="fa fa-sign-out"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Notification Menu -->
+                        <div class="dropdown bell-color">
+                            <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+
+                                <i class="glyphicon glyphicon-bell"></i>
+                                <span class="badge-pill badge-pill-warning badge-pill-move">10</span>
+
+                            </a>
+                            <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel" id="notification-dropdown">
+                                <div class="notification-heading">
+                                    <h4 class="menu-title">Notifications</h4>
+                                    <h4 class="menu-title float-right">
+                                        <a href="#">Mark all as read
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="notifications-wrapper conurl">
+                                    <a class="content" href="#">
+
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="content" href="#">
+
+                                        <div class="notification-item">
+
+
+                                            <p class="item-info">Marketing 101, Video Assignment</p>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+
+                                <div class="notification-footer">
+                                    <a href="#">
+                                        <h4 class="footer-menu-title ">View all&nbsp. . </h4>
+                                    </a>
+
+                                </div>
+
+
+                            </ul>
+                        </div>
+
+                        <!-- End Notification Menu -->
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="page-contents">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <!-- Newsfeed Common Side Bar Left
+          ================================================= -->
+
+                    <div class="col-md-9">
+
+
+
+                        <!-- Chat Room
+            ================================================= -->
+                        <div class="chat-room">
+                            <div class="row">
+                                <div class="col-md-5 no-pr" >
+
+                                    <!-- Contact List in Left-->
+                                    <ul class="nav contact-list-fix contact-list scrollbar-wrapper scrollbar-outer">
+                                        <li >
+                                            <a href="#contact-1" data-toggle="tab" class="active show">
+                                                <div class="contact">
+                                                    <img src="images/users/user-2.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6 class="text-left">Linda Lohan</h6>
+                                                        <p class="text-muted text-left">Hi there, how are you</p>
+                                                        <small class="text-muted">a min ago</small>
+                                                        <div class="chat-alert">1</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-2" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="images/users/user-10.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6 class="text-left">Julia Cox</h6>
+                                                        <p class="text-muted text-left">see you soon</p>
+                                                        <small class="text-muted">an hour ago</small>
+                                                        <div class="seen">
+                                                            <i class="icon ion-checkmark-round"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-2" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="images/users/user-10.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6 class="text-left">Julia Cox</h6>
+                                                        <p class="text-muted text-left">see you soon</p>
+                                                        <small class="text-muted">an hour ago</small>
+                                                        <div class="seen">
+                                                            <i class="icon ion-checkmark-round"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#contact-3" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="images/users/user-3.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6 class="text-left">Sophia Lee</h6>
+                                                        <p class="text-muted text-left">Okay fine. thank you</p>
+                                                        <small class="text-muted">13 hour ago</small>
+                                                        <div class="replied">
+                                                            <i class="icon ion-reply"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-3" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="images/users/user-3.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6 class="text-left">Sophia Lee</h6>
+                                                        <p class="text-muted text-left">Okay fine. thank you</p>
+                                                        <small class="text-muted">13 hour ago</small>
+                                                        <div class="replied">
+                                                            <i class="icon ion-reply"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-4" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="images/users/user-4.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6 class="text-left">John Doe</h6>
+                                                        <p class="text-muted text-left">hey anybody there</p>
+                                                        <small class="text-muted">Yesterday</small>
+                                                        <div class="chat-alert">1</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-5" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="images/users/user-9.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6 class="text-left">Anna Young</h6>
+                                                        <p class="text-muted text-left">I gotta go</p>
+                                                        <small class="text-muted">2 days ago</small>
+                                                        <div class="seen">
+                                                            <i class="icon ion-checkmark-round"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-6" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="images/users/user-8.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6 class="text-left">Richard Bell</h6>
+                                                        <p class="text-muted text-left">Hey there?</p>
+                                                        <small class="text-muted">2 days ago</small>
+                                                        <div class="chat-alert">1</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-6" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="images/users/user-8.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6 class="text-left">Richard Bell</h6>
+                                                        <p class="text-muted text-left">Hey there?</p>
+                                                        <small class="text-muted">2 days ago</small>
+                                                        <div class="chat-alert">1</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-6" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="images/users/user-8.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6 class="text-left">Richard Bell</h6>
+                                                        <p class="text-muted text-left">Hey there?</p>
+                                                        <small class="text-muted">2 days ago</small>
+                                                        <div class="chat-alert">1</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!--Contact List in Left End-->
+
+                                </div>
+                                <div class="col-md-7 no-pl no-pr">
+
+                                    <!--Chat Messages in Right-->
+                                    <div class="tab-content scrollbar-wrapper wrapper scrollbar-outer">
+                                        <div class="tab-pane active" id="contact-1">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="left">
+                                                        <img src="images/users/user-2.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Linda Lohan</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Hi honey, how are you doing???? Long time no see. Where have
+                                                                you been?</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Sarah Cruiz</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>I have been on vacation</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Sarah Cruiz</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>it was a great time for me. we had a lot of fun
+                                                                <i class="em em-blush"></i>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="images/users/user-2.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Linda Lohan</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>that's cool I wish I were you
+                                                                <i class="em em-expressionless"></i>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Sarah Cruiz</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>
+                                                                <i class="em em-hand"></i>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="images/users/user-2.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Linda Lohan</h5>
+                                                                <small class="text-muted">a min ago</small>
+                                                            </div>
+                                                            <p>Hi there, how are you</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="contact-2">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="left">
+                                                        <img src="images/users/user-10.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Julia Cox</h5>
+                                                                <small class="text-muted">a day ago</small>
+                                                            </div>
+                                                            <p>Hi</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Sarah Cruiz</h5>
+                                                                <small class="text-muted">a day ago</small>
+                                                            </div>
+                                                            <p>hellow</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="images/users/user-10.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Julia Cox</h5>
+                                                                <small class="text-muted">an hour ago</small>
+                                                            </div>
+                                                            <p>good</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Sarah Cruiz</h5>
+                                                                <small class="text-muted">an hour ago</small>
+                                                            </div>
+                                                            <p>see you soon</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="contact-3">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="right">
+                                                        <img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Sarah</h5>
+                                                                <small class="text-muted">2 days ago</small>
+                                                            </div>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                                laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="images/users/user-3.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Sophia Lee</h5>
+                                                                <small class="text-muted">a day ago</small>
+                                                            </div>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                                do eiusmod tempor incididunt</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Sarah Cruiz</h5>
+                                                                <small class="text-muted">13 hours ago</small>
+                                                            </div>
+                                                            <p>Okay fine. thank you</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="contact-4">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="left">
+                                                        <img src="images/users/user-4.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>John Doe</h5>
+                                                                <small class="text-muted">a day ago</small>
+                                                            </div>
+                                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                                                blanditiis praesentium voluptatum deleniti atque corrupti
+                                                                quos dolores et quas molestias excepturi sint occaecati cupiditate
+                                                                non provident, similique sunt in culpa qui officia deserunt
+                                                                mollitia animi, id est laborum et dolorum fuga. Et harum
+                                                                quidem rerum facilis est et expedita distinctio. Nam libero
+                                                                tempore, cum soluta nobis est eligendi optio cumque nihil
+                                                                impedit quo minus id quod maxime placeat facere possimus,
+                                                                omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
+                                                                autem quibusdam et aut officiis debitis aut rerum necessitatibus
+                                                                saepe eveniet ut et voluptates repudiandae sint et molestiae
+                                                                non recusandae.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="images/users/user-4.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>John Doe</h5>
+                                                                <small class="text-muted">a day ago</small>
+                                                            </div>
+                                                            <p>hey anybody there</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="contact-5">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="left">
+                                                        <img src="images/users/user-9.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Anna Young</h5>
+                                                                <small class="text-muted">2 days ago</small>
+                                                            </div>
+                                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                                accusantium doloremque laudantium, totam rem aperiam, eaque
+                                                                ipsa quae ab illo inventore veritatis et quasi architecto
+                                                                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                                                                quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                                                consequuntur magni dolores</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="images/users/user-9.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Anna Young</h5>
+                                                                <small class="text-muted">2 days ago</small>
+                                                            </div>
+                                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                                accusantium doloremque laudantium, totam rem aperiam, eaque
+                                                                ipsa quae ab illo inventore veritatis et quasi architecto
+                                                                beatae vitae dicta sunt explicabo.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Sarah Cruiz</h5>
+                                                                <small class="text-muted">2 days ago</small>
+                                                            </div>
+                                                            <p>I gotta go</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="contact-6">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="left">
+                                                        <img src="images/users/user-8.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Richard Bell</h5>
+                                                                <small class="text-muted">2 days ago</small>
+                                                            </div>
+                                                            <p>Hello</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="images/users/user-8.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Richard Bell</h5>
+                                                                <small class="text-muted">2 days ago</small>
+                                                            </div>
+                                                            <p>Hi</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="images/users/user-8.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Richard Bell</h5>
+                                                                <small class="text-muted">2 days ago</small>
+                                                            </div>
+                                                            <p>Hey</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="images/users/user-8.jpg" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Richard Bell</h5>
+                                                                <small class="text-muted">2 days ago</small>
+                                                            </div>
+                                                            <p>Hey there</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Chat Messages in Right End-->
+
+                                    <div class="send-message">
+                                        <div class="input-group">
+                                                <div class="col-md-12 col-sm-12 no-pl no-pr">
+                                                        <div class="form-group no-mt">
+                                                          <input type="text"  class="form-control" placeholder="Write your message"></input>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-md-12 col-sm-12 no-pl no-pr">
+                                                        <div >
+                                                          <a href="#" class="btn btn-raised btn-primary pull-right no-mt no-mb" >Reply</a>
+                                                        </div>
+                                                      </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsfeed Common Side Bar Right
+          ================================================= -->
+                    <div class="col-md-3 static " style="background-color: #041936;">
+                        <div class="sticky-top">
+                            <div class="suggestions ">
+
+                                <div class="follow-user ">
+                                    <img src="images/users/user-11.jpg" alt="" class="profile1-photo-sm pull-left" />
+                                    <div class="name-posfix">
+                                        <p>
+                                            <a href="#" class="name-limit ">Diana Amber</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="suggestions col-md-12 mt-1 no-pl option-border" id="sticky-sidebar">
+                                <div class=" name-posfix">
+                                    <h5 class="grey mb-1 text-left">
+                                        <strong>Option</strong>
+                                    </h5>
+                                    <ul class="list-unstyled ms-icon-list messenger-option">
+                                        <li><a href="#"><i class="fa fa-search mr-1"></i>Search in Conversation</a></li>
+                                        <li><a href="#"><i class="fa fa-pencil mr-1"></i>Edit Nickname</a></li>
+                                        <li><a href="#"><i class="fa fa-bell mr-1"></i>Notification</a></li>
+                                    </ul>
+                                </div>
+                                </div>
+
+
+                            <!--Active Friends-->
+                            <div class="suggestions " id="sticky-sidebar">
+                                <h4 class="col-md-12 grey text-center">
+                                    <strong>Active Members</strong>
+                                </h4>
+                                <div class="scroll-hide-wrap">
+                                    <div class="scroll-hide">
+
+                                        <div class="follow-user">
+                                            <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p class="no-p">
+                                                    <a href="#">Diana Amber</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">Diana Amber</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="follow-user">
+                                            <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">Diana Amber</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-12.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">John Doe</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">Diana Amber</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">Diana Amber</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-12.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">John Doe</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">Diana Amber</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-12.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">John Doe</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">Diana Amber</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-12.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">John Doe</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">Diana Amber</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-12.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">John Doe</a>
+                                                    <span class="online-dot"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="follow-user">
+                                            <img src="images/users/user-13.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">Rocky Vale</a>
+                                                    <span class="time-fix">2d</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class=" follow-user">
+                                            <img src="images/users/user-14.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class=" name-posfix">
+                                                <p>
+                                                    <a href="#">Jane Amber</a>
+                                                    <span class="time-fix">13m</span>
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                        <div class=" follow-user ">
+
+                                            <img src="images/users/user-15.jpg" alt="" class="profile-photo-sm pull-left" />
+                                            <div class="name-posfix">
+                                                <p>
+                                                    <a href="#">Devine Amber</a>
+                                                    <span class="time-fix ">2h</span>
+                                                </p>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Active Friends End-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside class="ms-footbar no-mt no-pt">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 ms-footer-col">
+                    <div class="ms-footbar-block">
+                        <h3 class="ms-footbar-title">Sitemap</h3>
+                        <ul class="list-unstyled ms-icon-list three_cols">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Portafolio</a>
+                            </li>
+                            <li>
+                                <a href="#">Works</a>
+                            </li>
+                            <li>
+                                <a href="#">Timeline</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Login</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4 ms-footer-col ms-footer-alt-color" align="center" style="padding-top:10px">
+                    <div class="ms-footbar-block">
+                        <h3 class="ms-footbar-title">Social Media</h3>
+                        <div class="ms-footbar-social">
+                            <a href="javascript:void(0)" class="btn-circle btn-facebook" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-facebook"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-twitter" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-twitter"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-youtube" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-youtube-play"></i>
+                            </a>
+                            <br>
+                            <a href="javascript:void(0)" class="btn-circle btn-google" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-google"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-instagram" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-instagram"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn-circle btn-github" style="background-color:#607d8b">
+                                <i class="zmdi zmdi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 ms-footer-col ">
+                    <div class="ms-footbar-block ">
+                        <h3 class="ms-footbar-title">Subscribe</h3>
+                        <p>To get further updates of our edu site or you want then please do subscribe us.</p>
+                        <form>
+                            <div class="form-group label-floating mt-2 mb-1">
+                                <div class="input-group ms-input-subscribe">
+                                    <label class="control-label" for="ms-subscribe">
+                                        <i class="zmdi zmdi-email"></i> Email Adress</label>
+                                    <input type="email" id="ms-subscribe" class="form-control"> </div>
+                            </div>
+                            <button class="ms-subscribre-btn" type="button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer class="ms-footer">
+        <div class="container">
+            <p>Copyright &copy; FX EDU 2018</p>
+        </div>
+        <hr>
+        <div class="container">
+            <p align="justify">
+                <strong style="color:#70BF44">Risk Disclaimer : </strong>FX Academy will not be held liable for any loss or damage resulting from reliance
+                on the information contained within this website including market news, analysis, trading signals and Forex
+                broker reviews. The data contained in this website is not necessarily real-time nor accurate, and analyses
+                are the opinions of the author and do not represent the recommendations of FX Academy or its employees. Currency
+                trading on margin involves high risk, and is not suitable for all investors. As a leveraged product losses
+                are able to exceed initial deposits and capital is at risk. Before deciding to trade Forex or any other financial
+                instrument you should carefully consider your investment objectives, level of experience, and risk appetite.</p>
+        </div>
+    </footer>
+    <!--start end footer list-->
+    <div class="ms-footer conurl">
+        <span class="pr-1">
+            <a href="">Risk Warning</a>
+        </span>
+        <span>|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Disclaimer</a>
+        </span>
+        <span class="pl-1">|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Privacy</a>
+        </span>
+        <span class="pl-1">|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Terms & Condition</a>
+        </span>
+        <span class="pl-1">|</span>
+        <span class="pl-1">
+            <a href="javascript:void(0)">Complaints Handling</a>
+        </span>
+    </div>
+
+    <!--end end footer list-->
+    <div class="btn-back-top">
+        <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">
+            <i class="zmdi zmdi-long-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- end footer -->
+
+    <!-- ms-site-container -->
+    <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+        <div class="sb-slidebar-container">
+            <header class="ms-slidebar-header">
+                <div class="ms-slidebar-login">
+                    <a href="javascript:void(0)" class="withripple">
+                        <i class="zmdi zmdi-account"></i> Login</a>
+                    <a href="javascript:void(0)" class="withripple">
+                        <i class="zmdi zmdi-account-add"></i> Register</a>
+                </div>
+                <div class="ms-slidebar-title">
+                    <form class="search-form">
+                        <input id="search-box-slidebar" type="text" class="search-input" placeholder="Search..." name="q" />
+                        <label for="search-box-slidebar">
+                            <i class="zmdi zmdi-search"></i>
+                        </label>
+                    </form>
+                    <div class="ms-slidebar-t">
+                        <span class="ms-logo ms-logo-sm">FX</span>
+                        <h3>
+                            <span>EDU</span>
+                        </h3>
+                    </div>
+                </div>
+            </header>
+            <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
+                <li class="card" role="tab" id="sch2">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#sc2" aria-expanded="false" aria-controls="sc2">
+                        <i class="zmdi zmdi-desktop-mac"></i>About FXEDU</a>
+                    <ul id="sc2" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch2" data-parent="#slidebar-menu">
+                    </ul>
+                </li>
+                <li class="card" role="tab" id="sch4">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#sc4" aria-expanded="false" aria-controls="sc4">
+                        <i class="zmdi zmdi-edit"></i> Free Basic Training</a>
+                    <ul id="sc4" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch4" data-parent="#slidebar-menu">
+                    </ul>
+                </li>
+                <li class="card" role="tab" id="sch5">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#sc5" aria-expanded="false" aria-controls="sc5">
+                        <i class="fa fa-eye"></i>Daily Trades/Videos</a>
+                    <ul id="sc5" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch5" data-parent="#slidebar-menu">
+                    </ul>
+                </li>
+                <li class="card" role="tab" id="sch6">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#sc6" aria-expanded="false" aria-controls="sc6">
+                        <i class="fa fa-star"></i>Broker Reviews</a>
+                    <ul id="sc6" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch6" data-parent="#slidebar-menu">
+                    </ul>
+                </li>
+                <li class="card" role="tab" id="sch7">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#sc7" aria-expanded="false" aria-controls="sc7">
+                        <i class="fa fa-users"></i>Trading Room</a>
+                    <ul id="sc7" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch7" data-parent="#slidebar-menu">
+                    </ul>
+                </li>
+                <li class="card" role="tab" id="sch8">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#sc8" aria-expanded="false" aria-controls="sc8">
+                        <i class="fa fa-bolt"></i>Copy Trading</a>
+                    <ul id="sc8" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch8" data-parent="#slidebar-menu">
+                    </ul>
+                </li>
+                <li class="card" role="tab" id="sch9">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#sc9" aria-expanded="false" aria-controls="sc9">
+                        <i class="fa fa-comments"></i>Official Blog</a>
+                    <ul id="sc9" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch9" data-parent="#slidebar-menu">
+                    </ul>
+                </li>
+                <li class="card" role="tab" id="sch10">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#sc10" aria-expanded="false" aria-controls="sc10">
+                        <i class="fa fa-user"></i>Our Representative</a>
+                    <ul id="sc10" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch10" data-parent="#slidebar-menu">
+                    </ul>
+                </li>
+                <li>
+                    <a class="link" href="page-all.html">
+                        <i class="zmdi zmdi-link"></i>Testimonial</a>
+                </li>
+                <li>
+                    <a class="link" href="page-all.html">
+                        <i class="fa fa-beer"></i>Carrer at FXEDU</a>
+                </li>
+            </ul>
+            <div class="ms-slidebar-social ms-slidebar-block">
+                <h4 class="ms-slidebar-block-title">Social Links</h4>
+                <div class="ms-slidebar-social">
+                    <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook">
+                        <i class="zmdi zmdi-facebook"></i>
+                        <span class="badge-pill badge-pill-pink">12</span>
+                        <div class="ripple-container"></div>
+                    </a>
+                    <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-twitter">
+                        <i class="zmdi zmdi-twitter"></i>
+                        <span class="badge-pill badge-pill-pink">4</span>
+                        <div class="ripple-container"></div>
+                    </a>
+                    <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-google">
+                        <i class="zmdi zmdi-google"></i>
+                        <div class="ripple-container"></div>
+                    </a>
+                    <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
+                        <i class="zmdi zmdi-instagram"></i>
+                        <div class="ripple-container"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts
+    ================================================= -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTMXfmDn0VlqWIyoOxK8997L-amWbUPiQ&amp;callback=initMap"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Signal Ticker -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../assets/js/jquery.carouselTicker.js"></script>
+
+    <script>
+        $(".carouselTicker").carouselTicker({
+            // animation speed
+            speed: 1,
+            // animation delay
+            delay: 30,
+            // RTL or LTR
+            reverse: true
+        });
+    </script>
+    <!-- End Signal Ticker -->
+    <script src="../assets/js/plugins.min.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+
+</body>
+
+</html>

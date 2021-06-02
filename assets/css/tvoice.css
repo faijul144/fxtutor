@@ -1,0 +1,46 @@
+.tvoice tr:hover{
+	background-color:rgba(245, 245, 245, 0.07)!important
+}
+
+.tvoice tr{
+	background-color:transparent;
+}
+
+.tvoice tr th,
+.tvoice tr td{
+border-color:#032f6dd1!important
+}
+
+.tvoice.tvoice-border tr th,
+.tvoice.tvoice-border tr td{
+border-color:#fff!important
+}
+
+.invoice__attrs__item{
+	background-color: #123f5873;
+    padding: 0px 12px;
+	margin: 7px 0;
+	border-radius: 5px;
+}
+
+.invoice__attrs__item h3{
+margin: 0;
+padding-bottom: 10px;
+}
+
+.tvoice-link a{
+	color:#fff
+}
+
+.tvoice-link a:hover{
+	color:#2ca7f9
+}
+
+.wrap-invoice{
+    padding:1px 0px 0px 0px!important;background: linear-gradient(to bottom right, #003075,#003075, #0045A4,#0045A4)
+}
+
+.tvoice tr th:not(:first-child),
+.tvoice tr td:not(:first-child){
+	text-align:center!important;
+}
